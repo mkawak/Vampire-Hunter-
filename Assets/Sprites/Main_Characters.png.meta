@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0772021422691f146a54bd5136405c51
+guid: 1eabd315e310845139f5e157e6232354
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,6 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: Player1_Idle
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 85
+        width: 25
+        height: 32
       name: Char1_Walk_Right_1
       rect:
         serializedVersion: 2
@@ -119,13 +126,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58616075bbf0bf34a8580dda825b4f6b
-      internalID: 1363356912
+      spriteID: 1aec3ff52d95c44f99e38ac11e7ca0c4
+      internalID: 650770307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 85
+        width: 25
+        height: 32
       name: Char1_Walk_Right_2
       rect:
         serializedVersion: 2
@@ -140,6 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: 7bb88f4228751482db07c0bc60bbc669
+      internalID: -923074578
       spriteID: 328a3d4f64a2b7a43aedfd2a19719d2a
       internalID: -689540665
       vertices: []
@@ -147,6 +163,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Player1_3
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 85
+        width: 26
+        height: 32
       name: Char1_Walk_Right_3
       rect:
         serializedVersion: 2
@@ -161,13 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 336c0491f632d384d93c00f0dfa70b10
-      internalID: 2002956220
+      spriteID: 8b7b52580a3874c6a8f589f7d282df99
+      internalID: -1440046137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_3
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 85
+        width: 28
+        height: 32
       name: Char1_Walk_Right_4
       rect:
         serializedVersion: 2
@@ -182,13 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1c2ada02ae22d24893eb983c20fe97a
-      internalID: 2137889143
+      spriteID: 177cd8ab8a81041c9aed594c46f61baa
+      internalID: -989311172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_4
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 85
+        width: 27
+        height: 32
       name: Char1_Walk_Right_5
       rect:
         serializedVersion: 2
@@ -203,13 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 083789881c9ca0547a9fa74fcb7cc362
-      internalID: -1684273442
+      spriteID: 961cf2b67bbcc41efb0c453e99b4dc78
+      internalID: -891629160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_5
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 85
+        width: 25
+        height: 32
       name: Char1_Walk_Right_6
       rect:
         serializedVersion: 2
@@ -224,6 +268,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: a36bdbdd061294406bae6f9b0a9d3400
+      internalID: -1216721268
       spriteID: 9ec9ac71fdbeaf64ba7b750c350b1ee5
       internalID: 653616454
       vertices: []
@@ -231,6 +277,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_6
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 85
+        width: 25
+        height: 32
       name: Char1_Walk_Right_7
       rect:
         serializedVersion: 2
@@ -245,13 +298,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84573ba447d449947b2613a6d3f805f7
-      internalID: 310063970
+      spriteID: 28090ce882ca94c74847a850d5fe7873
+      internalID: -1373587861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 45
+        width: 23
+        height: 32
       name: Char2_Walk_Right_1
       rect:
         serializedVersion: 2
@@ -266,13 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c41c0e77c505ae54b9e3ef5354ea21e9
-      internalID: 1073312154
+      spriteID: 7e64ce9358555442db70e727201ad50d
+      internalID: -89305891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_8
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 45
+        width: 24
+        height: 32
       name: Char2_Walk_Right_2
       rect:
         serializedVersion: 2
@@ -287,13 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ac84abcabe610741ada85aefa683ccd
-      internalID: -1525823614
+      spriteID: b48efde7ccfd04be9966c469d8dd77e5
+      internalID: 1001953067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_9
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 45
+        width: 24
+        height: 32
       name: Char2_Walk_Right_3
       rect:
         serializedVersion: 2
@@ -308,13 +382,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a6ccb37089c388489b77269d0829c2a
-      internalID: -324846474
+      spriteID: d11e78778a7f64dcf938a03cb5d21947
+      internalID: -1128202687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_10
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 45
+        width: 25
+        height: 32
       name: Char2_Walk_Right_4
       rect:
         serializedVersion: 2
@@ -329,13 +410,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 897f59d5233c3a545b1434ce2994b656
-      internalID: 1718214745
+      spriteID: ee321492d777746dfa641cddf6a655fb
+      internalID: 1033048879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 45
+        width: 24
+        height: 32
       name: Char2_Walk_Right_5
       rect:
         serializedVersion: 2
@@ -350,13 +438,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ab99035e3e829c4584914fcbe4da184
-      internalID: -1730456287
+      spriteID: 1e4e2b67ea9564e2aaba5ed8ac4743b6
+      internalID: -167602525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 45
+        width: 24
+        height: 32
       name: Char2_Walk_Right_6
       rect:
         serializedVersion: 2
@@ -371,13 +466,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d5622c822001304dbcb0c13319e7a18
-      internalID: 96402077
+      spriteID: 2a66d1ac9ec52479bb4aed1ebe1df4b3
+      internalID: 168137975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_13
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 45
+        width: 23
+        height: 32
       name: Char2_Walk_Right_7
       rect:
         serializedVersion: 2
@@ -392,13 +494,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac5b9805fa74c8e40bc52779ea1cac5b
-      internalID: 1828203979
+      spriteID: 1b8ddd439a5ca4aee99bc37c850cbb36
+      internalID: 28513738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3
+        width: 23
+        height: 32
       name: Char3_Walk_Right_1
       rect:
         serializedVersion: 2
@@ -413,13 +522,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02153274dee2f114b93eb3f46ddc9949
-      internalID: -1912154468
+      spriteID: cecccfc8cdc894294800eeb4845bc6e7
+      internalID: -1289587556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_15
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 3
+        width: 24
+        height: 32
       name: Char3_Walk_Right_2
       rect:
         serializedVersion: 2
@@ -434,20 +550,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b57b548886baeaa4fa918f58f809b955
-      internalID: -181713573
+      spriteID: a0a8fdc2e011744beb5fd204585c6b4f
+      internalID: -1099763009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Char3_Walk_Right_3
+      name: Main_Characters_16
       rect:
         serializedVersion: 2
         x: 56
-        y: 0
-        width: 28.428572
-        height: 40
+        y: 3
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,13 +571,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a41904d424638a4880b501ba8d826fc
-      internalID: -41853879
+      spriteID: 11492ebc3e96845c1a3b1cb2cb5b9a09
+      internalID: 235016551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_17
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3
+        width: 25
+        height: 32
       name: Char3_Walk_Right_4
       rect:
         serializedVersion: 2
@@ -476,13 +599,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcc0b51d267e06c478cb9e31bb540989
-      internalID: 1472940889
+      spriteID: 1580f104982ce4908a8e57814662f552
+      internalID: -667749672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_18
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 3
+        width: 24
+        height: 32
       name: Char3_Walk_Right_5
       rect:
         serializedVersion: 2
@@ -497,13 +627,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5e4a2253a89e0e42bf0d8a2e4a24e17
-      internalID: 1661315021
+      spriteID: de5f2414cf5c74049833477568c55630
+      internalID: 749747486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_19
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 3
+        width: 24
+        height: 32
       name: Char3_Walk_Right_6
       rect:
         serializedVersion: 2
@@ -518,13 +655,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7581fbfa39aaf194a8aa57c1f3bb4ec8
-      internalID: 843472213
+      spriteID: f984b60c390f544fcb673a0dea4f6481
+      internalID: -152471774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Main_Characters_20
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 3
+        width: 23
+        height: 32
       name: Char3_Walk_Right_7
       rect:
         serializedVersion: 2
@@ -539,8 +683,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 201f02caf3b84d744b1e1ae32c66670a
-      internalID: -1628276333
+      spriteID: 7cca9b57e0ff84e108ca5bb50aa58a68
+      internalID: 486143101
       vertices: []
       indices: 
       edges: []
@@ -556,6 +700,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Main_Characters_1: -923074578
+      Main_Characters_13: 28513738
+      Main_Characters_17: -667749672
+      Main_Characters_4: -891629160
+      Main_Characters_5: -1216721268
+      Main_Characters_6: -1373587861
+      Main_Characters_9: -1128202687
+      Main_Characters_7: -89305891
+      Main_Characters_12: 168137975
+      Main_Characters_14: -1289587556
+      Main_Characters_18: 749747486
+      Main_Characters_15: -1099763009
+      Main_Characters_10: 1033048879
+      Main_Characters_20: 486143101
+      Main_Characters_19: -152471774
+      Main_Characters_8: 1001953067
+      Main_Characters_3: -989311172
+      Main_Characters_16: 235016551
+      Main_Characters_11: -167602525
+      Player1_3: -1440046137
+      Player1_Idle: 650770307
       Char3_Walk_Right_4: 1472940889
       Char3_Walk_Right_6: 843472213
       Char2_Walk_Right_2: -1525823614
