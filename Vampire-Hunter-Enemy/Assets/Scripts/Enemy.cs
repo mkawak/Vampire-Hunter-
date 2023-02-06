@@ -8,12 +8,13 @@ public class Enemy : MonoBehaviour
     public float moveSpeed = 1f;
     private Rigidbody2D rb;
     private Vector2 movement;
-    private bool flip;
-
+    private Animator anim;
+    private string walkAnimation = "walk";
 
     private void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        anim = this.GetComponent<Animator>();
     }
 
     private void Update()
@@ -23,7 +24,19 @@ public class Enemy : MonoBehaviour
         //rb.rotation = angle;
         direction.Normalize();
         movement = direction;
-        if (player.position.x > transform.position.x)
+    }
+
+    private void FixedUpdate()
+    {
+        MoveEnemy(movement);
+        AnimateEnemy(movement);
+    }
+
+
+    void MoveEnemy(Vector2 direction)
+    {
+        rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+        if (player.position.x > transform.position.x) //flip sprite
         {
             //player on right
             transform.localScale = new Vector3(1f, 1f, 1f);
@@ -35,14 +48,16 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    void AnimateEnemy(Vector2 movement)
     {
-        MoveCharacter(movement);
-    }
-
-    void MoveCharacter(Vector2 direction)
-    {
-        rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+        if (movement.x != 0)
+        {
+            anim.SetBool(walkAnimation, true);
+        } else
+        {
+            anim.SetBool(walkAnimation, false);
+        }
+            
     }
     
 }
