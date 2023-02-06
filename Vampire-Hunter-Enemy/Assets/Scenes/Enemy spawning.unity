@@ -333,6 +333,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1503426315730334256, guid: 8acb24965827a41faab728f45f8b1e27, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6214214245690756459, guid: 8acb24965827a41faab728f45f8b1e27, type: 3}
       propertyPath: m_Name
       value: Hell_Boss_1
@@ -524,6 +528,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6529158242471471795, guid: 38c97c9aa612745fab806431915bb21f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6529158242471471795, guid: 38c97c9aa612745fab806431915bb21f, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
