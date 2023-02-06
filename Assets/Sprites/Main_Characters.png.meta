@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,6 +112,13 @@ TextureImporter:
         y: 85
         width: 25
         height: 32
+      name: Char1_Walk_Right_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,6 +140,13 @@ TextureImporter:
         y: 85
         width: 25
         height: 32
+      name: Char1_Walk_Right_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 80
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,6 +156,8 @@ TextureImporter:
       bones: []
       spriteID: 7bb88f4228751482db07c0bc60bbc669
       internalID: -923074578
+      spriteID: 328a3d4f64a2b7a43aedfd2a19719d2a
+      internalID: -689540665
       vertices: []
       indices: 
       edges: []
@@ -154,6 +170,13 @@ TextureImporter:
         y: 85
         width: 26
         height: 32
+      name: Char1_Walk_Right_3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 80
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,6 +198,13 @@ TextureImporter:
         y: 85
         width: 28
         height: 32
+      name: Char1_Walk_Right_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 80
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,6 +226,13 @@ TextureImporter:
         y: 85
         width: 27
         height: 32
+      name: Char1_Walk_Right_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,6 +254,13 @@ TextureImporter:
         y: 85
         width: 25
         height: 32
+      name: Char1_Walk_Right_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 80
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,6 +270,8 @@ TextureImporter:
       bones: []
       spriteID: a36bdbdd061294406bae6f9b0a9d3400
       internalID: -1216721268
+      spriteID: 9ec9ac71fdbeaf64ba7b750c350b1ee5
+      internalID: 653616454
       vertices: []
       indices: 
       edges: []
@@ -238,6 +284,13 @@ TextureImporter:
         y: 85
         width: 25
         height: 32
+      name: Char1_Walk_Right_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 80
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,6 +312,13 @@ TextureImporter:
         y: 45
         width: 23
         height: 32
+      name: Char2_Walk_Right_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,6 +340,13 @@ TextureImporter:
         y: 45
         width: 24
         height: 32
+      name: Char2_Walk_Right_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 40
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,6 +368,13 @@ TextureImporter:
         y: 45
         width: 24
         height: 32
+      name: Char2_Walk_Right_3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 40
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,6 +396,13 @@ TextureImporter:
         y: 45
         width: 25
         height: 32
+      name: Char2_Walk_Right_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 40
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,6 +424,13 @@ TextureImporter:
         y: 45
         width: 24
         height: 32
+      name: Char2_Walk_Right_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 40
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,6 +452,13 @@ TextureImporter:
         y: 45
         width: 24
         height: 32
+      name: Char2_Walk_Right_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 40
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -385,6 +480,13 @@ TextureImporter:
         y: 45
         width: 23
         height: 32
+      name: Char2_Walk_Right_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 40
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,6 +508,13 @@ TextureImporter:
         y: 3
         width: 23
         height: 32
+      name: Char3_Walk_Right_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,6 +536,13 @@ TextureImporter:
         y: 3
         width: 24
         height: 32
+      name: Char3_Walk_Right_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -469,6 +585,13 @@ TextureImporter:
         y: 3
         width: 25
         height: 32
+      name: Char3_Walk_Right_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,6 +613,13 @@ TextureImporter:
         y: 3
         width: 24
         height: 32
+      name: Char3_Walk_Right_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -511,6 +641,13 @@ TextureImporter:
         y: 3
         width: 24
         height: 32
+      name: Char3_Walk_Right_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -532,6 +669,13 @@ TextureImporter:
         y: 3
         width: 23
         height: 32
+      name: Char3_Walk_Right_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 28.428572
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -577,6 +721,27 @@ TextureImporter:
       Main_Characters_11: -167602525
       Player1_3: -1440046137
       Player1_Idle: 650770307
+      Char3_Walk_Right_4: 1472940889
+      Char3_Walk_Right_6: 843472213
+      Char2_Walk_Right_2: -1525823614
+      Char1_Walk_Right_2: -689540665
+      Char1_Walk_Right_1: 1363356912
+      Char1_Walk_Right_4: 2137889143
+      Char3_Walk_Right_5: 1661315021
+      Char1_Walk_Right_6: 653616454
+      Char2_Walk_Right_4: 1718214745
+      Char1_Walk_Right_7: 310063970
+      Char2_Walk_Right_1: 1073312154
+      Char1_Walk_Right_5: -1684273442
+      Char2_Walk_Right_5: -1730456287
+      Char2_Walk_Right_3: -324846474
+      Char3_Walk_Right_1: -1912154468
+      Char3_Walk_Right_2: -181713573
+      Char1_Walk_Right_3: 2002956220
+      Char2_Walk_Right_7: 1828203979
+      Char3_Walk_Right_3: -41853879
+      Char3_Walk_Right_7: -1628276333
+      Char2_Walk_Right_6: 96402077
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
