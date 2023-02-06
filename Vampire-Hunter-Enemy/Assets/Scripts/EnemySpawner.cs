@@ -8,7 +8,11 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private GameObject Hell_Boss_1;
 
+    [SerializeField]
+    private Transform leftPos, rightPos, topPos, bottomPos;
+
     private float Hell_Boss_1_Interval = 3.5f; //number of seconds in between spawns
+    private int randomSide;
 
     // Start is called before the first frame update
     void Start()
@@ -22,12 +26,27 @@ public class EnemySpawner : MonoBehaviour
 
     }
 
-    private IEnumerator spawnEnemy(float interval, GameObject enemy) //to perform something aftre a fixed amount of time
+    private IEnumerator spawnEnemy(float interval, GameObject enemy) //to perform something after a fixed amount of time
     {
         yield return new WaitForSeconds(interval);
-        //Instantiate: params: (game object, position of object, angle)
-        //currently spawns enemy at random place in the game
-        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-5f, 5), Random.Range(-6f, 6f), 0), Quaternion.identity);
+
+        randomSide = Random.Range(0, 4);
+
+        GameObject newEnemy = Instantiate(enemy);
+        if(randomSide == 0)
+        {
+            newEnemy.transform.position = topPos.transform.position;
+        } else if (randomSide == 1)
+        {
+            newEnemy.transform.position = rightPos.transform.position;
+        } else if (randomSide == 2)
+        {
+            newEnemy.transform.position = bottomPos.transform.position;
+        } else
+        {
+            newEnemy.transform.position = leftPos.transform.position;
+        }
+
         StartCoroutine(spawnEnemy(interval, enemy));
     }
 }
