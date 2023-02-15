@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon1 : Weapon
+public class Player1_BasicAttack : Weapon
 {
     protected override void Start() {
 
-        baseDamage = 1;
+        baseDamage = 2f;
         damageMultiplier = 1.2f;
-        fireRate = 60;
+        fireRate = 80;
 
-        numProjectiles = 3;
-        angles = new float[] {0, -30f, 30f};
-        numAngles = 3;
+        numProjectiles = 1;
+        angles = new float[] {0};
+        numAngles = 1;
 
         playerDamageMultiplier = 1; //Remove
 
@@ -25,6 +25,6 @@ public class Weapon1 : Weapon
 
     new void Update() {
         base.Update();
-        // if (Input.GetKeyDown(KeyCode.Alpha1)) Fire();
+        // if (Input.GetKeyDown(KeyCode.Alpha3)) Fire();
     }
 }
