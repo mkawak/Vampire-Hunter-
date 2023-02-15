@@ -10,8 +10,11 @@ public class Enemy : MonoBehaviour
     public float moveSpeed = 1f;
     private Rigidbody2D rb;
     private Vector2 movement;
+
     private Animator anim;
     private string walkAnimation = "walk";
+
+    private float health = 5f;
 
     private void Start()
     {
@@ -26,6 +29,15 @@ public class Enemy : MonoBehaviour
         //rb.rotation = angle;
         direction.Normalize();
         movement = direction;
+
+        Debug.Log("Health: " + health);
+        TakeDamage(5);
+
+        if(health <= 0)
+        {
+            Die();
+            Debug.Log(gameObject + " being destroyed");
+        }
     }
 
     private void FixedUpdate()
@@ -60,6 +72,26 @@ public class Enemy : MonoBehaviour
             anim.SetBool(walkAnimation, false);
         }
             
+    }
+
+    public float TakeDamage (float damage)
+    {
+        float damageTaken = damage;
+        //update health
+
+        if(damageTaken >= health)
+        {
+            damageTaken = health;
+        }
+
+        health -= damageTaken;
+        Debug.Log("Health " + health);
+        return damageTaken;
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
     }
     
 }
