@@ -41,12 +41,12 @@ public class Enemy : MonoBehaviour
         AnimateEnemy(movement);
     }
 
-    void setHealth(float health)
+    public void setHealth(float health)
     {
         this.health = health;
     }
 
-    float getHealth()
+    public float getHealth()
     {
         return this.health;
     }
@@ -119,7 +119,7 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public float getDistance(Transform player)
+    private float getDistance(Transform player)
     {
         float distance = Vector3.Distance(player.position, transform.position);
         return distance;
@@ -129,6 +129,6 @@ public class Enemy : MonoBehaviour
     public void Attack(Transform player)
     {
         //call function to deal player damage
-        Debug.Log("Attacking " + player);
+        Debug.Log(gameObject + " attacking " + player);
     }
 }
