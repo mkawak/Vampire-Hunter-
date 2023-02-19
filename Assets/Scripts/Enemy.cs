@@ -7,14 +7,16 @@ public class Enemy : MonoBehaviour
     [SerializeField] 
     public Transform player;
 
-    public float moveSpeed = 1f;
+    public float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 movement;
 
     private Animator anim;
     private string walkAnimation = "walk";
+    private string attackAnimation = "attack";
 
     private float health = 5f;
+    private float minDistance = 0.30f;
 
     private void Start()
     {
@@ -24,19 +26,12 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        Vector3 direction = player.position - transform.position; //tranform is the enemy since our script is attached to enemy character
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; ////Atan2- calculates the angle between enemy and player
-        //rb.rotation = angle;
-        direction.Normalize();
-        movement = direction;
+        getMovement(player);
 
-        Debug.Log("Health: " + health);
-        TakeDamage(5);
-
-        if(health <= 0)
+        if (getHealth() <= 0) //if health is 0 or less, enemy is dead
         {
             Die();
-            Debug.Log(gameObject + " being destroyed");
+            Debug.Log(gameObject + " being destroyed.");
         }
     }
 
@@ -44,6 +39,26 @@ public class Enemy : MonoBehaviour
     {
         MoveEnemy(movement);
         AnimateEnemy(movement);
+    }
+
+    void setHealth(float health)
+    {
+        this.health = health;
+    }
+
+    float getHealth()
+    {
+        return this.health;
+    }
+
+
+    void getMovement(Transform player)
+    {
+        Vector3 direction = player.position - transform.position; //tranform is the enemy since our script is attached to enemy character
+        /*float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; ////Atan2- calculates the angle between enemy and player
+        rb.rotation = angle;*/
+        direction.Normalize();
+        movement = direction;
     }
 
 
@@ -71,21 +86,31 @@ public class Enemy : MonoBehaviour
         {
             anim.SetBool(walkAnimation, false);
         }
+        if (getDistance(player) < minDistance) //attack animation
+        {
+            anim.SetBool(attackAnimation, true);
+            Attack(player);
+        }
+        else
+        {
+            anim.SetBool(attackAnimation, false);
+        }
             
     }
 
     public float TakeDamage (float damage)
     {
         float damageTaken = damage;
-        //update health
+        float newHealth;
 
         if(damageTaken >= health)
         {
             damageTaken = health;
         }
 
-        health -= damageTaken;
-        Debug.Log("Health " + health);
+        newHealth = getHealth() - damageTaken;
+        setHealth(newHealth);
+        Debug.Log("Health " + getHealth());
         return damageTaken;
     }
 
@@ -93,5 +118,17 @@ public class Enemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public float getDistance(Transform player)
+    {
+        float distance = Vector3.Distance(player.position, transform.position);
+        return distance;
+    }
+
     
+    public void Attack(Transform player)
+    {
+        //call function to deal player damage
+        Debug.Log("Attacking " + player);
+    }
 }
