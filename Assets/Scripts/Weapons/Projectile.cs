@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour
 
     protected float speed;
     public float lifeTime; // In seconds
-    protected float hits;
+    protected int hits;
     protected float damage;
 
     public void SetStats(float projDamage) {
