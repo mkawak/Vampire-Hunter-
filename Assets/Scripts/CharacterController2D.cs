@@ -8,6 +8,7 @@ public class CharacterController2D : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
     [SerializeField] float speed = 2f;
+    [SerializeField] bool hasVerticalAnimations = false; // makes anims look better on diagonal movement
     Vector2 motionVector;
 
     // below used for animations
@@ -31,7 +32,13 @@ public class CharacterController2D : MonoBehaviour
 
         // update animator
         animator.SetFloat("horizontal", horizontal);
-        animator.SetFloat("vertical", vertical);
+
+        // if no vertical animations, then suppress vertical vector if moving horizontally
+        if (horizontal != 0 && !hasVerticalAnimations)
+            animator.SetFloat("vertical", 0.0f);
+        else
+            animator.SetFloat("vertical", vertical);
+            
         moving = horizontal != 0 || vertical != 0;
         animator.SetBool("moving", moving);
 

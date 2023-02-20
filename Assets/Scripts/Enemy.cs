@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] 
-    public Transform player;
+    [SerializeField] public Transform player;
+    [SerializeField] public float moveSpeed = 5f;
+    [SerializeField] private float health = 5f;
+    [SerializeField] private float xScale = 22f;
+    [SerializeField] private float yScale = 22f;
+    [SerializeField] private float zScale = 1f;
 
-    public float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 movement;
 
@@ -15,7 +18,6 @@ public class Enemy : MonoBehaviour
     private string walkAnimation = "walk";
     private string attackAnimation = "attack";
 
-    private float health = 5f;
     private float minDistance = 0.30f;
 
     private void Start()
@@ -68,12 +70,12 @@ public class Enemy : MonoBehaviour
         if (player.position.x > transform.position.x) //flip sprite
         {
             //player on right
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            transform.localScale = new Vector3(xScale, yScale, zScale);
         }
         else
         {
             //player on left
-            transform.localScale = new Vector3(-1f, 1f, 1f);
+            transform.localScale = new Vector3(-xScale, yScale, zScale);
         }
     }
 
