@@ -36,7 +36,7 @@ public class CharacterController2D : MonoBehaviour
         animator.SetBool("moving", moving);
 
         // if player is moving, then save the vector and update animator
-        if (horizontal != 0 || vertical != 0)
+        if (moving)
         {
             lastMotionVector = new Vector2(horizontal, vertical).normalized;
 
