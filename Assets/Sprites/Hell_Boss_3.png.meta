@@ -1,0 +1,651 @@
+fileFormatVersion: 2
+guid: b647edf2ec4f1974d95a0dae18831581
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hell_Boss_3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 326.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaa5b9055bcf86438be476ab5e9498b
+      internalID: -1758025020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 326.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b293b227209d154c90680a801108df7
+      internalID: 1147247600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 326.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625170b6bc93f2642bf17926c877b0dc
+      internalID: -744209221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 326.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a437320621b045348a01dd34de20aad8
+      internalID: 220131381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 245.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856a7b4f43448b34785d0d180ecf0c68
+      internalID: -1747921921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 245.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44fcc1b68a130146ab88bd3f34e6ece
+      internalID: -832525436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 245.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f1d64dda140374fb96da66b4bcdef4
+      internalID: 397995523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 245.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c44a62e02b8104e8b0b3c092893b26
+      internalID: -563299284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 245.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a702b559d2f5c49a6cd444c9ce0641
+      internalID: 2002372036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_9
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 245.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1819ddbcc14176d4a848e5d6e88e15d9
+      internalID: 2115906789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 164.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d5f1dc34ae99a42b5fb7ba36d7b1b1
+      internalID: -390732006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_11
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 164.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c50c867475c7947b822cc60e9d5e0d
+      internalID: -364580209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 164.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b09644b10e65c94da9a817f42411b59
+      internalID: 1368862370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 164.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf77eaa9e9a3d6f4295999470ccc0454
+      internalID: -743023757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0923b5010327b7747baa05c165b8f5a4
+      internalID: 618037437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 83.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1ed34b8870e5f4bb550a220a2bebeb
+      internalID: 1420123285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 83.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077fb1870a2824c409afc81d6cec897e
+      internalID: 1085169030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_17
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 83.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac790718d2bcbfd4fbacd3e7067b0065
+      internalID: 505136524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 83.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641f48322741a354f9cdc7e3861b5bf0
+      internalID: 767514335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 83.4
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca953e008e08a746b653170156da99c
+      internalID: 1562538029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.4000015
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acde9621b31d574f89fad8a8ce19f85
+      internalID: -1107000120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_21
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 2.4000015
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ebef6536b948c4ebee0e2b29b521b6
+      internalID: 427152036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2.4000015
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c419232aec11d4d816569c08eeabdf
+      internalID: 434516160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hell_Boss_3_23
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 2.4000015
+        width: 60.333332
+        height: 81.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66cf123552c79b4b860249e687a6958
+      internalID: -758708573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Hell_Boss_3_9: 2115906789
+      Hell_Boss_3_11: -364580209
+      Hell_Boss_3_13: -743023757
+      Hell_Boss_3_3: 220131381
+      Hell_Boss_3_4: -1747921921
+      Hell_Boss_3_14: 618037437
+      Hell_Boss_3_6: 397995523
+      Hell_Boss_3_16: 1085169030
+      Hell_Boss_3_8: 2002372036
+      Hell_Boss_3_18: 767514335
+      Hell_Boss_3_22: 434516160
+      Hell_Boss_3_19: 1562538029
+      Hell_Boss_3_15: 1420123285
+      Hell_Boss_3_2: -744209221
+      Hell_Boss_3_12: 1368862370
+      Hell_Boss_3_17: 505136524
+      Hell_Boss_3_5: -832525436
+      Hell_Boss_3_20: -1107000120
+      Hell_Boss_3_10: -390732006
+      Hell_Boss_3_23: -758708573
+      Hell_Boss_3_1: 1147247600
+      Hell_Boss_3_7: -563299284
+      Hell_Boss_3_0: -1758025020
+      Hell_Boss_3_21: 427152036
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

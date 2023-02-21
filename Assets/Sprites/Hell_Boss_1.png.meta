@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -1241,15 +1241,15 @@ TextureImporter:
       Hell_Boss_1_Walk_6: -1797024074
       Hell_Boss_1_31: 1231039790
       Hell_Boss_1_3: 2085688517
-      Hell_Boss_1_Sneer_2: 1315936895
       Hell_Boss_1_Sneer_3: 748318653
-      Hell_Boss_1_Attack2_1: -411170118
       Hell_Boss_1_Attack1_1: 726048019
+      Hell_Boss_1_Sneer_2: 1315936895
       Hell_Boss_1_Attack2_2: -411170118
-      Hell_Boss_1_Attack2_4: 1856446113
+      Hell_Boss_1_Attack2_1: -411170118
       Hell_Boss_1_33: 1468682099
       Hell_Boss_1_Walk_1: 700358240
       Hell_Boss_1_11: 1680512969
+      Hell_Boss_1_Attack2_4: 1856446113
       Hell_Boss_1_22: 1940506608
       Hell_Boss_1_Walk_2: 700358240
       Hell_Boss_1_47: -2134024625

@@ -123,6 +123,266 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &182432901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182432902}
+  - component: {fileID: 182432903}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182432902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182432901}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.756, y: 21.933, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &182432903
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182432901}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -0.58025455, y: -0.03821659}
+  - {x: -0.30944633, y: 0.359787}
+  - {x: -0.002207756, y: 0.31537247}
+  - {x: 0.29813194, y: 0.43917656}
+  - {x: 0.385252, y: 0.4009018}
+  - {x: 0.2596054, y: 0.20455074}
+  - {x: 0.2443676, y: 0.069877625}
+  - {x: 0.47467136, y: -0.039341927}
+  - {x: 0.470006, y: -0.18498993}
+  - {x: 0.13628864, y: -0.20012093}
+  - {x: -0.21634579, y: -0.17176533}
+  - {x: -0.57388973, y: -0.042037964}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!1 &298534652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 298534653}
+  - component: {fileID: 298534654}
+  m_Layer: 0
+  m_Name: Tree Log Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &298534653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298534652}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.53, y: 22.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &298534654
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298534652}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -15.959824, y: 1.4820969}
+  - {x: -16.1248, y: 1.4454117}
+  - {x: -16.25859, y: 1.3263497}
+  - {x: -16.457087, y: 1.0985346}
+  - {x: -16.502102, y: 0.83841133}
+  - {x: -16.422579, y: 0.6144633}
+  - {x: -16.042673, y: 0.4779191}
+  - {x: -15.642053, y: 0.48506117}
+  - {x: -15.363754, y: 0.6823292}
+  - {x: -15.239227, y: 0.79029226}
+  - {x: -15.358888, y: 1.0702443}
+  - {x: -15.547276, y: 1.3395844}
+  - {x: -15.943952, y: 1.4840577}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!1 &445534366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 445534367}
+  - component: {fileID: 445534368}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &445534367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445534366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.584, y: 20.667, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &445534368
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445534366}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -0.5512085, y: 1.2085571}
+  - {x: -0.6309242, y: 0.6587858}
+  - {x: -0.64286184, y: 0.40099812}
+  - {x: -0.67497444, y: -0.080099106}
+  - {x: -0.66186166, y: -0.35904408}
+  - {x: -0.71832275, y: -0.53509235}
+  - {x: -0.46162796, y: -0.5126133}
+  - {x: -0.15201187, y: -0.49957657}
+  - {x: -0.30661726, y: -0.25587082}
+  - {x: -0.1838398, y: -0.039322853}
+  - {x: -0.07033157, y: 0.5316162}
+  - {x: -0.3252716, y: 0.9179411}
+  - {x: -0.303957, y: 1.2142391}
+  - {x: -0.5515156, y: 1.2085571}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!1 &517202570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 517202571}
+  - component: {fileID: 517202572}
+  m_Layer: 0
+  m_Name: Tree Log Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &517202571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517202570}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.02, y: 0.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &517202572
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517202570}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -15.959824, y: 1.4820969}
+  - {x: -16.1248, y: 1.4454117}
+  - {x: -16.25859, y: 1.3263497}
+  - {x: -16.457087, y: 1.0985346}
+  - {x: -16.502102, y: 0.83841133}
+  - {x: -16.422579, y: 0.6144633}
+  - {x: -16.042673, y: 0.4779191}
+  - {x: -15.642053, y: 0.48506117}
+  - {x: -15.363754, y: 0.6823292}
+  - {x: -15.239227, y: 0.79029226}
+  - {x: -15.358888, y: 1.0702443}
+  - {x: -15.547276, y: 1.3395844}
+  - {x: -15.943952, y: 1.4840577}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,13 +460,84 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -9.33, y: 13.81, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &617612119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617612120}
+  - component: {fileID: 617612121}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &617612120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617612119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25.58, y: 20.57, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &617612121
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617612119}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -0.8166218, y: 1.3698864}
+  - {x: -0.86093616, y: 0.8078079}
+  - {x: -1.2603054, y: 0.6149864}
+  - {x: -0.8960061, y: 0.3079481}
+  - {x: -1.1975574, y: 0.09432316}
+  - {x: -1.1468239, y: -0.38559818}
+  - {x: -0.58900285, y: -0.23934746}
+  - {x: -0.5413799, y: -0.60274696}
+  - {x: -0.2589121, y: -0.44324303}
+  - {x: 0.07210636, y: -0.47286606}
+  - {x: 0.49219847, y: -0.4043455}
+  - {x: 0.4668522, y: 0.24473381}
+  - {x: 0.25228786, y: 0.648489}
+  - {x: 0.11062431, y: 0.7816849}
+  - {x: -0.1762495, y: 1.0345669}
+  - {x: -0.03923416, y: 1.337575}
+  - {x: -0.355999, y: 1.4640408}
+  - {x: -0.45094395, y: 1.2886124}
+  - {x: -0.805953, y: 1.3871536}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &646338831
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,15 +576,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 646338831}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 697, y: 337, z: 0}
+  m_LocalScale: {x: 15.070631, y: 15.070631, z: 15.070631}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 856827633}
   - {fileID: 1485789739}
   - {fileID: 1545597289}
+  - {fileID: 1135480681}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &646338835
 Tilemap:
@@ -293,6 +625,141 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &766180654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766180655}
+  - component: {fileID: 766180656}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &766180655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766180654}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.626, y: 1.614, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &766180656
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766180654}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -0.50699997, y: 0.9547639}
+  - {x: -0.88098717, y: 1.0383949}
+  - {x: -0.9595394, y: 0.7413082}
+  - {x: -0.6313329, y: 0.5706167}
+  - {x: -1.0411596, y: 0.45724678}
+  - {x: -1.1909361, y: 0.081591606}
+  - {x: -0.71933484, y: 0.22583675}
+  - {x: -0.79354763, y: -0.31611228}
+  - {x: -0.33310127, y: -0.0141506195}
+  - {x: -0.010102272, y: -0.22222805}
+  - {x: 0.033771038, y: 0.11341834}
+  - {x: 0.039164543, y: 0.2963934}
+  - {x: 0.3485508, y: 0.5655508}
+  - {x: 0.13799667, y: 0.7928567}
+  - {x: 0.01907444, y: 0.9949961}
+  - {x: -0.24391556, y: 1.244977}
+  - {x: -0.4993744, y: 0.9643984}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!1 &783401151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 783401152}
+  - component: {fileID: 783401153}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &783401152
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783401151}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.15, y: 12.76, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &783401153
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783401151}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -0.2377621, y: -0.013999939}
+  - {x: -0.41900545, y: 0.10060644}
+  - {x: -0.37863672, y: 0.6469269}
+  - {x: 0.013970137, y: 0.22515011}
+  - {x: 0.10157782, y: 1.0868454}
+  - {x: 0.17358923, y: 0.3457694}
+  - {x: 0.40946865, y: 0.81604433}
+  - {x: 0.31149822, y: 0.25990295}
+  - {x: 0.2443676, y: 0.069877625}
+  - {x: 0.54040223, y: 0.071362495}
+  - {x: 0.52881783, y: -0.38564205}
+  - {x: 0.13628864, y: -0.20012093}
+  - {x: -0.20942676, y: -0.27555084}
+  - {x: -0.22447813, y: -0.021280766}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &856827632
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +772,7 @@ GameObject:
   - component: {fileID: 856827635}
   - component: {fileID: 856827634}
   m_Layer: 0
-  m_Name: Tilemap Base
+  m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23971,6 +24438,250 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1053256149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1053256150}
+  - component: {fileID: 1053256151}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1053256150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053256149}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.35, y: 20.63, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1053256151
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053256149}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -0.5512085, y: 1.2085571}
+  - {x: -0.6309242, y: 0.6587858}
+  - {x: -0.7812233, y: 0.48485374}
+  - {x: -0.67497444, y: -0.080099106}
+  - {x: -0.8924637, y: -0.36742973}
+  - {x: -0.71832275, y: -0.53509235}
+  - {x: -0.46162796, y: -0.5126133}
+  - {x: -0.15201187, y: -0.49957657}
+  - {x: 0.100081444, y: -0.39003944}
+  - {x: -0.1838398, y: -0.039322853}
+  - {x: -0.07033157, y: 0.5316162}
+  - {x: -0.3252716, y: 0.9179411}
+  - {x: -0.303957, y: 1.2142391}
+  - {x: -0.5515156, y: 1.2085571}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!1 &1081082357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081082358}
+  - component: {fileID: 1081082359}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1081082358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081082357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8, y: -6.16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1081082359
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081082357}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -15.814581, y: 1.9683459}
+  - {x: -16.43423, y: 1.3980494}
+  - {x: -16.41962, y: 0.84010077}
+  - {x: -16.169758, y: 0.58702564}
+  - {x: -15.68432, y: 0.49109077}
+  - {x: -15.254319, y: 0.5007949}
+  - {x: -14.786004, y: 0.8189244}
+  - {x: -14.761121, y: 1.2586379}
+  - {x: -14.681744, y: 1.5380011}
+  - {x: -15.002418, y: 1.9427648}
+  - {x: -15.289424, y: 1.8280349}
+  - {x: -15.420978, y: 1.9331865}
+  - {x: -15.801867, y: 1.9608338}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!1 &1135480680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1135480681}
+  m_Layer: 0
+  m_Name: Object Colliders
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1135480681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135480680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.73, y: -6.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 298534653}
+  - {fileID: 1776227914}
+  - {fileID: 517202571}
+  - {fileID: 1053256150}
+  - {fileID: 1445321008}
+  - {fileID: 182432902}
+  - {fileID: 783401152}
+  - {fileID: 445534367}
+  - {fileID: 1622639148}
+  - {fileID: 617612120}
+  - {fileID: 1925761145}
+  - {fileID: 766180655}
+  - {fileID: 1838491329}
+  - {fileID: 2102752110}
+  - {fileID: 1750531439}
+  - {fileID: 1081082358}
+  m_Father: {fileID: 646338833}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1445321007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1445321008}
+  - component: {fileID: 1445321009}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1445321008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445321007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.38, y: 10.68, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1445321009
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445321007}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -0.5512085, y: 1.2085571}
+  - {x: -0.6309242, y: 0.6587858}
+  - {x: -0.7812233, y: 0.48485374}
+  - {x: -0.67497444, y: -0.080099106}
+  - {x: -0.8924637, y: -0.36742973}
+  - {x: -0.71832275, y: -0.53509235}
+  - {x: -0.46162796, y: -0.5126133}
+  - {x: -0.15201187, y: -0.49957657}
+  - {x: 0.100081444, y: -0.39003944}
+  - {x: -0.1838398, y: -0.039322853}
+  - {x: -0.07033157, y: 0.5316162}
+  - {x: -0.3252716, y: 0.9179411}
+  - {x: -0.303957, y: 1.2142391}
+  - {x: -0.5515156, y: 1.2085571}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1485789738
 GameObject:
   m_ObjectHideFlags: 0
@@ -23983,7 +24694,7 @@ GameObject:
   - component: {fileID: 1485789741}
   - component: {fileID: 1485789740}
   m_Layer: 0
-  m_Name: Objects
+  m_Name: Objects map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24344,7 +25055,7 @@ GameObject:
   - component: {fileID: 1545597289}
   - component: {fileID: 1545597290}
   m_Layer: 0
-  m_Name: Colliders
+  m_Name: Wall Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24382,6 +25093,7 @@ EdgeCollider2D:
   m_EdgeRadius: 1
   m_Points:
   - {x: -23.361702, y: 18.76055}
+  - {x: -23.311298, y: 2.6478372}
   - {x: -23.378971, y: -12.989355}
   - {x: -21.53407, y: -14.532188}
   - {x: -19.227455, y: -15.77916}
@@ -24397,10 +25109,275 @@ EdgeCollider2D:
   - {x: 19.528103, y: -18.713764}
   - {x: 24.014675, y: -18.72218}
   - {x: 30.412273, y: -13.548025}
+  - {x: 30.142574, y: 2.9313784}
   - {x: 30.146057, y: 17.5113}
   - {x: 27.389063, y: 20.637173}
   - {x: -21.515089, y: 20.592758}
   - {x: -23.359732, y: 18.845654}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!1 &1622639147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622639148}
+  - component: {fileID: 1622639149}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1622639148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622639147}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.66, y: 17.76, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1622639149
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622639147}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -0.5512085, y: 1.2085571}
+  - {x: -0.86093616, y: 0.8078079}
+  - {x: -0.6201844, y: 0.2454977}
+  - {x: -0.943861, y: 0.020328522}
+  - {x: -0.66186166, y: -0.35904408}
+  - {x: -0.71832275, y: -0.53509235}
+  - {x: -0.23809528, y: -0.2923212}
+  - {x: 0.08771801, y: -0.50929546}
+  - {x: 0.023822308, y: -0.21699524}
+  - {x: -0.06397438, y: 0.015749931}
+  - {x: 0.101367, y: 0.42470932}
+  - {x: 0.08460426, y: 0.95862675}
+  - {x: -0.1762495, y: 1.0345669}
+  - {x: -0.303957, y: 1.2142391}
+  - {x: -0.38849354, y: 1.1220789}
+  - {x: -0.55094624, y: 1.1998024}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!1 &1750531438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1750531439}
+  - component: {fileID: 1750531440}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1750531439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750531438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.36, y: 1.27, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1750531440
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750531438}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -0.5982971, y: -0.14510584}
+  - {x: -0.71689796, y: 0.5177016}
+  - {x: -0.46784592, y: 0.8703675}
+  - {x: -0.6764965, y: 1.2586055}
+  - {x: -0.47101784, y: 1.7648621}
+  - {x: -0.10804367, y: 1.615664}
+  - {x: -0.13167953, y: 1.0698264}
+  - {x: 0.13002586, y: 1.1543365}
+  - {x: 0.06345558, y: 0.7834759}
+  - {x: 0.30521774, y: 0.926136}
+  - {x: 0.20922852, y: 0.57318735}
+  - {x: 0.50824547, y: 0.5246825}
+  - {x: 0.1248188, y: 0.21969557}
+  - {x: -0.14304352, y: 0.05416584}
+  - {x: -0.5110607, y: -0.08425522}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!1 &1776227913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1776227914}
+  - component: {fileID: 1776227915}
+  m_Layer: 0
+  m_Name: Tree Log Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1776227914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776227913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 40.038, y: 9.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1776227915
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776227913}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -15.959824, y: 1.4820969}
+  - {x: -16.1248, y: 1.4454117}
+  - {x: -16.25859, y: 1.3263497}
+  - {x: -16.457087, y: 1.0985346}
+  - {x: -16.502102, y: 0.83841133}
+  - {x: -16.422579, y: 0.6144633}
+  - {x: -16.042673, y: 0.4779191}
+  - {x: -15.642053, y: 0.48506117}
+  - {x: -15.363754, y: 0.6823292}
+  - {x: -15.239227, y: 0.79029226}
+  - {x: -15.358888, y: 1.0702443}
+  - {x: -15.547276, y: 1.3395844}
+  - {x: -15.943952, y: 1.4840577}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!1 &1838491328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1838491329}
+  - component: {fileID: 1838491330}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1838491329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838491328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.269, y: -4.039, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1838491330
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838491328}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -0.58025455, y: -0.03821659}
+  - {x: -0.30944633, y: 0.359787}
+  - {x: -0.002207756, y: 0.31537247}
+  - {x: 0.29813194, y: 0.43917656}
+  - {x: 0.385252, y: 0.4009018}
+  - {x: 0.2596054, y: 0.20455074}
+  - {x: 0.2443676, y: 0.069877625}
+  - {x: 0.47467136, y: -0.039341927}
+  - {x: 0.470006, y: -0.18498993}
+  - {x: 0.13628864, y: -0.20012093}
+  - {x: -0.21634579, y: -0.17176533}
+  - {x: -0.57388973, y: -0.042037964}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -24433,12 +25410,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915347472}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.87, y: 1.1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 547.1133, y: 391.9525, z: 0}
+  m_LocalScale: {x: 17.871729, y: 17.871729, z: 17.871729}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1915347474
 SpriteRenderer:
@@ -24554,3 +25531,137 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.02, y: 2.22}
   m_EdgeRadius: 0
+--- !u!1 &1925761144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1925761145}
+  - component: {fileID: 1925761146}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1925761145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925761144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.56, y: 10.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1925761146
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925761144}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -0.406744, y: 0.6900902}
+  - {x: -0.86093616, y: 0.8078079}
+  - {x: -1.2603054, y: 0.6149864}
+  - {x: -0.8960061, y: 0.3079481}
+  - {x: -1.1975574, y: 0.09432316}
+  - {x: -1.1468239, y: -0.38559818}
+  - {x: -0.58900285, y: -0.23934746}
+  - {x: -0.35643482, y: -0.21786237}
+  - {x: -0.2589121, y: -0.44324303}
+  - {x: 0.07210636, y: -0.47286606}
+  - {x: 0.23227644, y: -0.20940375}
+  - {x: 0.47427177, y: -0.14874029}
+  - {x: 0.4668522, y: 0.24473381}
+  - {x: 0.25228786, y: 0.648489}
+  - {x: -0.12930393, y: 0.51176596}
+  - {x: -0.421175, y: 0.6796732}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!1 &2102752109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2102752110}
+  - component: {fileID: 2102752111}
+  m_Layer: 0
+  m_Name: Plant Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2102752110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102752109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.16, y: -5.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1135480681}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &2102752111
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102752109}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -0.2377621, y: -0.013999939}
+  - {x: -0.41900545, y: 0.10060644}
+  - {x: -0.37863672, y: 0.6469269}
+  - {x: 0.013970137, y: 0.22515011}
+  - {x: 0.10157782, y: 1.0868454}
+  - {x: 0.17358923, y: 0.3457694}
+  - {x: 0.40946865, y: 0.81604433}
+  - {x: 0.31149822, y: 0.25990295}
+  - {x: 0.2443676, y: 0.069877625}
+  - {x: 0.54040223, y: 0.071362495}
+  - {x: 0.52881783, y: -0.38564205}
+  - {x: 0.13628864, y: -0.20012093}
+  - {x: -0.20942676, y: -0.27555084}
+  - {x: -0.22447813, y: -0.021280766}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
