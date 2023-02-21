@@ -25408,10 +25408,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 542009034}
-  maxEnemies: 10
+  maxEnemies: 50
   secondsBetweenWaves: 10
   enemy1: {fileID: 4202614807293798864, guid: 8acb24965827a41faab728f45f8b1e27, type: 3}
-  enemiesPerWave: 2
+  enemiesPerWave: 5
   targetFramesPerSecond: 60
 --- !u!4 &1660531985
 Transform:
@@ -25837,7 +25837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fe9264f6e249e14293a61587dd0546f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 12
 --- !u!114 &2742738299843793543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25851,10 +25851,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 1
-  baseSpeed: 10
+  baseSpeed: 12
   maxWeapons: 3
   maxItems: 3
-  baseHealth: 10
+  baseHealth: 100
 --- !u!114 &2742738299843793548
 MonoBehaviour:
   m_ObjectHideFlags: 0

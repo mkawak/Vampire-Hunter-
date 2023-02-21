@@ -22,11 +22,28 @@ public class PlayerCharacter : MonoBehaviour
 
     void Start() {
         playerController = GetComponent<PlayerController>();
+        health = baseHealth;
     }
 
+    private void Update(){
+
+    }
 
     public float GetPlayerDamage() {
         return damage;
+    }
+
+    public void TakeDamage(float damage){
+        health -= damage;
+        Debug.Log("Player took damage, health: " + health);
+
+        if (health <= 0){
+            Die();
+        }
+    }
+
+    public void Die(){
+        Destroy(gameObject);
     }
 
 }
