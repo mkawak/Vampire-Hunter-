@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerController))]
+[RequireComponent(typeof(HealthBar))]
 //RequireComponent(typoeof(HealthBar))
 public class PlayerCharacter : MonoBehaviour
 {
@@ -31,25 +32,9 @@ public class PlayerCharacter : MonoBehaviour
 
     }
 
-    private void Update(){
-        /*
-        //test bar flicker
-        Debug.Log("start health: " + playerHealthBar.health);
-        switch(playerHealthBar.health)
-        {
-            case 0: playerHealthBar.health = 51;
-                break;
-            case 51: playerHealthBar.health = 100;
-                break;
-            case 100: playerHealthBar.health = 50;
-                break;
-            case 50: playerHealthBar.health = 0;
-                break;
-            default: playerHealthBar.health = 100;
-                break;
-        }
-        Debug.Log("end health: " + playerHealthBar.health);
-        */
+    void Update(){
+        //debug: making sure bar is updated (it doesn't)
+        TakeDamage(0.5f);
     }
 
     public float GetPlayerDamage() {
@@ -57,8 +42,13 @@ public class PlayerCharacter : MonoBehaviour
     }
 
     public void TakeDamage(float damage){
+        if (damage > health) damage = health;
+        
         health -= damage;
-        Debug.Log("Player took damage, health: " + health);
+
+        // update health bar
+        Debug.Log("PC calling HB::TakeDamage.");
+        playerHealthBar.TakeDamage(damage);
 
         if (health <= 0){
             Die();
