@@ -18,13 +18,16 @@ public class HealthBar : MonoBehaviour
 
     void Update()
     {
-        //healthbar.value = health;
+        if (healthbar.value < 100) ++healthbar.value;
+        else healthbar.value = 0;
+        //healthbar.value = 22;//(health / maxHealth) * 100;
     }
 
-    public void TakeDamge(float damage)
+    public void TakeDamage(float damage)
     {
-        health -= damage;
-        healthbar.value = health;
+        if (damage > health) health = 0;
+        else health -= damage;
+        //healthbar.value = health;
         if (health <= 0)
         {
             Die();
