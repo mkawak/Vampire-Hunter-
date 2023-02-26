@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1471457965436491802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 474.1221, y: 256.705, z: 0}
-  m_LocalScale: {x: 13.501402, y: 16.461548, z: 1}
+  m_LocalScale: {x: 19.513577, y: 22.79266, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -129,7 +129,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -149,6 +149,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   moveSpeed: 1
+  health: 5
+  attackDamage: 0.5
+  xScale: 22
+  yScale: 22
+  zScale: 1
+  attackRange: 9.5
 --- !u!95 &8444058270359818803
 Animator:
   serializedVersion: 5
