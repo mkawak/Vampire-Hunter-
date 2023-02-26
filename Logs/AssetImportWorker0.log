@@ -660,3 +660,63 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3618.707117 seconds.
+  path: Assets/Sprites/Hell_Boss_3.png
+  artifactKey: Guid(b647edf2ec4f1974d95a0dae18831581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Hell_Boss_3.png using Guid(b647edf2ec4f1974d95a0dae18831581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb8c8edcfe212c0c5162025b18fe4d33') in 0.227894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.890783 seconds.
+  path: Assets/Sprites/Hell_Boss_3.png
+  artifactKey: Guid(b647edf2ec4f1974d95a0dae18831581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Hell_Boss_3.png using Guid(b647edf2ec4f1974d95a0dae18831581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb2730fc8d067ff48cc9449601b0a43') in 0.051520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 466.947510 seconds.
+  path: Assets/Animations/Enemy_Animations/Hell_Boss_3_Animations
+  artifactKey: Guid(b829a934ba366460b9a299af43ce964a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy_Animations/Hell_Boss_3_Animations using Guid(b829a934ba366460b9a299af43ce964a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5402cd14e9331584c8cfc505b9bccfa5') in 0.002044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.037669 seconds.
+  path: Assets/Animations/Enemy_Animations/Hell_Boss_3_Animations/Hell_Boss_3_Controller.controller
+  artifactKey: Guid(6face3d9432484a06b34fb70d9a43526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy_Animations/Hell_Boss_3_Animations/Hell_Boss_3_Controller.controller using Guid(6face3d9432484a06b34fb70d9a43526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '858e0ebc8633c5c719c92fcf9340b2b3') in 0.009281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.337252 seconds.
+  path: Assets/Animations/Enemy_Animations/Hell_Boss_3_Animations/Idle.anim
+  artifactKey: Guid(59e4c2d2953ed44bfa1e27c54de17110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy_Animations/Hell_Boss_3_Animations/Idle.anim using Guid(59e4c2d2953ed44bfa1e27c54de17110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '364f00223e71f2f391c7a8d7d1d697ca') in 0.003256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 188.553776 seconds.
+  path: Assets/Sprites/Hell_Boss_3.png
+  artifactKey: Guid(b647edf2ec4f1974d95a0dae18831581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Hell_Boss_3.png using Guid(b647edf2ec4f1974d95a0dae18831581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bbf9b2b708f7e33f70265c5ea9d504f') in 0.058644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.436279 seconds.
+  path: Assets/Animations/Enemy_Animations/Hell_Boss_3_Animations/Attack1.anim
+  artifactKey: Guid(0e8d2d58238934f948662cc3090d2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy_Animations/Hell_Boss_3_Animations/Attack1.anim using Guid(0e8d2d58238934f948662cc3090d2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a65e6bb944417728d4727863bddf614d') in 0.003281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.033964 seconds.
+  path: Assets/Animations/Enemy_Animations/Hell_Boss_3_Animations/Walk.anim
+  artifactKey: Guid(a064b345d8ac54dab8ffb1d6287180b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy_Animations/Hell_Boss_3_Animations/Walk.anim using Guid(a064b345d8ac54dab8ffb1d6287180b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6337fb9cbe17839056e198920b3fe568') in 0.002392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.997460 seconds.
+  path: Assets/Animations/Enemy_Animations/Hell_Boss_3_Animations/Idle.anim
+  artifactKey: Guid(59e4c2d2953ed44bfa1e27c54de17110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy_Animations/Hell_Boss_3_Animations/Idle.anim using Guid(59e4c2d2953ed44bfa1e27c54de17110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bca838bd81ff6d323d06521194cf61d6') in 0.003594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 156.416625 seconds.
+  path: Assets/Prefabs/Hell_Boss_3.prefab
+  artifactKey: Guid(c0fd6dcd9d2034ef6a7fd21257a91338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Hell_Boss_3.prefab using Guid(c0fd6dcd9d2034ef6a7fd21257a91338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8154a0b5ad2b81e1733f884d5aea9566') in 0.067548 seconds 
