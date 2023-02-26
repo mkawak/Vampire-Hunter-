@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Enemy3 : MonoBehaviour
 {
-    [SerializeField]
-    public Transform player;
+    [SerializeField] public Transform player;
+    [SerializeField] public float moveSpeed = 5f;
+    [SerializeField] private float health = 5f;
+    [SerializeField] private float attackDamage = 0.5f;
+    [SerializeField] private float xScale = 22f;
+    [SerializeField] private float yScale = 22f;
+    [SerializeField] private float zScale = 1f;
+    [SerializeField] private float attackRange = 9.5f;
 
-    public float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 movement;
 
@@ -15,13 +20,12 @@ public class Enemy3 : MonoBehaviour
     private string walkAnimation = "walk";
     private string attackAnimation = "attack";
 
-    private float health = 15f; //greater health
-    private float minDistance = 1.5f; //greater attack range
 
     private void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
+        gameObject.tag = "Enemy";
     }
 
     private void Update()
@@ -68,12 +72,12 @@ public class Enemy3 : MonoBehaviour
         if (player.position.x > transform.position.x) //flip sprite
         {
             //player on right
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            transform.localScale = new Vector3(xScale, yScale, zScale);
         }
         else
         {
             //player on left
-            transform.localScale = new Vector3(-1f, 1f, 1f);
+            transform.localScale = new Vector3(-xScale, yScale, zScale);
         }
     }
 
@@ -87,7 +91,7 @@ public class Enemy3 : MonoBehaviour
         {
             anim.SetBool(walkAnimation, false);
         }
-        if (getDistance(player) < minDistance) //attack animation
+        if (getDistance(player) <= attackRange) //attack animation
         {
             anim.SetBool(attackAnimation, true);
             Attack(player);
@@ -111,7 +115,7 @@ public class Enemy3 : MonoBehaviour
 
         newHealth = getHealth() - damageTaken;
         setHealth(newHealth);
-        Debug.Log("Health " + getHealth());
+        Debug.Log("Damage taken, Health: " + getHealth());
         return damageTaken;
     }
 
@@ -131,5 +135,7 @@ public class Enemy3 : MonoBehaviour
     {
         //call function to deal player damage
         Debug.Log(gameObject + " attacking " + player);
+
+        player.GetComponent<PlayerCharacter>().TakeDamage(attackDamage);
     }
 }
