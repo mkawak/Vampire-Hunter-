@@ -1,0 +1,651 @@
+fileFormatVersion: 2
+guid: 806bae83f5c59784cb9f4c3612a2ae4b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 736
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80363e61d26cb84796564928cf46da7
+      internalID: -1829894639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_1
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 736
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a8379f349333e4283900c835e86d3d
+      internalID: -1705734122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 736
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8dbacd739184f44ab42d1b5b1ed806b
+      internalID: 276756933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_3
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 736
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559757240ddf0484a9d73129257aaa36
+      internalID: 807641593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_4
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 736
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f07dc4ec40b73479d9c380ba3afce2
+      internalID: -1870029298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 552
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34c1e257c884ba4bab93b6014dca4a2
+      internalID: -1139259198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_6
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 552
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c05e97c40543646811be356bfc7f7d
+      internalID: -2009742648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_7
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 552
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b064d46ae875c147b16f03dfb1a7be8
+      internalID: 1174894824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_8
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 552
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2355fe813d64dc489e3dacedb38d980
+      internalID: 371638558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_9
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 552
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e85ee3387089f42ae16da5d2af2a6b
+      internalID: 1147321068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469e46cbbae29b44c9873fbe0741e891
+      internalID: -1387841261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_11
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 368
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d9d1a29d677db48908f2ea73a859db
+      internalID: 2081397694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_12
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 368
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc105aa9dfdb7ea4e93347fedf60fdad
+      internalID: 174718457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_13
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 368
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40674d2e745db034b8c7b705f5f1b976
+      internalID: 591590259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_14
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 368
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd506615ccc42d249803fc45a7569b5e
+      internalID: -1503039006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f505c9da5ced047bc7a403ec77cd5f
+      internalID: 849895703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_16
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 184
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11be95f305f5f494b9626dbc7ddbc111
+      internalID: 1851287005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_17
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 184
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2400630baeee2574d88c031b43e52774
+      internalID: 1171025901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_18
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 184
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be84d92952b4624c93178c2272a8d65
+      internalID: 2131893257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_19
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 184
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32739c03ca8cbe449aa8146c4bd3fc4b
+      internalID: 1963384762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44db7e0496296d44fa6f3ae135d8aab6
+      internalID: 1152092685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_21
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 0
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366fe9e8ae9b77341a41ef854c642d84
+      internalID: 1448588620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_22
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5a68c3fe5802b408df62b611207bdb
+      internalID: -1348429485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_23
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d70eb25e7c364e4881ca35d9c16376b
+      internalID: -88266289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_10: -1387841261
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_12: 174718457
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_1: -1705734122
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_4: -1870029298
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_16: 1851287005
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_0: -1829894639
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_19: 1963384762
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_14: -1503039006
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_7: 1174894824
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_21: 1448588620
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_15: 849895703
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_6: -2009742648
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_20: 1152092685
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_13: 591590259
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_9: 1147321068
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_18: 2131893257
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_5: -1139259198
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_22: -1348429485
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_11: 2081397694
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_3: 807641593
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_2: 276756933
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_8: 371638558
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_17: 1171025901
+      png-transparent-animation-2d-computer-graphics-graphy-game-animation-text-cartoon-rpg-maker_23: -88266289
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
