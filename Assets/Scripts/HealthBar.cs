@@ -11,7 +11,7 @@ public class HealthBar : MonoBehaviour
 
     void Start()
     {
-        maxHealth = 100;
+        maxHealth = 100f;
         health = maxHealth;
         healthbar.value = maxHealth;
     }
@@ -21,7 +21,7 @@ public class HealthBar : MonoBehaviour
         //healthbar.value = health;
     }
 
-    public void TakeDamge(float damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
         healthbar.value = health;

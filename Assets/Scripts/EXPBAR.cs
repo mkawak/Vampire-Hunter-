@@ -10,16 +10,18 @@ public class EXPBAR : MonoBehaviour
     public float experience { get; private set; }
     public TMP_Text playerLevel;
     public Slider slider;
+    public GameObject showUpgradeItemMenu;
 
-    void Start()
+    public void Start()
     {
         experience = 0;
         level = 1;
         slider.value = experience; 
         DisplayLevel();
+        showUpgradeItemMenu.SetActive(false);
     }
 
-    void Update()
+    public void Update()
     {
         DisplayLevel();
     }
@@ -42,8 +44,9 @@ public class EXPBAR : MonoBehaviour
 
         if (slider.value >= 100)
         {
+            showUpgradeItemMenu.SetActive(true);
             LevelUp();
-/*            expNeeded = EXPNeedToLevelUp(level);
+/*          expNeeded = EXPNeedToLevelUp(level);
             previousExperience = EXPNeedToLevelUp(level - 1);*/
         }
     }
@@ -57,7 +60,14 @@ public class EXPBAR : MonoBehaviour
     {
         level++;
         slider.value = 0;
+        showUpgradeItemMenu.SetActive(false);
     }
 
+/*    public void UpgradeItemMenu()
+    {
+        
+
+    } 
+*/
 
 }

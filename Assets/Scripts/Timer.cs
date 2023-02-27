@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (isTimer)
         {
@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour
         }
     }
 
-    void DisplayTime()
+    public void DisplayTime()
     {
         int minutes = Mathf.FloorToInt(timer / 60.0f);
         int seconds = Mathf.FloorToInt(timer - minutes * 60);
