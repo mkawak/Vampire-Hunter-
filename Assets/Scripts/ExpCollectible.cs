@@ -6,7 +6,7 @@ public class ExpCollectible : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        PlayerCharacter controller = other.GetComponent<PlayerController>();
+        PlayerCharacter controller = other.GetComponent<PlayerCharacter>();
 
         if (controller != null)
         {
