@@ -62,6 +62,25 @@ public class PlayerCharacter : MonoBehaviour
         Debug.Log("Experience gained: " + value);
     }
 
+    public void ChangeHealth(int value) {
+        
+        baseHealth += value;
+        playerHealthBar.maxHealth = baseHealth;
+        Debug.Log("Health gained: " + value);
+    }
+
+    public void ChangeDamage(int value) {
+        
+        baseDamage += value;
+        Debug.Log("Damage gained: " + value);
+    }
+
+    public void ChangeSpeed(int value) {
+        
+        baseSpeed += value;
+        Debug.Log("Speed gained: " + value);
+    }
+
     public void Die(){
         Destroy(gameObject);
     }
