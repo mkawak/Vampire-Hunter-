@@ -46,6 +46,7 @@ public class EXPBAR : MonoBehaviour
         if (slider.value >= 100)
         {
             LevelUp();
+            Time.timeScale = 0f;
             upgradeWindow.SetActive(true);
             //UpgradeWeaponWindow();
 
@@ -79,5 +80,6 @@ public class EXPBAR : MonoBehaviour
     public void CloseUpgradeWeaponWindow()
     {
         upgradeWindow.SetActive(false);
+        Time.timeScale = 1f;
     }
 }
