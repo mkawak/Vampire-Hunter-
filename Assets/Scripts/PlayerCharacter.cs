@@ -34,8 +34,8 @@ public class PlayerCharacter : MonoBehaviour
     }
 
     void Update(){
-        //debug: making sure bar is updated (it doesn't)
-        //TakeDamage(0.5f);
+        // set the player's speed in case it has changed
+        playerController.speed = baseSpeed;
     }
 
     public float GetPlayerDamage() {
@@ -65,7 +65,6 @@ public class PlayerCharacter : MonoBehaviour
     public void ChangeHealth(int value) {
         
         baseHealth += value;
-        playerHealthBar.maxHealth = baseHealth;
         Debug.Log("Health gained: " + value);
     }
 
