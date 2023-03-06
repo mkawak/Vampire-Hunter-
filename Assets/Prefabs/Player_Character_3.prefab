@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 244920258931626712}
   - component: {fileID: 244920258931626713}
   m_Layer: 0
-  m_Name: Player_Character_1
+  m_Name: Player_Character_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 244920258931626705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 526, y: 215.2, z: 0}
-  m_LocalScale: {x: 30, y: 30, z: 1}
+  m_LocalScale: {x: 22, y: 22, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2699354228103697187}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 650770307, guid: 1eabd315e310845139f5e157e6232354, type: 3}
+  m_Sprite: {fileID: -1099763009, guid: 1eabd315e310845139f5e157e6232354, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,7 +132,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.25, y: 0.32}
+    oldSize: {x: 0.24, y: 0.32}
     newSize: {x: 0.25, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fe9264f6e249e14293a61587dd0546f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
+  speed: 18
 --- !u!114 &244920258931626707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,10 +187,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 1
-  baseSpeed: 12
+  baseSpeed: 18
   maxWeapons: 3
   maxItems: 3
-  baseHealth: 100
+  baseHealth: 80
   experience: 0
 --- !u!114 &244920258931626712
 MonoBehaviour:
