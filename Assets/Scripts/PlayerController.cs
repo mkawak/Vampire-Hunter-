@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float speed = 10f;
+    [SerializeField] public float speed = 10f;
     private Rigidbody2D rigidbody2d;
     private Vector2 lastMotionVector; 
     private Vector2 motionVector;
