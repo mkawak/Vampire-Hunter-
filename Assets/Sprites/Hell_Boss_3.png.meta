@@ -105,15 +105,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hell_Boss_3_0
+      name: Hell_Boss_3_idle1
       rect:
         serializedVersion: 2
         x: 0
-        y: 326.4
-        width: 60.333332
-        height: 81.6
+        y: 326
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,15 +126,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_1
+      name: Hell_Boss_3_idle2
       rect:
         serializedVersion: 2
         x: 60
-        y: 326.4
-        width: 60.333332
-        height: 81.6
+        y: 326
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,15 +147,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_2
+      name: Hell_Boss_3_idle3
       rect:
         serializedVersion: 2
-        x: 120
-        y: 326.4
-        width: 60.333332
-        height: 81.6
+        x: 119
+        y: 326
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,7 +168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_3
+      name: Hell_Boss_3_idle4
       rect:
         serializedVersion: 2
         x: 180
@@ -176,7 +176,7 @@ TextureImporter:
         width: 60.333332
         height: 81.6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,15 +189,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_4
+      name: Hell_Boss_3_walk1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 245.4
-        width: 60.333332
-        height: 81.6
+        x: 1
+        y: 245
+        width: 59
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,15 +210,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_5
+      name: Hell_Boss_3_walk2
       rect:
         serializedVersion: 2
         x: 60
-        y: 245.4
-        width: 60.333332
-        height: 81.6
+        y: 245
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,15 +231,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_6
+      name: Hell_Boss_3_walk3
       rect:
         serializedVersion: 2
         x: 120
-        y: 245.4
-        width: 60.333332
-        height: 81.6
+        y: 245
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,7 +252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_7
+      name: Hell_Boss_3_walk4
       rect:
         serializedVersion: 2
         x: 180
@@ -260,7 +260,7 @@ TextureImporter:
         width: 60.333332
         height: 81.6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,7 +273,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_8
+      name: Hell_Boss_3_walk5
       rect:
         serializedVersion: 2
         x: 240
@@ -281,7 +281,7 @@ TextureImporter:
         width: 60.333332
         height: 81.6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,15 +294,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_9
+      name: Hell_Boss_3_walk6
       rect:
         serializedVersion: 2
-        x: 300
-        y: 245.4
-        width: 60.333332
-        height: 81.6
+        x: 301
+        y: 245
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,15 +315,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_10
+      name: Hell_Boss_3_sneer1
       rect:
         serializedVersion: 2
         x: 0
-        y: 164.4
-        width: 60.333332
-        height: 81.6
+        y: 165
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,15 +336,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_11
+      name: Hell_Boss_3_sneer2
       rect:
         serializedVersion: 2
-        x: 60
-        y: 164.4
-        width: 60.333332
-        height: 81.6
+        x: 62
+        y: 165
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,15 +357,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_12
+      name: Hell_Boss_3_sneer3
       rect:
         serializedVersion: 2
         x: 120
-        y: 164.4
-        width: 60.333332
-        height: 81.6
+        y: 164
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,15 +378,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_13
+      name: Hell_Boss_3_sneer4
       rect:
         serializedVersion: 2
         x: 180
-        y: 164.4
-        width: 60.333332
-        height: 81.6
+        y: 164
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -399,15 +399,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_14
+      name: Hell_Boss_3_attack1-1
       rect:
         serializedVersion: 2
         x: 0
-        y: 83.4
-        width: 60.333332
-        height: 81.6
+        y: 82
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,15 +420,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_15
+      name: Hell_Boss_3_attack1-2
       rect:
         serializedVersion: 2
-        x: 60
-        y: 83.4
-        width: 60.333332
-        height: 81.6
+        x: 61
+        y: 83
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -441,15 +441,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_16
+      name: Hell_Boss_3_attack1-3
       rect:
         serializedVersion: 2
         x: 120
-        y: 83.4
-        width: 60.333332
-        height: 81.6
+        y: 83
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -462,15 +462,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_17
+      name: Hell_Boss_3_attack1-4
       rect:
         serializedVersion: 2
         x: 180
-        y: 83.4
-        width: 60.333332
-        height: 81.6
+        y: 83
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -483,15 +483,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_18
+      name: Hell_Boss_3_attack1-5
       rect:
         serializedVersion: 2
         x: 240
-        y: 83.4
-        width: 60.333332
-        height: 81.6
+        y: 83
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -504,15 +504,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_19
+      name: Hell_Boss_3_attack1-6
       rect:
         serializedVersion: 2
-        x: 300
-        y: 83.4
-        width: 60.333332
-        height: 81.6
+        x: 302
+        y: 83
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -525,15 +525,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_20
+      name: Hell_Boss_3_attack2-1
       rect:
         serializedVersion: 2
         x: 0
-        y: 2.4000015
-        width: 60.333332
-        height: 81.6
+        y: 2
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -546,15 +546,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_21
+      name: Hell_Boss_3_attack2-2
       rect:
         serializedVersion: 2
-        x: 60
-        y: 2.4000015
-        width: 60.333332
-        height: 81.6
+        x: 61
+        y: 2
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -567,15 +567,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_22
+      name: Hell_Boss_3_attack2-3
       rect:
         serializedVersion: 2
         x: 120
-        y: 2.4000015
-        width: 60.333332
-        height: 81.6
+        y: 2
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -588,15 +588,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hell_Boss_3_23
+      name: Hell_Boss_3_attack2-4
       rect:
         serializedVersion: 2
-        x: 180
-        y: 2.4000015
-        width: 60.333332
-        height: 81.6
+        x: 181
+        y: 2
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -619,30 +619,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hell_Boss_3_9: 2115906789
-      Hell_Boss_3_11: -364580209
-      Hell_Boss_3_13: -743023757
-      Hell_Boss_3_3: 220131381
-      Hell_Boss_3_4: -1747921921
-      Hell_Boss_3_14: 618037437
-      Hell_Boss_3_6: 397995523
-      Hell_Boss_3_16: 1085169030
-      Hell_Boss_3_8: 2002372036
-      Hell_Boss_3_18: 767514335
-      Hell_Boss_3_22: 434516160
-      Hell_Boss_3_19: 1562538029
-      Hell_Boss_3_15: 1420123285
-      Hell_Boss_3_2: -744209221
-      Hell_Boss_3_12: 1368862370
-      Hell_Boss_3_17: 505136524
-      Hell_Boss_3_5: -832525436
-      Hell_Boss_3_20: -1107000120
-      Hell_Boss_3_10: -390732006
-      Hell_Boss_3_23: -758708573
-      Hell_Boss_3_1: 1147247600
-      Hell_Boss_3_7: -563299284
-      Hell_Boss_3_0: -1758025020
-      Hell_Boss_3_21: 427152036
+      Hell_Boss_3_sneer2: -364580209
+      Hell_Boss_3_idle3: -744209221
+      Hell_Boss_3_attack1-4: 505136524
+      Hell_Boss_3_attack2-1: -1107000120
+      Hell_Boss_3_attack2-3: 434516160
+      Hell_Boss_3_attack1-2: 1420123285
+      Hell_Boss_3_attack1-6: 1562538029
+      Hell_Boss_3_idle1: -1758025020
+      Hell_Boss_3_attack2-2: 427152036
+      Hell_Boss_3_idle2: 1147247600
+      Hell_Boss_3_sneer4: -743023757
+      Hell_Boss_3_idle4: 220131381
+      Hell_Boss_3_attack2-4: -758708573
+      Hell_Boss_3_walk3: 397995523
+      Hell_Boss_3_walk5: 2002372036
+      Hell_Boss_3_sneer1: -390732006
+      Hell_Boss_3_walk6: 2115906789
+      Hell_Boss_3_walk1: -1747921921
+      Hell_Boss_3_attack1-1: 618037437
+      Hell_Boss_3_attack1-5: 767514335
+      Hell_Boss_3_walk2: -832525436
+      Hell_Boss_3_walk4: -563299284
+      Hell_Boss_3_sneer3: 1368862370
+      Hell_Boss_3_attack1-3: 1085169030
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
