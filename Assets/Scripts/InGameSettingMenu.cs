@@ -11,6 +11,7 @@ public class InGameSettingMenu : MonoBehaviour
     void Start()
     {
         SettingMenu.SetActive(false);
+        Options.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,6 +31,19 @@ public class InGameSettingMenu : MonoBehaviour
         SettingMenu.SetActive(false);
         ResumeGame();
     }
+
+    public void OpenOptions()
+    {
+        Options.SetActive(true);
+        PauseGame();
+    }
+
+    public void CloseOptions()
+    {
+        Options.SetActive(false);
+        PauseGame();
+    }
+
 
     public void PauseGame()
     {

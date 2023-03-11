@@ -10,6 +10,7 @@ public class EXPBAR : MonoBehaviour
     public float experience { get; private set; }
     public TMP_Text playerLevel;
     public Slider slider;
+    private int currentWeaponLeve;
 
     public GameObject upgradeWindow;
 
@@ -64,6 +65,7 @@ public class EXPBAR : MonoBehaviour
     {
         level++;
         slider.value = 0;
+        //ChangeStats();
     }
 
 
