@@ -8,12 +8,14 @@ public class HealthBar : MonoBehaviour
     public Slider healthbar;
     public float maxHealth;
     public float health;
+    public GameObject DieWindow;
 
     void Start()
     {
         maxHealth = 100;
         health = maxHealth;
         healthbar.value = maxHealth;
+        DieWindow.SetActive(false);
     }
 
     void Update()
@@ -49,9 +51,9 @@ public class HealthBar : MonoBehaviour
       
     }
 
-
     public void Die()
     {
+        DieWindow.SetActive(true);
         health = 0;
         Debug.Log("You Died.");
     }
