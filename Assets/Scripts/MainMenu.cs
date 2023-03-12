@@ -6,16 +6,38 @@ public class MainMenu : MonoBehaviour {
     public GameObject StartMenu;
     public GameObject Options;
     public GameObject CharacterMenu;
+    public GameObject MapMenu;
 
     void Start()
     {
         StartMenu.SetActive(true);
         Options.SetActive(false);
         CharacterMenu.SetActive(false);
+        MapMenu.SetActive(false);
     }
 
     public void GoToScene(string sceneName) {
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void OpenStartMenu()
+    {
+        StartMenu.SetActive(true);
+    }
+
+    public void CloseStartMenu()
+    {
+        StartMenu.SetActive(false);
+    }
+
+    public void OpenCharacterMenu()
+    {
+        CharacterMenu.SetActive(true);
+    }
+
+    public void CloseCharacterMenu()
+    {
+        CharacterMenu.SetActive(false);
     }
 
     public void OpenSettingMenu()
@@ -28,14 +50,14 @@ public class MainMenu : MonoBehaviour {
         Options.SetActive(false);
     }
 
-    public void OpenCharacterMenu()
+    public void OpenMapMenu()
     {
-        CharacterMenu.SetActive(true);
+        MapMenu.SetActive(true);
     }
 
-    public void CloseCharacterMenu()
+    public void CloseMapMenu()
     {
-        CharacterMenu.SetActive(false);
+        MapMenu.SetActive(false);
     }
 
     public void QuitApp() {

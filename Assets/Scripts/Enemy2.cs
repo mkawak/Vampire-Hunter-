@@ -139,3 +139,4 @@ public class Enemy2 : MonoBehaviour
         player.GetComponent<PlayerCharacter>().TakeDamage(attackDamage);
     }
 }
+
