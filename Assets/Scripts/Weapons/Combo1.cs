@@ -20,6 +20,8 @@ public class Combo1 : Weapon
 
         level = 3;
 
+        name = "Combo1";
+
         base.Start();
     }
 
