@@ -66,6 +66,9 @@ public class ChoicesWindow : MonoBehaviour
                     break;
                 case 1:
                     weaponImage.sprite = gm.playerWeapons_upgradeable[optionChoice[i]].image;
+                    if (gm.playerWeapons_upgradeable[optionChoice[i]].GetLevel() == 3) {
+                        currText.text = "Combo";
+                    }
                     break;
                 case 2:
                     weaponImage.sprite = gm.itemList[optionChoice[i]].image;

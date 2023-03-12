@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.38073987, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -332,14 +332,7 @@ MonoBehaviour:
   player: {fileID: 1128478831}
   weaponList:
   - {fileID: 7455574949241605096, guid: 772ac59b99a7023449f24d83ca1b4abd, type: 3}
-  - {fileID: 8257628147965955381, guid: b83fbced5dbf4b0408f96f2358360b5d, type: 3}
-  - {fileID: 300580853988345947, guid: a75c737150dc90249abda7f7424812f0, type: 3}
-  - {fileID: 8469858285174122744, guid: 3851345f263202b4c9033c39b1786893, type: 3}
   - {fileID: 1330464876421647811, guid: 3644f89abb01e2342bae726aeddc86e6, type: 3}
-  - {fileID: 7622557879715608709, guid: c4549b495d9e87f4d84a5dcedf9b33f8, type: 3}
-  - {fileID: 2090062855695193587, guid: 00a76e7342787ca45a5cd484b74f2e96, type: 3}
-  - {fileID: 151658490687673564, guid: b74996fb826333a4ca8d6fe2b7bb4c90, type: 3}
-  - {fileID: 5074204629952864157, guid: ef3f8d1ea0693d34d92103926bcd5213, type: 3}
   playerWeapons:
   - {fileID: 382584266}
   playerWeapons_upgradeable:
@@ -350,6 +343,10 @@ MonoBehaviour:
   - {fileID: 6758117207011972856, guid: a2b26000f73074444a36915c33e2dc3a, type: 3}
   playerItems: []
   playerItems_upgradeable: []
+  comboFabs:
+  - {fileID: 8257628147965955381, guid: b83fbced5dbf4b0408f96f2358360b5d, type: 3}
+  - {fileID: 300580853988345947, guid: a75c737150dc90249abda7f7424812f0, type: 3}
+  xpbar: {fileID: 0}
 --- !u!4 &681485370
 Transform:
   m_ObjectHideFlags: 0
@@ -768,6 +765,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 220039772}
+    - target: {fileID: 902894091169799826, guid: 5e6289a033f487ed5b0c0675c1ee1161, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 902894091169799827, guid: 5e6289a033f487ed5b0c0675c1ee1161, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 902894091169799829, guid: 5e6289a033f487ed5b0c0675c1ee1161, type: 3}
       propertyPath: gm
       value: 

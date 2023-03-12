@@ -18,6 +18,8 @@ public class Lightning_Ball : Weapon
 
         playerDamageMultiplier = 1; //Remove
 
+        name = "lightningBall";
+
         base.Start();
     }
 

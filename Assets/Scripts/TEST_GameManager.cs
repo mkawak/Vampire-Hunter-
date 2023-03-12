@@ -14,13 +14,55 @@ public class TEST_GameManager : MonoBehaviour
     public List<Item> playerItems;
     public List<Item> playerItems_upgradeable;
 
-    void Start() {
+    public List<Weapon> comboFabs = new List<Weapon>();
 
+    Dictionary<string, string> combos = new Dictionary<string, string>() {{"shooty", "ray"}, {"ray", "shooty"}, {"lightningBall", "aura"}, {"aura", "lightningBall"}};
+    Dictionary<string, int> comboMaxed = new Dictionary<string, int>() {{"shooty", 0}, {"ray", 0}, {"lightningBall", 0}, {"aura", 0}};
+    Dictionary<string, Weapon> comboWeapon;
+
+    void Start() {
+        comboWeapon = new Dictionary<string, Weapon>(){{"shooty", comboFabs[0]}, {"ray", comboFabs[0]}, {"lightningBall", comboFabs[1]}, {"aura", comboFabs[1]}};
+    }
+
+    void ComboWeapons(int ind) {
+        string otherWeaponName = combos[playerWeapons_upgradeable[ind].name];
+        int weap1 = -1, weap2 = -1;
+        for (int i = 0; i < playerWeapons.Count; i++) {
+            if (weap1 == -1 && (playerWeapons[i].name == otherWeaponName || playerWeapons[i].name == playerWeapons_upgradeable[ind].name)) weap1 = i;
+            else if (weap2== -1 && (playerWeapons[i].name == otherWeaponName || playerWeapons[i].name == playerWeapons_upgradeable[ind].name)) {weap2 = i; break;}
+        }
+
+        Destroy(playerWeapons[weap1].gameObject);
+        Destroy(playerWeapons[weap2].gameObject);
+
+        playerWeapons.RemoveAt(weap2);
+        playerWeapons.RemoveAt(weap1);
+        playerWeapons_upgradeable.RemoveAt(ind);
+        
+
+        Weapon currWeapon = Instantiate(comboWeapon[otherWeaponName], Vector3.zero, Quaternion.identity);
+        currWeapon.transform.parent = player.transform;
+        currWeapon.transform.localPosition = Vector3.zero;
+        playerWeapons.Add(currWeapon);
     }
 
     public void UpgradeWeapon(int ind) {
+        if (playerWeapons_upgradeable[ind].GetLevel() == 3) {
+            ComboWeapons(ind);
+            return;
+        }
+
         playerWeapons_upgradeable[ind].LevelUp();
-        if (playerWeapons_upgradeable[ind].GetLevel() == 3) playerWeapons_upgradeable.RemoveAt(ind);
+        if (playerWeapons_upgradeable[ind].GetLevel() == 3){
+
+            if (combos.ContainsKey(playerWeapons_upgradeable[ind].name)) {
+                comboMaxed[playerWeapons_upgradeable[ind].name] = 1;
+                if (comboMaxed[combos[playerWeapons_upgradeable[ind].name]] == 1) {
+                    return;
+                }
+            }
+            playerWeapons_upgradeable.RemoveAt(ind);
+        }
     }
 
     public void AddWeapon(int ind) {

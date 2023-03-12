@@ -20,6 +20,7 @@ public class Weapon : MonoBehaviour
     protected float totalDamage = 0;                      // Total damage done by the weapon during the run
 
     public Sprite image;
+    public string name = "Default";
 
     public bool autoFire = true;
 

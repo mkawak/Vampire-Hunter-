@@ -18,6 +18,8 @@ public class Shooty : Weapon
 
         playerDamageMultiplier = 1; //Remove
 
+        name = "shooty";
+
         base.Start();
     }
 

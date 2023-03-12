@@ -16,7 +16,7 @@ public class Aura : Weapon
 
         playerDamageMultiplier = 1; //Remove
 
-        name = "Aura";
+        name = "aura";
 
         base.Start();
     }

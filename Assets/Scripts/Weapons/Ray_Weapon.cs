@@ -18,6 +18,8 @@ public class Ray_Weapon : Weapon
 
         playerDamageMultiplier = 1; //Remove
 
+        name = "ray";
+
         base.Start();
     }
 
