@@ -30,6 +30,7 @@ public class PlayerCharacter : MonoBehaviour
         health = baseHealth;
         playerHealthBar.maxHealth = baseHealth;
         playerHealthBar.health = health;
+        gameObject.tag = "Player";
 
     }
 
