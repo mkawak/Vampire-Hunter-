@@ -9,13 +9,22 @@ public class WeaponList : MonoBehaviour
     public List<int> optionWeapon = new List<int>(new int[3]);
     public List<int> optionType = new List<int>(new int[3]);
 
-    public void ChooseOption(int choice) { 
-        if (optionType[choice] == 1) {
-            gm.UpgradeWeapon(optionWeapon[choice]);
+    public void ChooseOption(int choice) {
+        switch(optionType[choice]) {
+            case 0: 
+                gm.AddWeapon(optionWeapon[choice]);
+                break;
+            case 1:
+                gm.UpgradeWeapon(optionWeapon[choice]);
+                break;
+            case 2:
+                gm.AddItem(optionWeapon[choice]);
+                break;
+            case 3:
+                gm.UpgradeItem(optionWeapon[choice]);
+                break;
         }
-        else {
-            gm.AddWeapon(optionWeapon[choice]);
-        }
+        
 
         gameObject.GetComponent<EXPBAR>().CloseUpgradeWeaponWindow();
     }

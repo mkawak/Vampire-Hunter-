@@ -54,10 +54,14 @@ public class PlayerCharacter : MonoBehaviour
         }
     }
 
+    public TEST_GameManager gm;
     public void ChangeExperience(int value) {
         
         experience += value;
         Debug.Log("Experience gained: " + value);
+        if ((experience % 3) == 0) {
+            gm.LeveledUp();
+        }
     }
 
     public void ChangeHealth(float value) {

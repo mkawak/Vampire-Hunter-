@@ -17,7 +17,9 @@ public class Enemy_TEST : MonoBehaviour
         return damageTaken;
     }
 
+    public GameObject xp;
     void Die() {
+        Instantiate(xp, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
