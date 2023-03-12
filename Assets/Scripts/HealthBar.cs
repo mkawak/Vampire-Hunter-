@@ -23,10 +23,10 @@ public class HealthBar : MonoBehaviour
         // debug: make bar move
         //if (health > 0) --health;
         //else health = 100;
-        Debug.Log("HB::Update health: " + health);
-        Debug.Log("HB::Update maxHealth: " + maxHealth);
-        healthbar.value = (health / maxHealth) * 100;
-        Debug.Log("HB::Update value: " + healthbar.value);
+        //Debug.Log("HB::Update health: " + health);
+        //Debug.Log("HB::Update maxHealth: " + maxHealth);
+        //healthbar.value = (health / maxHealth) * 100;
+        //Debug.Log("HB::Update value: " + healthbar.value);
     }
 
     public void TakeDamage(float damage)
