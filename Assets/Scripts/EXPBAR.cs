@@ -7,8 +7,10 @@ using TMPro;
 public class EXPBAR : MonoBehaviour
 {
     public int level;
+    //public int counter;
     public float experience { get; private set; }
     public TMP_Text playerLevel;
+   // public TMP_Text killedCounter;
     public Slider slider;
     private int currentWeaponLeve;
 
@@ -16,6 +18,7 @@ public class EXPBAR : MonoBehaviour
 
     void Start()
     {
+        //killedCounter = 0;
         experience = 0;
         level = 1;
         slider.value = experience; 
@@ -36,6 +39,11 @@ public class EXPBAR : MonoBehaviour
         }
         return currentLevel * currentLevel + currentLevel;
     }
+
+    /*public int EnemyKilledCounter()
+    {
+        killedCounter.text = string.Format("ENEMY KILLED: " + counter);
+    }*/
 
     public void AddEXP(int amount)
     {

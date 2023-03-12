@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class InGameSettingMenu : MonoBehaviour
 {
@@ -17,7 +20,7 @@ public class InGameSettingMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OpenSettingMenu()
@@ -60,22 +63,31 @@ public class InGameSettingMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
     }
-/*
-    public void MusicVolume()
-    {
-        AudioManager.Instance.MusicVolume(musicSilder.value);
-    }
+    /*
+        public void MusicVolume()
+        {
+            AudioManager.Instance.MusicVolume(musicSilder.value);
+        }
 
-    public void SFXVolume()
-    {
-        AudioManager.Instance.SFXVolume(sfxSlider.value);
-    }*/
+        public void SFXVolume()
+        {
+            AudioManager.Instance.SFXVolume(sfxSlider.value);
+        }*/
 
 
     public void QuitGame()
     {
         AudioManager.Instance.PlaySFX("PressButtonSFX");
-        Application.Quit();
-        Debug.Log("Quit!");
+        SceneManager.LoadScene("StartMenu");
+        Debug.Log("Back to Start Menu");
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("PlayerUI");
+        Debug.Log("Restart the game!");
     }
 }
+
+
+

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class HealthBar : MonoBehaviour
 {
@@ -34,6 +36,7 @@ public class HealthBar : MonoBehaviour
         Debug.Log("HB TakeDamage called.");
         if (damage > health) damage = health;
         health -= damage;
+        //healthbar.value = (health / maxHealth) * 100;
 
         if (health <= 0)
         {
@@ -57,4 +60,5 @@ public class HealthBar : MonoBehaviour
         health = 0;
         Debug.Log("You Died.");
     }
+
 }
