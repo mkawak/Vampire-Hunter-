@@ -22,24 +22,30 @@ public class InGameSettingMenu : MonoBehaviour
 
     public void OpenSettingMenu()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         SettingMenu.SetActive(true);
         PauseGame();
     }
 
     public void CloseSettingMenu()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         SettingMenu.SetActive(false);
         ResumeGame();
     }
 
     public void OpenOptions()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
+
         Options.SetActive(true);
         PauseGame();
     }
 
     public void CloseOptions()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
+
         Options.SetActive(false);
         PauseGame();
     }
@@ -58,6 +64,7 @@ public class InGameSettingMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         Application.Quit();
         Debug.Log("Quit!");
     }

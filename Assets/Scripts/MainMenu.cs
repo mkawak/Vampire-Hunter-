@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class MainMenu : MonoBehaviour {
 
@@ -16,47 +17,65 @@ public class MainMenu : MonoBehaviour {
         MapMenu.SetActive(false);
     }
 
+    void Update()
+    {
+/*        if(OpenStartMenu() || CloseStartMenu() || OpenCharacterMenu() || CloseCharacterMenu() || OpenSettingMenu() || OpenMapMenu() || CloseMapMenu())
+        {*/
+            //AudioManager.Instance.PlaySFX("PressButtonSFX");
+       /* }*/
+    }
+
     public void GoToScene(string sceneName) {
         SceneManager.LoadScene(sceneName);
     }
+    
 
     public void OpenStartMenu()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         StartMenu.SetActive(true);
     }
 
     public void CloseStartMenu()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         StartMenu.SetActive(false);
     }
 
     public void OpenCharacterMenu()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         CharacterMenu.SetActive(true);
     }
 
     public void CloseCharacterMenu()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         CharacterMenu.SetActive(false);
     }
 
     public void OpenSettingMenu()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         Options.SetActive(true);
     }
 
     public void CloseSettingMenu()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         Options.SetActive(false);
     }
 
     public void OpenMapMenu()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         MapMenu.SetActive(true);
     }
 
     public void CloseMapMenu()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
+
         MapMenu.SetActive(false);
     }
 

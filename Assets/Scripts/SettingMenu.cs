@@ -2,28 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Audio;
 
 public class SettingMenu : MonoBehaviour
 {
-    public Slider musicSilder;
-    public AudioMixer mixer;
+    public Slider musicSilder, sfxSlider;
     
-    // Start is called before the first frame update
-    void Start()
+
+    public void MusicVolume()
     {
-        //musicSilder.value = 0.5f;
+        AudioManager.Instance.MusicVolume(musicSilder.value);
     }
 
-    public void SetVolume()
+    public void SFXVolume()
     {
-        mixer.SetFloat("Music", musicSilder.value);
+        AudioManager.Instance.SFXVolume(sfxSlider.value);
     }
 
- 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
