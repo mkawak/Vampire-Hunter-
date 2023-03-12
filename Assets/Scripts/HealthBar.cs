@@ -25,7 +25,7 @@ public class HealthBar : MonoBehaviour
         //else health = 100;
         //Debug.Log("HB::Update health: " + health);
         //Debug.Log("HB::Update maxHealth: " + maxHealth);
-        //healthbar.value = (health / maxHealth) * 100;
+        healthbar.value = (health / maxHealth) * 100;
         //Debug.Log("HB::Update value: " + healthbar.value);
     }
 

@@ -60,6 +60,16 @@ public class InGameSettingMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
     }
+/*
+    public void MusicVolume()
+    {
+        AudioManager.Instance.MusicVolume(musicSilder.value);
+    }
+
+    public void SFXVolume()
+    {
+        AudioManager.Instance.SFXVolume(sfxSlider.value);
+    }*/
 
 
     public void QuitGame()

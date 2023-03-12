@@ -18,5 +18,4 @@ public class SettingMenu : MonoBehaviour
         AudioManager.Instance.SFXVolume(sfxSlider.value);
     }
 
-
 }
