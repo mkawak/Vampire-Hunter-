@@ -6,7 +6,7 @@ public class GameMaster : MonoBehaviour
 {
     public static GameMaster instance;
 
-    [SerializeField] public Transform player;
+    //[SerializeField] public Transform player;
     [SerializeField] public int maxEnemies = 100;
     [SerializeField] public int secondsBetweenWaves = 10;
     [SerializeField] public GameObject enemy1; // enemy to spawn
@@ -24,6 +24,7 @@ public class GameMaster : MonoBehaviour
 
 
     private int framesPassed = 0;
+    private GameObject player;
 
     private List<GameObject> enemyList = new List<GameObject>();
 
@@ -31,6 +32,7 @@ public class GameMaster : MonoBehaviour
     {
         instance = this;
         Application.targetFrameRate = targetFramesPerSecond;
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -103,7 +105,8 @@ public class GameMaster : MonoBehaviour
 
                     // move enemy to spawnPosition and assign the player as target for enemy
                     newEnemy.transform.position = spawnPosition;
-                    newSpawn.player = this.player;
+                    //newSpawn.player = this.player;
+                    newSpawn.player = this.player.transform;
 
                     // add enemy in the list of spawned enemies
                     enemyList.Add(newEnemy);
