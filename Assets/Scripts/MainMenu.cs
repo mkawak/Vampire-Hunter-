@@ -26,6 +26,7 @@ public class MainMenu : MonoBehaviour {
     }
 
     public void GoToScene(string sceneName) {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         SceneManager.LoadScene(sceneName);
     }
     
