@@ -34,8 +34,6 @@ public class PlayerCharacter : MonoBehaviour
     }
 
     void Update(){
-        // set the player's speed in case it has changed
-        playerController.moveSpeed = baseSpeed;
     }
 
     public float GetPlayerDamage() {
@@ -62,19 +60,19 @@ public class PlayerCharacter : MonoBehaviour
         Debug.Log("Experience gained: " + value);
     }
 
-    public void ChangeHealth(int value) {
+    public void ChangeHealth(float value) {
         
         baseHealth += value;
         Debug.Log("Health gained: " + value);
     }
 
-    public void ChangeDamage(int value) {
+    public void ChangeDamage(float value) {
         
         baseDamage += value;
         Debug.Log("Damage gained: " + value);
     }
 
-    public void ChangeSpeed(int value) {
+    public void ChangeSpeed(float value) {
         
         baseSpeed += value;
         Debug.Log("Speed gained: " + value);

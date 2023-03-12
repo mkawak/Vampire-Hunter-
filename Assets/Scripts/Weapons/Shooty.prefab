@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5399724453223958156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 358.4837, y: 289.02374, z: -45.108894}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46,5 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   projectile: {fileID: 7347402086343167503, guid: 742566fa9d696f44db7d67a41d11388d, type: 3}
+  image: {fileID: 21300000, guid: 7101f5e27a0ae5248b3be5b74d203254, type: 3}
   autoFire: 1
   coolDown: {fileID: 0}

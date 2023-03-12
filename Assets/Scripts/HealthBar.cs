@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public Slider healthbar;
+    // public Slider healthbar;
     public float maxHealth;
     public float health;
 
@@ -13,7 +13,7 @@ public class HealthBar : MonoBehaviour
     {
         maxHealth = 100;
         health = maxHealth;
-        healthbar.value = maxHealth;
+        // healthbar.value = maxHealth;
     }
 
     void Update()
@@ -24,7 +24,7 @@ public class HealthBar : MonoBehaviour
     public void TakeDamge(float damage)
     {
         health -= damage;
-        healthbar.value = health;
+        // healthbar.value = health;
         if (health <= 0)
         {
             Die();
@@ -35,8 +35,8 @@ public class HealthBar : MonoBehaviour
     {
         if(health < 100)
         {
-            health += healing;
-            healthbar.value = health;
+            // health += healing;
+            // healthbar.value = health;
         }
       
     }
