@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 102c30600b76f234b84fc8f46d1d996b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - player: {instanceID: 0}
+  - projectile: {fileID: 6899796677954297651, guid: ea1c8b5ca57941541b98de861593fd34, type: 3}
+  - coolDown: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

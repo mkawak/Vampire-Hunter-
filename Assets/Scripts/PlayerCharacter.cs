@@ -35,7 +35,7 @@ public class PlayerCharacter : MonoBehaviour
 
     void Update(){
         // set the player's speed in case it has changed
-        playerController.speed = baseSpeed;
+        playerController.moveSpeed = baseSpeed;
     }
 
     public float GetPlayerDamage() {
@@ -48,8 +48,8 @@ public class PlayerCharacter : MonoBehaviour
         health -= damage;
 
         // update health bar
-        Debug.Log("PC calling HB::TakeDamage.");
-        playerHealthBar.TakeDamage(damage);
+        // Debug.Log("PC calling HB::TakeDamage.");
+        // playerHealthBar.TakeDamage(damage);
 
         if (health <= 0){
             Die();

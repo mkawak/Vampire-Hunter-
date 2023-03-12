@@ -6,11 +6,18 @@ public class Lightning_Ball_Projectile : Projectile
 {
     float offset = 0;
 
+    float hitTime = 0.1f;
+    float currHitTime = 0;
+
+    List<GameObject> toHit = new List<GameObject>{};
+
 
     void Start() {
         speed = 8;
         lifeTime = 6.1f;
         hits = 99;
+
+        damage = 1;
     }
 
     bool grow = false;
@@ -27,7 +34,38 @@ public class Lightning_Ball_Projectile : Projectile
         }
     }
 
+    new void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.tag == "Enemy") {
+            for (int i = 0; i < toHit.Count; i++) {
+                if (toHit[i] == other.gameObject) {
+                    return;
+                }
+            }
+            toHit.Add(other.gameObject);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.gameObject.tag == "Enemy") {
+            for (int i = 0; i < toHit.Count; i++) {
+                if (other.gameObject == toHit[i]) {toHit.RemoveAt(i); break;}
+            }
+        }    
+    }
+
+    void Attack() {
+        for (int i = 0; i < toHit.Count; i++) {
+            weapon.AddDamage(toHit[i].GetComponent<Enemy_TEST>().TakeDamage(damage));
+        }
+    }
+
     new void Update() {
+        currHitTime -= Time.deltaTime;
+        if (currHitTime < 0) {
+            currHitTime = hitTime;
+            Attack();
+        }
+
         Move(Time.deltaTime);
         base.Update();
     }

@@ -19,10 +19,13 @@ public class Weapon : MonoBehaviour
 
     protected float totalDamage = 0;                      // Total damage done by the weapon during the run
 
+    public bool autoFire = true;
+
     protected virtual void Start() {
         // playerDamageMultiplier = player.GetComponent<PlayerController>().playerDamage;
     }
 
+    protected Projectile currProj;
     public virtual void Fire() {
         int angleInd = 0;
 
@@ -33,7 +36,7 @@ public class Weapon : MonoBehaviour
                 currAngle = angles[angleInd++];
             }
 
-            Projectile currProj = Instantiate(projectile, transform.position, Quaternion.identity * Quaternion.Euler(Vector3.forward * currAngle) * Quaternion.Euler(transform.eulerAngles)).GetComponent<Projectile>();
+            currProj = Instantiate(projectile, transform.position, Quaternion.identity * Quaternion.Euler(Vector3.forward * currAngle) * Quaternion.Euler(transform.eulerAngles)).GetComponent<Projectile>();
             currProj.weapon = this;
             currProj.SetStats(baseDamage * damageMultiplier * playerDamageMultiplier);
         }
@@ -48,9 +51,28 @@ public class Weapon : MonoBehaviour
             timeTillShot = 60 / fireRate;
             Fire();
         }
+
+        if (Input.GetKeyDown(KeyCode.K)) {
+            LevelUp();
+        }
     }
 
     public void AddDamage(float amount) {
         totalDamage += amount;
+    }
+
+    public void LevelUp() {
+        level += 1;
+        ChangeStats();
+    }
+
+    public int GetLevel() {
+        return level;
+    }
+
+    protected virtual void ChangeStats() {
+        // Override
+        // Special per weapon changes at level 2 and 3 (3 and 5?)
+        return;
     }
 }
