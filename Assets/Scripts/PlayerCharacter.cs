@@ -9,7 +9,7 @@ public class PlayerCharacter : MonoBehaviour
 {
     // For tweaking --------------
     public float baseDamage = 1;
-    public float baseSpeed = 10f;
+    public float baseSpeed = 20f;
     public int maxWeapons = 3;
     public int maxItems = 3;
     public float baseHealth = 100;

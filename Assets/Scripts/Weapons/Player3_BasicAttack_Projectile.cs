@@ -78,6 +78,7 @@ public class Player3_BasicAttack_Projectile : Projectile
                 movingToTarget = false;
             }
         }
+        transform.GetChild(0).transform.Rotate(new Vector3(0, 0, 720) * Time.deltaTime);
     }
 
     new void OnTriggerEnter2D(Collider2D other) {

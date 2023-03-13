@@ -5,7 +5,7 @@ using UnityEngine;
 public class Speed : Item
 {
     void Start() {
-        value = 50;
+        value = 10;
         base.Start();
     }
 
@@ -22,11 +22,11 @@ public class Speed : Item
         float prevVal = value;
         switch(level) {
             case 2:
-                value += 5;
+                value += 10;
                 AddToPlayer();
                 break;
             case 3:
-                value += 5;
+                value += 10;
                 AddToPlayer();
                 break;
         }

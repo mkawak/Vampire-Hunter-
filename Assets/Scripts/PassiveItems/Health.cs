@@ -5,7 +5,7 @@ using UnityEngine;
 public class Health : Item
 {
     void Start() {
-        value = 200;
+        value = 100;
         base.Start();
     }
 
@@ -22,11 +22,11 @@ public class Health : Item
         float prevVal = value;
         switch(level) {
             case 2:
-                value += 5;
+                value += 100;
                 AddToPlayer();
                 break;
             case 3:
-                value += 5;
+                value += 100;
                 AddToPlayer();
                 break;
         }

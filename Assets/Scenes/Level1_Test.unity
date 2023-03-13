@@ -360,6 +360,14 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7751946591527204800, guid: 6676831ca634cbc44b58da5c3acb3df0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751946591527204800, guid: 6676831ca634cbc44b58da5c3acb3df0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751946591527204800, guid: 6676831ca634cbc44b58da5c3acb3df0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -965,6 +973,14 @@ PrefabInstance:
     - target: {fileID: 4904344013678848836, guid: 2b4b7007076e2284d90e2d45d69a4116, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904344013678848836, guid: 2b4b7007076e2284d90e2d45d69a4116, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904344013678848836, guid: 2b4b7007076e2284d90e2d45d69a4116, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4904344013678848836, guid: 2b4b7007076e2284d90e2d45d69a4116, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2302,6 +2318,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1111655374}
     - target: {fileID: 6625660790537187497, guid: 8bea42172889c394da7399945cddc5fe, type: 3}
+      propertyPath: baseSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625660790537187497, guid: 8bea42172889c394da7399945cddc5fe, type: 3}
       propertyPath: baseHealth
       value: 1000
       objectReference: {fileID: 0}
@@ -3172,11 +3192,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4113198466615024668, guid: ddec805f35587344ab5edd488a199831, type: 3}
       propertyPath: m_UiScaleMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4113198466615024668, guid: ddec805f35587344ab5edd488a199831, type: 3}
       propertyPath: m_MatchWidthOrHeight
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4113198466615024668, guid: ddec805f35587344ab5edd488a199831, type: 3}
       propertyPath: m_ReferenceResolution.x
@@ -3184,7 +3204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4113198466615024668, guid: ddec805f35587344ab5edd488a199831, type: 3}
       propertyPath: m_ReferenceResolution.y
-      value: 600
+      value: 690
       objectReference: {fileID: 0}
     - target: {fileID: 4113198466615024670, guid: ddec805f35587344ab5edd488a199831, type: 3}
       propertyPath: m_Pivot.x
@@ -3554,7 +3574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 0.7
-  baseSpeed: 19
+  baseSpeed: 25
   maxWeapons: 3
   maxItems: 3
   baseHealth: 70
@@ -3619,7 +3639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 1
-  baseSpeed: 10
+  baseSpeed: 20
   maxWeapons: 3
   maxItems: 3
   baseHealth: 100

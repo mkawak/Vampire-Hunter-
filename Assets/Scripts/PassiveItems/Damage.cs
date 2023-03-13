@@ -22,11 +22,11 @@ public class Damage : Item
         float prevVal = value;
         switch(level) {
             case 2:
-                value += 5;
+                value += 2;
                 AddToPlayer();
                 break;
             case 3:
-                value += 5;
+                value += 2;
                 AddToPlayer();
                 break;
         }
