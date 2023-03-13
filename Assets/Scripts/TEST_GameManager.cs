@@ -71,6 +71,7 @@ public class TEST_GameManager : MonoBehaviour
             if (weap1 == -1 && (playerWeapons[i].name == otherWeaponName || playerWeapons[i].name == playerWeapons_upgradeable[ind].name)) weap1 = i;
             else if (weap2 == -1 && (playerWeapons[i].name == otherWeaponName || playerWeapons[i].name == playerWeapons_upgradeable[ind].name)) {weap2 = i; break;}
         }
+        Debug.Log("WHAT THE FUCK R U DOING");
 
         Destroy(playerWeapons[weap1].gameObject);
         Destroy(playerWeapons[weap2].gameObject);
@@ -100,7 +101,9 @@ public class TEST_GameManager : MonoBehaviour
             return;
         }
 
+        Debug.Log("UPGRADE b4 " + playerWeapons_upgradeable[ind].GetLevel() );
         playerWeapons_upgradeable[ind].LevelUp();
+        Debug.Log("UPGRADE aft " + playerWeapons_upgradeable[ind].GetLevel() );
         if (playerWeapons_upgradeable[ind].GetLevel() == 3){
 
             if (combos.ContainsKey(playerWeapons_upgradeable[ind].name)) {
@@ -135,6 +138,7 @@ public class TEST_GameManager : MonoBehaviour
 
     public void UpgradeItem(int ind) {
         playerItems_upgradeable[ind].LevelUp();
+        Debug.Log("Level: " + playerItems_upgradeable[ind].GetLevel());
         if (playerItems_upgradeable[ind].GetLevel() == 3) playerItems_upgradeable.RemoveAt(ind);
     }
 

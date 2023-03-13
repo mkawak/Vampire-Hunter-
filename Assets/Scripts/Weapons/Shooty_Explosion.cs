@@ -8,6 +8,7 @@ public class Shooty_Explosion : Projectile
         speed = 0;
         lifeTime = 0.3f;
         hits = 999;
+        AudioManager.Instance.PlaySFX("DiamondExplosionSFX");
     }
 
     void Move(float deltaTime) {

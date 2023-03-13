@@ -33,6 +33,7 @@ public class Player3_BasicAttack : Weapon
             }
             else if (Input.GetKeyDown(keycode)) {
                 timeTillShot = 60/fireRate;
+                AudioManager.Instance.PlaySFX("SemiCircleSFX");
                 Fire();
             }
         }

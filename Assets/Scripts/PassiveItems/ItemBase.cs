@@ -6,7 +6,7 @@ public class Item : MonoBehaviour
 {
     public PlayerCharacter player;
 
-    protected int level;
+    protected int level = 1;
     protected float value;
 
     public Sprite image;
@@ -28,7 +28,6 @@ public class Item : MonoBehaviour
     }
 
     public void LevelUp() {
-        level += 1;
         ChangeStats();
     }
 

@@ -45,6 +45,7 @@ public class Shooty : Weapon
             }
             else if (Input.GetKeyDown(keycode)) {
                 timeTillShot = 60/fireRate;
+                AudioManager.Instance.PlaySFX("6SidedSFX");
                 Fire();
             }
         }

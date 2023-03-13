@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     private float timer = 0.0f;
     private bool isTimer = false;
 
-    public float levelTime = 60;
+    protected float levelTime = 180;
 
     void Awake()
     {
@@ -20,7 +20,10 @@ public class Timer : MonoBehaviour
     }
 
 
-    int diffRef = 10;
+    int diffRef;
+    void Start() {
+        diffRef = (int)levelTime / 4;
+    }
     // Update is called once per frame
     void Update()
     {

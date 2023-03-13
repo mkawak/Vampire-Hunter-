@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour
 
     public Transform leftPos, rightPos, topPos, bottomPos;
 
-    private float Hell_Boss_1_Interval = 1.5f; //number of seconds in between spawns
+    private float Hell_Boss_1_Interval = 1.2f; //number of seconds in between spawns
     private int randomSide;
     private int level = 1;
 
@@ -62,5 +62,6 @@ public class EnemySpawner : MonoBehaviour
     public void LevelUp() {
         if (level == 4) return;
         level++;
+        Hell_Boss_1_Interval -= 0.3f;
     }
 }

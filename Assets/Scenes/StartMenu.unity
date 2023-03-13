@@ -4336,9 +4336,9 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 187f04b549db3aa4eaf62e90b3e52a14, type: 3}
   - name: PressButtonBackSFX
     clip: {fileID: 8300000, guid: dbae8081dccc4f748b798243c783cf39, type: 3}
-  - name: 6SlidedSFX
+  - name: 6SidedSFX
     clip: {fileID: 8300000, guid: be68162d9f4079947b5ae4931a5f98f1, type: 3}
-  - name: DimondExplosionSFX
+  - name: DiamondExplosionSFX
     clip: {fileID: 8300000, guid: 6aee16ab8cf53634b80df8bed6642de5, type: 3}
   - name: DoubleFireSFX
     clip: {fileID: 8300000, guid: 057c651b2602787489b9de12402e84e4, type: 3}

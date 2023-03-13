@@ -21,11 +21,16 @@ public class ChoicesWindow : MonoBehaviour
         RelayOptions();
     }
 
+    int tot = 3;
     void RollOptions() {
         List<int> nums = new List<int>{gm.weaponList.Count, gm.playerWeapons_upgradeable.Count, gm.itemList.Count, gm.playerItems_upgradeable.Count};
         List<int> counts = new List<int>{gm.weaponList.Count, gm.playerWeapons_upgradeable.Count, gm.itemList.Count, gm.playerItems_upgradeable.Count};
+        
+        int currTot = 0;
+        for (int i = 0; i < counts.Count; i++) currTot += counts[i];
+        if (currTot < 3) tot = currTot;
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < tot; i++) {
 
             int type = Random.Range(0, 4);
 
@@ -55,7 +60,7 @@ public class ChoicesWindow : MonoBehaviour
 
     // TextMeshProUGUI
     void DisplayOptions() {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < tot; i++) {
             TextMeshProUGUI currText = selections[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>();
             currText.text = (optionType[i] % 2 == 0) ? "New" : "Upgrade";
 
@@ -77,6 +82,10 @@ public class ChoicesWindow : MonoBehaviour
                     weaponImage.sprite = gm.playerItems_upgradeable[optionChoice[i]].image;
                     break;
             }
+        }
+        for (int i = tot; i < 3; i++) {
+            selections[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "EMPTY";
+            selections[i].transform.GetChild(3).GetComponent<Image>().sprite = null;
         }
     }
 

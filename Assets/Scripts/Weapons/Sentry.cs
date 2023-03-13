@@ -57,10 +57,14 @@ public class Sentry : Weapon
             return;
         }
         if (!spawnedChild) SpawnChild();
-        childCollider.radius = childCollider.radius + (10 * Time.deltaTime);
+        childCollider.radius = childCollider.radius + (100 * Time.deltaTime);
     }
 
     new void Fire() {
+        if (target == null) {
+            shots = -1;
+            return;
+        }
         Vector3 toTarget = transform.position - target.transform.position;
 
         Projectile currProj = Instantiate(projectile, transform.position, Quaternion.identity);
@@ -72,6 +76,7 @@ public class Sentry : Weapon
 
     bool firing = false;
     new void Update() {
+        CoolDown();
         if (currCoolDown >= 0) {
             currCoolDown -= Time.deltaTime;
             return;
@@ -87,7 +92,7 @@ public class Sentry : Weapon
                 }
             }
         }
-        else {
+        else if (shots < 0){
             currCoolDown = coolDownE;
             found = false;
             target = null;
@@ -110,5 +115,10 @@ public class Sentry : Weapon
         }
 
         base.ChangeStats();
+    }
+
+    protected new void CoolDown() {
+        if (currCoolDown == 0) currCoolDown += 0.0001f;
+        coolDown.fillAmount = Mathf.Min(Mathf.Max(0, currCoolDown / (60 / fireRate)), 1);
     }
 }

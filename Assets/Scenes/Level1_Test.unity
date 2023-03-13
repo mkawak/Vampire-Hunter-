@@ -3508,7 +3508,7 @@ GameObject:
   - component: {fileID: 6547513216228290938}
   m_Layer: 0
   m_Name: Player_Character_3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3520,7 +3520,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6547513216228290937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bafc39f237827544b288391505a62b0, type: 3}
   m_Name: 
@@ -3559,7 +3559,7 @@ MonoBehaviour:
   maxItems: 3
   baseHealth: 70
   experience: 0
-  gm: {fileID: 0}
+  gm: {fileID: 1111655374}
 --- !u!61 &6547513216228290942
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ public class Combo1Projectile2 : Projectile
         lifeTime = 1;
         hits = 1;
 
+        AudioManager.Instance.PlaySFX("6SidedSFX");
+
         animator = transform.GetChild(0).transform.GetComponent<Animator>();
     }
 

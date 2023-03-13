@@ -35,6 +35,9 @@ public class PlayerCharacter : MonoBehaviour
 
     void Update(){
         RegenHealth();
+        if (Input.GetKeyDown(KeyCode.K)) {
+            ChangeExperience(10000);
+        }
     }
 
     protected void RegenHealth() {
@@ -81,7 +84,7 @@ public class PlayerCharacter : MonoBehaviour
         if (experience >= expToLevel) {
             experience = 0;
             level++;
-            expToLevel += 20;
+            expToLevel += 10;
             gm.LeveledUp();
         }
     }
