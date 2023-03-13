@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class InGameSettingMenu : MonoBehaviour
 {
@@ -10,6 +13,7 @@ public class InGameSettingMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
         SettingMenu.SetActive(false);
         Options.SetActive(false);
     }
@@ -17,29 +21,35 @@ public class InGameSettingMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OpenSettingMenu()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         SettingMenu.SetActive(true);
         PauseGame();
     }
 
     public void CloseSettingMenu()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
         SettingMenu.SetActive(false);
         ResumeGame();
     }
 
     public void OpenOptions()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
+
         Options.SetActive(true);
         PauseGame();
     }
 
     public void CloseOptions()
     {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
+
         Options.SetActive(false);
         PauseGame();
     }
@@ -55,10 +65,31 @@ public class InGameSettingMenu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    /*
+        public void MusicVolume()
+        {
+            AudioManager.Instance.MusicVolume(musicSilder.value);
+        }
+
+        public void SFXVolume()
+        {
+            AudioManager.Instance.SFXVolume(sfxSlider.value);
+        }*/
+
 
     public void QuitGame()
     {
-        Application.Quit();
-        Debug.Log("Quit!");
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
+        SceneManager.LoadScene("StartMenu");
+        Debug.Log("Back to Start Menu");
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("PlayerUI");
+        Debug.Log("Restart the game!");
     }
 }
+
+
+

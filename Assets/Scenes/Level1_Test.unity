@@ -380,6 +380,7 @@ MonoBehaviour:
   - {fileID: 2090062855695193587, guid: 00a76e7342787ca45a5cd484b74f2e96, type: 3}
   - {fileID: 151658490687673564, guid: b74996fb826333a4ca8d6fe2b7bb4c90, type: 3}
   - {fileID: 5074204629952864157, guid: ef3f8d1ea0693d34d92103926bcd5213, type: 3}
+  tempWeaponList: []
   playerWeapons:
   - {fileID: 2733236507879579741, guid: ac99859c8a994344b8c315702fa01770, type: 3}
   playerWeapons_upgradeable:
@@ -390,6 +391,8 @@ MonoBehaviour:
   - {fileID: 6758117207011972856, guid: a2b26000f73074444a36915c33e2dc3a, type: 3}
   playerItems: []
   playerItems_upgradeable: []
+  comboFabs: []
+  coolDowns: []
   xpbar: {fileID: 946464404}
 --- !u!4 &1111655375
 Transform:
@@ -812,6 +815,10 @@ PrefabInstance:
     - target: {fileID: 902894091169799826, guid: 5e6289a033f487ed5b0c0675c1ee1161, type: 3}
       propertyPath: m_SortingLayerID
       value: -1755116629
+      objectReference: {fileID: 0}
+    - target: {fileID: 902894091169799827, guid: 5e6289a033f487ed5b0c0675c1ee1161, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 902894091169799829, guid: 5e6289a033f487ed5b0c0675c1ee1161, type: 3}
       propertyPath: gm
