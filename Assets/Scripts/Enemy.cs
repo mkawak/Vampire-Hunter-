@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float yScale = 22f;
     [SerializeField] private float zScale = 1f;
     [SerializeField] private float attackRange = 9.5f;
+    [SerializeField] public GameObject[] itemDrops;
 
     private Rigidbody2D rb;
     private Vector2 movement;
@@ -35,6 +36,7 @@ public class Enemy : MonoBehaviour
         if (getHealth() <= 0) //if health is 0 or less, enemy is dead
         {
             Die();
+            ItemDrop();
             Debug.Log(gameObject + " being destroyed.");
         }
     }
@@ -136,5 +138,34 @@ public class Enemy : MonoBehaviour
         Debug.Log(gameObject + " attacking " + player);
 
         player.GetComponent<PlayerCharacter>().TakeDamage(attackDamage);
+    }
+
+    private void ItemDrop()
+    {
+        int randNum = range(0,101);
+        Debug.Log("Random Number is " + randNum);
+
+        if(randNum <= 85)
+        {
+            Instantiate(itemDrops[0], transform.position, Quaternion.identity);
+
+
+        }
+        else if(randNum > 85 && randNum <= 90) // health drop 5%
+        {
+
+            Instantiate(itemList[1], Epos.position, Quaternion.identity);
+
+        }
+        else if(randNum > 90 && randNum <= 95)// damage drop 5%
+        {
+            Instantiate(itemList[2], Epos.position, Quaternion.identity);
+        }
+
+        else if(randNum > 95 && randNum <= 100)// speed drop 5%
+        {
+            Instantiate(itemList[2], Epos.position, Quaternion.identity);
+        }
+        
     }
 }
