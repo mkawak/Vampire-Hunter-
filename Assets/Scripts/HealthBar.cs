@@ -59,6 +59,11 @@ public class HealthBar : MonoBehaviour
         DieWindow.SetActive(true);
         health = 0;
         Debug.Log("You Died.");
+        PauseGame();
     }
 
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+    }
 }
