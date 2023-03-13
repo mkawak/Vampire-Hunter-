@@ -10,6 +10,9 @@ public class EXPBAR : MonoBehaviour
     public float experience { get; private set; }
     public TMP_Text playerLevel;
     public Slider slider;
+    private int currentWeaponLeve;
+
+    public GameObject upgradeWindow;
 
     void Start()
     {
@@ -17,6 +20,7 @@ public class EXPBAR : MonoBehaviour
         level = 1;
         slider.value = experience; 
         DisplayLevel();
+        upgradeWindow.SetActive(false);
     }
 
     void Update()
@@ -43,8 +47,12 @@ public class EXPBAR : MonoBehaviour
         if (slider.value >= 100)
         {
             LevelUp();
-/*            expNeeded = EXPNeedToLevelUp(level);
-            previousExperience = EXPNeedToLevelUp(level - 1);*/
+            Time.timeScale = 0f;
+            upgradeWindow.SetActive(true);
+            //UpgradeWeaponWindow();
+
+            /*            expNeeded = EXPNeedToLevelUp(level);
+                        previousExperience = EXPNeedToLevelUp(level - 1);*/
         }
     }
 
@@ -57,7 +65,22 @@ public class EXPBAR : MonoBehaviour
     {
         level++;
         slider.value = 0;
+        //ChangeStats();
     }
 
 
+/*    public void UpgradeWeaponWindow()
+    {
+        
+       *//*  After weapon function done, put them here*//*
+         
+        CloseUpgradeWeaponWindow();
+    }*/
+
+
+    public void CloseUpgradeWeaponWindow()
+    {
+        upgradeWindow.SetActive(false);
+        Time.timeScale = 1f;
+    }
 }

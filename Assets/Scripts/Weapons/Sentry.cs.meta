@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8deebd7d3d60d7d4b8aa03be1c2001d8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - player: {instanceID: 0}
+  - projectile: {fileID: 6612878318136002002, guid: 64f9246e47d99dd49b6d608932f88196, type: 3}
+  - image: {fileID: 21300000, guid: 575c799e7beb69b438100ef2237cfb15, type: 3}
+  - childToSpawn: {fileID: 1485084999955866712, guid: a8cd8796edbeb8443b20e54dfd888af0, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

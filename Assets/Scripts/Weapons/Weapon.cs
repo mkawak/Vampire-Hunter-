@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.UI;
+
 public class Weapon : MonoBehaviour
 {
     protected float baseDamage;
@@ -19,10 +21,17 @@ public class Weapon : MonoBehaviour
 
     protected float totalDamage = 0;                      // Total damage done by the weapon during the run
 
+    public Sprite image;
+    public string name = "Default";
+
+    protected bool autoFire = false;
+    public KeyCode keycode;
+
     protected virtual void Start() {
         // playerDamageMultiplier = player.GetComponent<PlayerController>().playerDamage;
     }
 
+    protected Projectile currProj;
     public virtual void Fire() {
         int angleInd = 0;
 
@@ -33,13 +42,13 @@ public class Weapon : MonoBehaviour
                 currAngle = angles[angleInd++];
             }
 
-            Projectile currProj = Instantiate(projectile, transform.position, Quaternion.identity * Quaternion.Euler(Vector3.forward * currAngle) * Quaternion.Euler(transform.eulerAngles)).GetComponent<Projectile>();
+            currProj = Instantiate(projectile, transform.position, Quaternion.identity * Quaternion.Euler(Vector3.forward * currAngle) * Quaternion.Euler(transform.eulerAngles)).GetComponent<Projectile>();
             currProj.weapon = this;
             currProj.SetStats(baseDamage * damageMultiplier * playerDamageMultiplier);
         }
     }
 
-    protected float timeTillShot = 0;
+    protected float timeTillShot = 0.3f;
 
     protected void Update() {
         timeTillShot -= Time.deltaTime;
@@ -48,9 +57,36 @@ public class Weapon : MonoBehaviour
             timeTillShot = 60 / fireRate;
             Fire();
         }
+
+        if (Input.GetKeyDown(KeyCode.K)) {
+            LevelUp();
+        }
     }
 
     public void AddDamage(float amount) {
         totalDamage += amount;
+    }
+
+    public void LevelUp() {
+        level += 1;
+        ChangeStats();
+    }
+
+    public int GetLevel() {
+        return level;
+    }
+
+    protected virtual void ChangeStats() {
+        // Override
+        // Special per weapon changes at level 2 and 3 (3 and 5?)
+        return;
+    }
+
+    // COOLDOWN TESTING
+    public Image coolDown;
+
+    protected void CoolDown() {
+        if (timeTillShot == 0) timeTillShot += 0.0001f;
+        coolDown.fillAmount = Mathf.Min(Mathf.Max(0, timeTillShot / (60 / fireRate)), 1);
     }
 }

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5610252517351326886}
   - component: {fileID: 1461259682583018235}
   - component: {fileID: 7010070574601518128}
-  - component: {fileID: 3784760311166277377}
   - component: {fileID: 6817734182641364500}
   m_Layer: 0
   m_Name: damage
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a3deaf6bd29f6814c85db138147b2bfd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -113,19 +112,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.748535, y: 9.7239685}
   m_EdgeRadius: 0
---- !u!114 &3784760311166277377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8086501472068981186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cbeb26309ae4cf4f832b1ec4a3b395a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropForce: 1
 --- !u!114 &6817734182641364500
 MonoBehaviour:
   m_ObjectHideFlags: 0
