@@ -16,9 +16,11 @@ public class PlayerCharacter : MonoBehaviour
     public float experience = 0;
     // ---------------------------
 
-    protected float damage;
+    protected float damage = 1;
     protected float health;
-    protected HealthBar playerHealthBar;
+
+    float expToLevel = 10;
+    int level = 1;
 
     protected List<Weapon> weapons;
     // protected List<Item> items;
@@ -26,19 +28,35 @@ public class PlayerCharacter : MonoBehaviour
 
     void Start() {
         playerController = GetComponent<PlayerController>();
-        playerHealthBar = GetComponent<HealthBar>();
         health = baseHealth;
-        playerHealthBar.maxHealth = baseHealth;
-        playerHealthBar.health = health;
         gameObject.tag = "Player";
 
     }
 
     void Update(){
+        RegenHealth();
+    }
+
+    protected void RegenHealth() {
+        if (health < baseHealth) {
+            health += 3 * Time.deltaTime;
+        }
     }
 
     public float GetPlayerDamage() {
-        return damage;
+        return baseDamage;
+    }
+
+    public float GetHealthAsPercentage() {
+        return health / baseHealth * 100;
+    }
+
+    public int GetLevel() {
+        return level;
+    }
+
+    public float GetExpAsPercentage() {
+        return experience / expToLevel * 100;
     }
 
     public void TakeDamage(float damage){
@@ -59,8 +77,11 @@ public class PlayerCharacter : MonoBehaviour
     public void ChangeExperience(int value) {
         
         experience += value;
-        Debug.Log("Experience gained: " + value);
-        if ((experience % 3) == 0) {
+
+        if (experience >= expToLevel) {
+            experience = 0;
+            level++;
+            expToLevel += 20;
             gm.LeveledUp();
         }
     }
@@ -68,11 +89,10 @@ public class PlayerCharacter : MonoBehaviour
     public void ChangeHealth(float value) {
         
         baseHealth += value;
-        Debug.Log("Health gained: " + value);
+        health += value;
     }
 
     public void ChangeDamage(float value) {
-        
         baseDamage += value;
         Debug.Log("Damage gained: " + value);
     }
@@ -84,6 +104,7 @@ public class PlayerCharacter : MonoBehaviour
     }
 
     public void Die(){
+        gm.Died();
         Destroy(gameObject);
     }
 

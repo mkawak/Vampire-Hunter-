@@ -33,6 +33,8 @@ public class Weapon : MonoBehaviour
 
     protected Projectile currProj;
     public virtual void Fire() {
+        playerDamageMultiplier = player.GetComponent<PlayerCharacter>().GetPlayerDamage();
+        Debug.Log(playerDamageMultiplier);
         int angleInd = 0;
 
         for (int i = 0; i < numProjectiles; i++) {

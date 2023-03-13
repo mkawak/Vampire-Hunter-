@@ -24,7 +24,20 @@ public class Player3_BasicAttack : Weapon
     }
 
     new void Update() {
-        base.Update();
+        timeTillShot -= Time.deltaTime;
+
+        if (timeTillShot <= 0) {
+            if (autoFire) {
+                timeTillShot = 60/fireRate;
+                Fire();
+            }
+            else if (Input.GetKeyDown(keycode)) {
+                timeTillShot = 60/fireRate;
+                Fire();
+            }
+        }
+
+        if (coolDown != null) CoolDown();
     }
 
     protected override void ChangeStats() {

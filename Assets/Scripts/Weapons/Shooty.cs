@@ -43,7 +43,7 @@ public class Shooty : Weapon
                 timeTillShot = 60/fireRate;
                 Fire();
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha2)) {
+            else if (Input.GetKeyDown(keycode)) {
                 timeTillShot = 60/fireRate;
                 Fire();
             }

@@ -72,7 +72,7 @@ public class Ray_Weapon : Weapon
         timeTillShot -= Time.deltaTime;
 
         if (timeTillShot <= 0 && !firing) {
-            if (Input.GetKeyDown(KeyCode.Alpha3)) {
+            if (Input.GetKeyDown(keycode)) {
                 firing = true;
             }
         }

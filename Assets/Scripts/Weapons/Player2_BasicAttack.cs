@@ -64,7 +64,7 @@ public class Player2_BasicAttack : Weapon
 
         if (coolDown != null) CoolDown();
 
-        if (level == 3) currProj.lifeTime = 5f;
+        if (level == 3 && currProj != null) currProj.lifeTime = 5f;
     }
 
     

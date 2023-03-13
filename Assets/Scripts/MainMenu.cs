@@ -17,6 +17,8 @@ public class MainMenu : MonoBehaviour {
         CharacterMenu.SetActive(false);
         MapMenu.SetActive(false);
         CreditsPanel.SetActive(false);
+
+        li = GameObject.FindWithTag("LevelInfo").GetComponent<LevelInfo>();
     }
 
     void Update()

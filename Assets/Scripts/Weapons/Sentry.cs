@@ -70,12 +70,14 @@ public class Sentry : Weapon
         shots -= 1;
     }
 
+    bool firing = false;
     new void Update() {
         if (currCoolDown >= 0) {
             currCoolDown -= Time.deltaTime;
             return;
         }
-        if (shots >= 0) {
+        if (Input.GetKeyDown(keycode)) firing = true;
+        if (shots >= 0 && firing) {
             FindTarget();
             if (found) {
                 timeTillShot -= Time.deltaTime;
@@ -90,10 +92,7 @@ public class Sentry : Weapon
             found = false;
             target = null;
             shots = numProjectiles;
-        }
-
-        if (Input.GetKeyDown(KeyCode.K)) {
-            LevelUp();
+            firing = false;
         }
     }
 

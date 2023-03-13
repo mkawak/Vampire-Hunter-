@@ -11,6 +11,10 @@ public class Item : MonoBehaviour
 
     public Sprite image;
 
+    protected void Start() {
+        AddToPlayer();
+    }
+
     public int GetLevel() {
         return level;
     }

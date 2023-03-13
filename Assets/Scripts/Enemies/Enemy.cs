@@ -31,7 +31,6 @@ public class Enemy : MonoBehaviour
         gameObject.tag = "Enemy";
 
         player = GameObject.FindWithTag("Player").transform;
-        Debug.Log(player);
     }
 
     private void Update()
@@ -52,7 +51,6 @@ public class Enemy : MonoBehaviour
 
     public void setHealth(float health)
     {
-        Debug.Log("A");
         this.health = health;
     }
 
@@ -120,7 +118,7 @@ public class Enemy : MonoBehaviour
 
         newHealth = getHealth() - damageTaken;
         this.setHealth(newHealth);
-        // Debug.Log("Damage taken, Health: " + getHealth());
+        Debug.Log("Damage taken, Health: " + getHealth());
         return damageTaken;
     }
 
