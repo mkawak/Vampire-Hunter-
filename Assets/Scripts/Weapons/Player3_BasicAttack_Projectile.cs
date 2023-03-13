@@ -15,12 +15,17 @@ public class Player3_BasicAttack_Projectile : Projectile
 
     float timeTillNextSearch = 0;
 
+    float hitTime = 0.3f;
+    float currHitTime = 0;
+
+    List<GameObject> toHit = new List<GameObject>{};
+
     void Start() {
         speed = 12;
         lifeTime = 100f;
         hits = 99;
 
-        damage = 1;
+        //damage = 1;
 
         collider = transform.GetChild(0).GetComponent<CircleCollider2D>();
         colliderOriginalRadius = collider.radius;
@@ -75,8 +80,29 @@ public class Player3_BasicAttack_Projectile : Projectile
         }
     }
 
-    new private void OnTriggerEnter2D(Collider2D other) {
-        // Code for doing damage
+    new void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.tag == "Enemy") {
+            for (int i = 0; i < toHit.Count; i++) {
+                if (toHit[i] == other.gameObject) {
+                    return;
+                }
+            }
+            toHit.Add(other.gameObject);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.gameObject.tag == "Enemy") {
+            for (int i = 0; i < toHit.Count; i++) {
+                if (other.gameObject == toHit[i]) {toHit.RemoveAt(i); break;}
+            }
+        }    
+    }
+
+    void Attack() {
+        for (int i = 0; i < toHit.Count; i++) {
+            weapon.AddDamage(toHit[i].GetComponent<Enemy_TEST>().TakeDamage(damage));
+        }
     }
 
     // What happens if target dies?
@@ -88,6 +114,12 @@ public class Player3_BasicAttack_Projectile : Projectile
 
         if (doFind) {
             FindNearestEnemy();
+        }
+
+        currHitTime -= Time.deltaTime;
+        if (currHitTime < 0) {
+            currHitTime = hitTime;
+            Attack();
         }
 
         Move();

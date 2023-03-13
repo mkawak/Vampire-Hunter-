@@ -35,8 +35,6 @@ public class PlayerCharacter : MonoBehaviour
     }
 
     void Update(){
-        // set the player's speed in case it has changed
-        playerController.speed = baseSpeed;
     }
 
     public float GetPlayerDamage() {
@@ -49,33 +47,37 @@ public class PlayerCharacter : MonoBehaviour
         health -= damage;
 
         // update health bar
-        Debug.Log("PC calling HB::TakeDamage.");
-        playerHealthBar.TakeDamage(damage);
+        // Debug.Log("PC calling HB::TakeDamage.");
+        // playerHealthBar.TakeDamage(damage);
 
         if (health <= 0){
             Die();
         }
     }
 
+    public TEST_GameManager gm;
     public void ChangeExperience(int value) {
         
         experience += value;
         Debug.Log("Experience gained: " + value);
+        if ((experience % 3) == 0) {
+            gm.LeveledUp();
+        }
     }
 
-    public void ChangeHealth(int value) {
+    public void ChangeHealth(float value) {
         
         baseHealth += value;
         Debug.Log("Health gained: " + value);
     }
 
-    public void ChangeDamage(int value) {
+    public void ChangeDamage(float value) {
         
         baseDamage += value;
         Debug.Log("Damage gained: " + value);
     }
 
-    public void ChangeSpeed(int value) {
+    public void ChangeSpeed(float value) {
         
         baseSpeed += value;
         Debug.Log("Speed gained: " + value);

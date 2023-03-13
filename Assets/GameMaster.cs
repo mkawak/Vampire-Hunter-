@@ -12,15 +12,14 @@ public class GameMaster : MonoBehaviour
     [SerializeField] public GameObject enemy1; // enemy to spawn
     [SerializeField] public int enemiesPerWave = 5; 
     [SerializeField] public int targetFramesPerSecond = 60;
-    [SerializeField] public Camera camera;
 
-    //below vars are used to know the spawn limits on the current map, 
+    /* below vars are used to know the spawn limits on the current map, 
     // ignored since spawning at placeholder location
     [SerializeField] private float maxY = 590.0f;
     [SerializeField] private float minY = 657.0f;
     [SerializeField] private float maxX = 1072.0f;
     [SerializeField] private float minX = 427.0f;
-    
+    */
 
 
     private int framesPassed = 0;

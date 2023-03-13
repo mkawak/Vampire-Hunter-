@@ -21,10 +21,24 @@ public class Player1_BasicAttack : Weapon
 
     public override void Fire() {
         base.Fire();
+        currProj.transform.localScale += new Vector3(level, level, 0);
     }
 
     new void Update() {
         base.Update();
         // if (Input.GetKeyDown(KeyCode.Alpha3)) Fire();
+    }
+
+    protected override void ChangeStats() {
+        switch(level) {
+            case 2:
+                break;
+            case 3:
+                break;
+            default:
+                break;
+        }
+
+        base.ChangeStats();
     }
 }

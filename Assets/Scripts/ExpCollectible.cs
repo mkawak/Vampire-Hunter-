@@ -6,12 +6,11 @@ public class ExpCollectible : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        PlayerCharacter controller = other.GetComponent<PlayerCharacter>();
-
-        if (controller != null)
+        if (other.gameObject.tag == "Player")
         {
+            PlayerCharacter controller = other.GetComponent<PlayerCharacter>();
             controller.ChangeExperience(1);
-            Debug.Log("Object that entered the trigger : " + other);
+//            Debug.Log("Object that entered the trigger : " + other);
             Destroy(gameObject);
         }
     }

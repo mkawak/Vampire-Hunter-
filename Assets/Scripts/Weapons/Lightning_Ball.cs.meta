@@ -6,6 +6,8 @@ MonoImporter:
   defaultReferences:
   - player: {instanceID: 0}
   - projectile: {fileID: 956132216464320380, guid: 1c7f54f124b3b394caa3d19caf1063b2, type: 3}
+  - image: {fileID: 21300000, guid: 8122d2c6ed641f94d9af0801135c679b, type: 3}
+  - coolDown: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

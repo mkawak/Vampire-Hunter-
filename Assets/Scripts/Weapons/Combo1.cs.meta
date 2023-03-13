@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 07149bf6ba5edf447b0b91d0fde32eab
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - player: {instanceID: 0}
+  - projectile: {fileID: 4015690844465342192, guid: bfd5e25d63bad0a488642bdd3e8c023a, type: 3}
+  - image: {fileID: 21300000, guid: 09c6dc95796e11a4182fd10c0a062c47, type: 3}
+  - cursorFab: {fileID: 255298939483156715, guid: 1bee316ee1289f34badefab7afc7fb14, type: 3}
+  - coolDown: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

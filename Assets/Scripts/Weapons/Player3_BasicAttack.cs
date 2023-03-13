@@ -8,7 +8,7 @@ public class Player3_BasicAttack : Weapon
 
         baseDamage = 2f;
         damageMultiplier = 1.2f;
-        fireRate = 80;
+        fireRate = 10;
 
         numProjectiles = 1;
         angles = new float[] {0};
@@ -25,5 +25,20 @@ public class Player3_BasicAttack : Weapon
 
     new void Update() {
         base.Update();
+    }
+
+    protected override void ChangeStats() {
+        switch(level) {
+            case 2:
+                fireRate = 30;
+                break;
+            case 3:
+                fireRate = 60;
+                break;
+            default:
+                break;
+        }
+
+        base.ChangeStats();
     }
 }
