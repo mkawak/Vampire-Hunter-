@@ -38,7 +38,7 @@ public class Lightning_Ball : Weapon
                 timeTillShot = 60/fireRate;
                 Fire();
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha4)) {
+            else if (Input.GetKeyDown(keycode)) {
                 timeTillShot = 60/fireRate;
                 Fire();
             }
@@ -58,13 +58,5 @@ public class Lightning_Ball : Weapon
         }
 
         base.ChangeStats();
-    }
-    
-    // COOLDOWN TESTING
-    public Image coolDown;
-
-    void CoolDown() {
-        if (timeTillShot == 0) timeTillShot += 0.0001f;
-        coolDown.fillAmount = Mathf.Min(Mathf.Max(0, timeTillShot / (60 / fireRate)), 1);
     }
 }

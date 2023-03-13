@@ -23,14 +23,14 @@ public class ChoicesWindow : MonoBehaviour
 
     void RollOptions() {
         List<int> nums = new List<int>{gm.weaponList.Count, gm.playerWeapons_upgradeable.Count, gm.itemList.Count, gm.playerItems_upgradeable.Count};
+        List<int> counts = new List<int>{gm.weaponList.Count, gm.playerWeapons_upgradeable.Count, gm.itemList.Count, gm.playerItems_upgradeable.Count};
 
         for (int i = 0; i < 3; i++) {
 
             int type = Random.Range(0, 4);
 
             for (int iter = 0; iter < 6; iter++) { // Probably the worst way to do this
-                if (nums[type] != 0) {
-                    nums[type]--;
+                if (counts[type] != 0) {
                     break;
                 }
                 type = (type == 3) ? 0 : type + 1;
@@ -38,15 +38,15 @@ public class ChoicesWindow : MonoBehaviour
             }
 
             int ind = Random.Range(0, nums[type]);
-            for (int j = 0; j < i; j++) {
-                if (type == optionType[j]) {
-                    for (int aa = 0; aa < 2; aa++) {
-                        for (int bb = 0; bb < i; bb++) {
-                            if (optionType[bb] == type && optionChoice[bb] == ind) ind = (ind + 1 == nums[type]) ? 0 : ind + 1;
-                        }
+            for (int aa = 0; aa < 2; aa++) {
+                for (int bb = 0; bb < i; bb++) {
+                    if (optionType[bb] == type && optionChoice[bb] == ind) {
+                        ind = (ind + 1 >= nums[type]) ? 0 : ind + 1;
                     }
                 }
             }
+
+            counts[type]--;   
 
             optionType[i] = type;
             optionChoice[i] = ind;

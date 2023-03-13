@@ -83,12 +83,4 @@ public class Combo1 : Weapon
 
         base.ChangeStats();
     }
-
-    // COOLDOWN TESTING
-    public Image coolDown;
-
-    void CoolDown() {
-        if (timeTillShot == 0) timeTillShot += 0.0001f;
-        coolDown.fillAmount = Mathf.Min(Mathf.Max(0, timeTillShot / (60 / fireRate)), 1);
-    }
 }

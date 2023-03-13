@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.UI;
+
 public class Weapon : MonoBehaviour
 {
     protected float baseDamage;
@@ -22,7 +24,8 @@ public class Weapon : MonoBehaviour
     public Sprite image;
     public string name = "Default";
 
-    public bool autoFire = true;
+    protected bool autoFire = false;
+    public KeyCode keycode;
 
     protected virtual void Start() {
         // playerDamageMultiplier = player.GetComponent<PlayerController>().playerDamage;
@@ -45,7 +48,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    protected float timeTillShot = 0;
+    protected float timeTillShot = 0.3f;
 
     protected void Update() {
         timeTillShot -= Time.deltaTime;
@@ -77,5 +80,13 @@ public class Weapon : MonoBehaviour
         // Override
         // Special per weapon changes at level 2 and 3 (3 and 5?)
         return;
+    }
+
+    // COOLDOWN TESTING
+    public Image coolDown;
+
+    protected void CoolDown() {
+        if (timeTillShot == 0) timeTillShot += 0.0001f;
+        coolDown.fillAmount = Mathf.Min(Mathf.Max(0, timeTillShot / (60 / fireRate)), 1);
     }
 }

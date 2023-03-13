@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.UI;
+
 public class TEST_GameManager : MonoBehaviour
 {
     public GameObject player;
 
     public List<Weapon> weaponList;
+    public List<Weapon> tempWeaponList;
     public List<Weapon> playerWeapons;
     public List<Weapon> playerWeapons_upgradeable;
 
@@ -20,8 +23,15 @@ public class TEST_GameManager : MonoBehaviour
     Dictionary<string, int> comboMaxed = new Dictionary<string, int>() {{"shooty", 0}, {"ray", 0}, {"lightningBall", 0}, {"aura", 0}};
     Dictionary<string, Weapon> comboWeapon;
 
+
+    public List<Image> coolDowns;
+    List<KeyCode> keycodes = new List<KeyCode>() {KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4};
+
     void Start() {
         comboWeapon = new Dictionary<string, Weapon>(){{"shooty", comboFabs[0]}, {"ray", comboFabs[0]}, {"lightningBall", comboFabs[1]}, {"aura", comboFabs[1]}};
+
+        playerWeapons[playerWeapons.Count - 1].coolDown = coolDowns[playerWeapons.Count - 1];
+        playerWeapons[playerWeapons.Count - 1].keycode = keycodes[playerWeapons.Count - 1];
     }
 
     void ComboWeapons(int ind) {
@@ -43,7 +53,13 @@ public class TEST_GameManager : MonoBehaviour
         Weapon currWeapon = Instantiate(comboWeapon[otherWeaponName], Vector3.zero, Quaternion.identity);
         currWeapon.transform.parent = player.transform;
         currWeapon.transform.localPosition = Vector3.zero;
+        currWeapon.transform.localEulerAngles = Vector3.zero;
         playerWeapons.Add(currWeapon);
+
+        playerWeapons[playerWeapons.Count - 1].coolDown = coolDowns[playerWeapons.Count - 1];
+        playerWeapons[playerWeapons.Count - 1].keycode = keycodes[playerWeapons.Count - 1];
+
+        weaponList = tempWeaponList;
     }
 
     public void UpgradeWeapon(int ind) {
@@ -69,9 +85,18 @@ public class TEST_GameManager : MonoBehaviour
         Weapon currWeapon = Instantiate(weaponList[ind], Vector3.zero, Quaternion.identity);
         currWeapon.transform.parent = player.transform;
         currWeapon.transform.localPosition = Vector3.zero;
+        currWeapon.transform.localEulerAngles = Vector3.zero;
         playerWeapons.Add(currWeapon);
         playerWeapons_upgradeable.Add(currWeapon);
         weaponList.RemoveAt(ind);
+
+        playerWeapons[playerWeapons.Count - 1].coolDown = coolDowns[playerWeapons.Count - 1];
+        playerWeapons[playerWeapons.Count - 1].keycode = keycodes[playerWeapons.Count - 1];
+
+        if (weaponList.Count == 4) {
+            tempWeaponList = weaponList;
+            weaponList = new List<Weapon>();
+        }
     }
 
     public void UpgradeItem(int ind) {

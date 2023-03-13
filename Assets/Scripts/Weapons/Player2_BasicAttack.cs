@@ -56,7 +56,7 @@ public class Player2_BasicAttack : Weapon
                 timeTillShot = 60/fireRate;
                 Fire();
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha1)) {
+            else if (Input.GetKeyDown(keycode)) {
                 timeTillShot = 60/fireRate;
                 Fire();
             }
@@ -67,11 +67,5 @@ public class Player2_BasicAttack : Weapon
         if (level == 3) currProj.lifeTime = 5f;
     }
 
-    // COOLDOWN TESTING
-    public Image coolDown;
-
-    void CoolDown() {
-        if (timeTillShot == 0) timeTillShot += 0.0001f;
-        coolDown.fillAmount = Mathf.Min(Mathf.Max(0, timeTillShot / (60 / fireRate)), 1);
-    }
+    
 }
