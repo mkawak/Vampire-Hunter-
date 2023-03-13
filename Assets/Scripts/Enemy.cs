@@ -154,17 +154,17 @@ public class Enemy : MonoBehaviour
         else if(randNum > 85 && randNum <= 90) // health drop 5%
         {
 
-            Instantiate(itemList[1], Epos.position, Quaternion.identity);
+            Instantiate(itemList[1], transform.position, Quaternion.identity);
 
         }
         else if(randNum > 90 && randNum <= 95)// damage drop 5%
         {
-            Instantiate(itemList[2], Epos.position, Quaternion.identity);
+            Instantiate(itemList[2], transform.position, Quaternion.identity);
         }
 
         else if(randNum > 95 && randNum <= 100)// speed drop 5%
         {
-            Instantiate(itemList[2], Epos.position, Quaternion.identity);
+            Instantiate(itemList[2], transform.position, Quaternion.identity);
         }
         
     }
