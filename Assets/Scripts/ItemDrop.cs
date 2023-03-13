@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemDrop : MonoBehaviour
 {
     private Rigidbody2D itemRb;
-    public float dropForce = 1;
+    public float dropForce = 3;
     // Start is called before the first frame update
     void Start()
     {

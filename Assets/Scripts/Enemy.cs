@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using Random = UnityEngine.Random;
+
 
 public class Enemy : MonoBehaviour
 {
@@ -142,7 +145,7 @@ public class Enemy : MonoBehaviour
 
     private void ItemDrop()
     {
-        int randNum = range(0,101);
+        int randNum = Random.Range(1,100);
         Debug.Log("Random Number is " + randNum);
 
         if(randNum <= 85)
@@ -154,17 +157,17 @@ public class Enemy : MonoBehaviour
         else if(randNum > 85 && randNum <= 90) // health drop 5%
         {
 
-            Instantiate(itemList[1], transform.position, Quaternion.identity);
+            Instantiate(itemDrops[1], transform.position, Quaternion.identity);
 
         }
         else if(randNum > 90 && randNum <= 95)// damage drop 5%
         {
-            Instantiate(itemList[2], transform.position, Quaternion.identity);
+            Instantiate(itemDrops[2], transform.position, Quaternion.identity);
         }
 
         else if(randNum > 95 && randNum <= 100)// speed drop 5%
         {
-            Instantiate(itemList[2], transform.position, Quaternion.identity);
+            Instantiate(itemDrops[2], transform.position, Quaternion.identity);
         }
         
     }
