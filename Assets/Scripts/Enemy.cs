@@ -26,6 +26,8 @@ public class Enemy : MonoBehaviour
         rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
         gameObject.tag = "Enemy";
+
+        player = GameObject.FindWithTag("Player").transform;
     }
 
     private void Update()

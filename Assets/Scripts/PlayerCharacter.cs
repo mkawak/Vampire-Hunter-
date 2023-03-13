@@ -13,6 +13,7 @@ public class PlayerCharacter : MonoBehaviour
     public int maxWeapons = 3;
     public int maxItems = 3;
     public float baseHealth = 100;
+    public float experience = 0;
     // ---------------------------
 
     protected float damage;
@@ -29,12 +30,11 @@ public class PlayerCharacter : MonoBehaviour
         health = baseHealth;
         playerHealthBar.maxHealth = baseHealth;
         playerHealthBar.health = health;
+        gameObject.tag = "Player";
 
     }
 
     void Update(){
-        //debug: making sure bar is updated (it doesn't)
-        TakeDamage(0.5f);
     }
 
     public float GetPlayerDamage() {
@@ -47,12 +47,40 @@ public class PlayerCharacter : MonoBehaviour
         health -= damage;
 
         // update health bar
-        Debug.Log("PC calling HB::TakeDamage.");
-        playerHealthBar.TakeDamage(damage);
+        // Debug.Log("PC calling HB::TakeDamage.");
+        // playerHealthBar.TakeDamage(damage);
 
         if (health <= 0){
             Die();
         }
+    }
+
+    public TEST_GameManager gm;
+    public void ChangeExperience(int value) {
+        
+        experience += value;
+        Debug.Log("Experience gained: " + value);
+        if ((experience % 3) == 0) {
+            gm.LeveledUp();
+        }
+    }
+
+    public void ChangeHealth(float value) {
+        
+        baseHealth += value;
+        Debug.Log("Health gained: " + value);
+    }
+
+    public void ChangeDamage(float value) {
+        
+        baseDamage += value;
+        Debug.Log("Damage gained: " + value);
+    }
+
+    public void ChangeSpeed(float value) {
+        
+        baseSpeed += value;
+        Debug.Log("Speed gained: " + value);
     }
 
     public void Die(){
