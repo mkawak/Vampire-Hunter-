@@ -2172,3 +2172,88 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 409.034815 seconds.
+  path: Assets/Sound/Hurt.mp3
+  artifactKey: Guid(015d946d24726824395aa2c288ba54fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Hurt.mp3 using Guid(015d946d24726824395aa2c288ba54fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a377ad105946110dbfdacad26f31fbad') in 0.092838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sound/Main Menu Soundtrack.mp3
+  artifactKey: Guid(58a309f68f1dd0644936dcf48e825401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Main Menu Soundtrack.mp3 using Guid(58a309f68f1dd0644936dcf48e825401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '417a0f3173b5334ba79999301e8628b4') in 0.007881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Sound/Main_Menu_Back.mp3
+  artifactKey: Guid(dbae8081dccc4f748b798243c783cf39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Main_Menu_Back.mp3 using Guid(dbae8081dccc4f748b798243c783cf39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d04bbe8a7b047df29052fba1b8ef86b') in 0.012796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 190.502201 seconds.
+  path: Assets/Scripts/Weapons/Player3_BasicAttack_Projectile.cs
+  artifactKey: Guid(0b4531a59ef51e84aa04f0545e185d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Weapons/Player3_BasicAttack_Projectile.cs using Guid(0b4531a59ef51e84aa04f0545e185d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc701a6f35029b90a3253a141107164b') in 0.000961 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009130 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/jeffrey/Desktop/Vampire-Hunter/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/jeffrey/Desktop/Vampire-Hunter/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.453 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1455ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (1112ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (333ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (532ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (342ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.16 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4312 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (92.5 KB). Loaded Objects now: 5331.
+Memory consumption went from 157.8 MB to 157.7 MB.
+Total: 4.986775 ms (FindLiveObjects: 0.446321 ms CreateObjectMapping: 0.308932 ms MarkObjects: 4.170050 ms  DeleteObjects: 0.059860 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 22.522608 seconds.
+  path: Assets/Scripts/Weapons/Player3_BasicAttack_Projectile.cs
+  artifactKey: Guid(0b4531a59ef51e84aa04f0545e185d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Weapons/Player3_BasicAttack_Projectile.cs using Guid(0b4531a59ef51e84aa04f0545e185d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dcc6edfca885a336ee1048df3b21de9') in 0.007379 seconds 

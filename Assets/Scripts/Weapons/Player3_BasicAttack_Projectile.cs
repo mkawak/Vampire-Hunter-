@@ -22,7 +22,7 @@ public class Player3_BasicAttack_Projectile : Projectile
 
     void Start() {
         speed = 12;
-        lifeTime = 100f;
+        lifeTime = 10f;
         hits = 99;
 
         //damage = 1;
