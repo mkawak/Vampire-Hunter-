@@ -60,12 +60,14 @@ public class AudioManager : MonoBehaviour
 
     public void MusicVolume(float volume)
     {
+        //volume = 1f;
         musicSource.volume = volume;
     }
 
-    public void SFXVolume(float volume)
+    public void SFXVolume(float volume2)
     {
-        sfxSource.volume = volume;
+        //volume2 = 1f;
+        sfxSource.volume = volume2;
     }
 
 

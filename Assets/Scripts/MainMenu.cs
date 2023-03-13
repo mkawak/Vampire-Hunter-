@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour {
     public GameObject Options;
     public GameObject CharacterMenu;
     public GameObject MapMenu;
+    public GameObject CreditsPanel;
 
     void Start()
     {
@@ -15,6 +16,7 @@ public class MainMenu : MonoBehaviour {
         Options.SetActive(false);
         CharacterMenu.SetActive(false);
         MapMenu.SetActive(false);
+        CreditsPanel.SetActive(false);
     }
 
     void Update()
@@ -41,6 +43,18 @@ public class MainMenu : MonoBehaviour {
     {
         AudioManager.Instance.PlaySFX("PressButtonSFX");
         StartMenu.SetActive(false);
+    }
+
+    public void OpenCreditsPanel()
+    {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
+        CreditsPanel.SetActive(true);
+    }
+
+    public void CloseCreditsPanel()
+    {
+        AudioManager.Instance.PlaySFX("PressButtonSFX");
+        CreditsPanel.SetActive(false);
     }
 
     public void OpenCharacterMenu()
