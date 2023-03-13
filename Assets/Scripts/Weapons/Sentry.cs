@@ -11,7 +11,7 @@ public class Sentry : Weapon
 
     bool spawnedChild = false, found = false;
 
-    float coolDown = 3f, currCoolDown = 3f;
+    float coolDownE = 3f, currCoolDown = 3f;
     int shots = 6;
 
     protected override void Start() {
@@ -86,7 +86,7 @@ public class Sentry : Weapon
             }
         }
         else {
-            currCoolDown = coolDown;
+            currCoolDown = coolDownE;
             found = false;
             target = null;
             shots = numProjectiles;
@@ -100,10 +100,10 @@ public class Sentry : Weapon
     protected override void ChangeStats() {
         switch(level) {
             case 2:
-                coolDown = 2f;
+                coolDownE = 2f;
                 break;
             case 3:
-                coolDown = 1f;
+                coolDownE = 1f;
                 numProjectiles = 10;
                 break;
             default:

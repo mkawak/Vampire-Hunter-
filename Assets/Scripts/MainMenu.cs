@@ -98,4 +98,14 @@ public class MainMenu : MonoBehaviour {
         Application.Quit();
         Debug.Log("Application has quit.");
     }
+
+
+    public LevelInfo li;
+    public void ChooseLevel(int i) {
+        li.level = i;
+    }
+
+    public void ChoosePlayer(int i) {
+        li.player = i;
+    }
 }

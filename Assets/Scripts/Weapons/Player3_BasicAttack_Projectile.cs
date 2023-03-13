@@ -101,7 +101,7 @@ public class Player3_BasicAttack_Projectile : Projectile
 
     void Attack() {
         for (int i = 0; i < toHit.Count; i++) {
-            weapon.AddDamage(toHit[i].GetComponent<Enemy_TEST>().TakeDamage(damage));
+            weapon.AddDamage(toHit[i].GetComponent<Enemy>().TakeDamage(damage));
         }
     }
 

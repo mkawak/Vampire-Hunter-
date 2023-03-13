@@ -27,7 +27,7 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "Enemy") {
             //TODO: integrated with enemies
-            float damageDealt = other.GetComponent<Enemy_TEST>().TakeDamage(damage);
+            float damageDealt = other.GetComponent<Enemy>().TakeDamage(damage);
             // float damageDealt = 0.0f; // placeholder
             weapon.AddDamage(damageDealt);
             hits -= 1;

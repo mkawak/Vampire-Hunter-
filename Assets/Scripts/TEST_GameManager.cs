@@ -27,11 +27,23 @@ public class TEST_GameManager : MonoBehaviour
     public List<Image> coolDowns;
     List<KeyCode> keycodes = new List<KeyCode>() {KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4};
 
+    public LevelInfo li;
+    public List<GameObject> maps;
+    public List<GameObject> players;
+
+    public Camera mainCamera;
+
     void Start() {
         comboWeapon = new Dictionary<string, Weapon>(){{"shooty", comboFabs[0]}, {"ray", comboFabs[0]}, {"lightningBall", comboFabs[1]}, {"aura", comboFabs[1]}};
 
         playerWeapons[playerWeapons.Count - 1].coolDown = coolDowns[playerWeapons.Count - 1];
         playerWeapons[playerWeapons.Count - 1].keycode = keycodes[playerWeapons.Count - 1];
+
+        li = GameObject.FindWithTag("LevelInfo").GetComponent<LevelInfo>();
+        if (li == null) return;
+        maps[li.level].SetActive(true);
+        players[li.player].SetActive(true);
+        mainCamera.GetComponent<FollowPlayer>().player = players[li.player];
     }
 
     void ComboWeapons(int ind) {
@@ -39,7 +51,7 @@ public class TEST_GameManager : MonoBehaviour
         int weap1 = -1, weap2 = -1;
         for (int i = 0; i < playerWeapons.Count; i++) {
             if (weap1 == -1 && (playerWeapons[i].name == otherWeaponName || playerWeapons[i].name == playerWeapons_upgradeable[ind].name)) weap1 = i;
-            else if (weap2== -1 && (playerWeapons[i].name == otherWeaponName || playerWeapons[i].name == playerWeapons_upgradeable[ind].name)) {weap2 = i; break;}
+            else if (weap2 == -1 && (playerWeapons[i].name == otherWeaponName || playerWeapons[i].name == playerWeapons_upgradeable[ind].name)) {weap2 = i; break;}
         }
 
         Destroy(playerWeapons[weap1].gameObject);
@@ -113,8 +125,24 @@ public class TEST_GameManager : MonoBehaviour
         itemList.RemoveAt(ind);
     }
 
+
+    // Level up test
     public EXPBAR xpbar;
     public void LeveledUp() {
         xpbar.AddEXP(100);
+    }
+
+
+    // Control Spawning
+    public EnemySpawner es;
+    public void IncreaseDifficulty() {
+        es.LevelUp();
+    }
+
+
+    public GameObject winwindow; 
+    public void Win() {
+        Time.timeScale = 0f;
+        winwindow.SetActive(true);
     }
 }

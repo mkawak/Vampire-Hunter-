@@ -57,7 +57,7 @@ public class Combo2Projectile1 : Projectile
 
     void Attack() {
         for (int i = 0; i < toHit.Count; i++) {
-            weapon.AddDamage(toHit[i].GetComponent<Enemy_TEST>().TakeDamage(damage));
+            weapon.AddDamage(toHit[i].GetComponent<Enemy>().TakeDamage(damage));
         }
     }
 
