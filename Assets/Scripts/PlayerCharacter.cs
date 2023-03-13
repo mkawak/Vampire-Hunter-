@@ -63,6 +63,8 @@ public class PlayerCharacter : MonoBehaviour
     }
 
     public void TakeDamage(float damage){
+        AudioManager.Instance.PlaySFX("HurtSFX");
+
         if (damage > health) damage = health;
         
         health -= damage;
