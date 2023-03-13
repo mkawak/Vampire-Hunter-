@@ -11,14 +11,14 @@ public class Timer : MonoBehaviour
     private float timer = 0.0f;
     private bool isTimer = false;
 
-    void Awake()
+    public void Awake()
     {
         StartTimer();
     }
 
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (isTimer)
         {

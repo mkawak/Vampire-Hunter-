@@ -12,7 +12,7 @@ public class HealthBar : MonoBehaviour
     public float health;
     public GameObject DieWindow;
 
-    void Start()
+    public void Start()
     {
         maxHealth = 100;
         health = maxHealth;
@@ -20,7 +20,7 @@ public class HealthBar : MonoBehaviour
         DieWindow.SetActive(false);
     }
 
-    void Update()
+    public void Update()
     {
         // debug: make bar move
         //if (health > 0) --health;

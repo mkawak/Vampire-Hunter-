@@ -19,38 +19,12 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Hierarchy
-  m_RootView: {fileID: 3}
+  m_Title: Project
+  m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 1299
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
-  m_Panes:
-  - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,9 +37,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 4}
-  - {fileID: 6}
+  - {fileID: 3}
   - {fileID: 5}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -78,7 +52,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &4
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &5
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,6 +95,31 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 6}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 2560
+    height: 1299
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 6337
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,19 +133,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 2}
   - {fileID: 7}
-  - {fileID: 12}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 30
-    width: 2560
+    y: 0
+    width: 1937
     height: 1299
-  m_MinSize: {x: 400, y: 200}
-  m_MaxSize: {x: 32384, y: 16192}
-  vertical: 0
-  controlID: 89
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 6338
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,17 +159,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 8}
-  - {fileID: 11}
+  - {fileID: 9}
   m_Position:
     serializedVersion: 2
-    x: 200
+    x: 0
     y: 0
-    width: 1737
-    height: 1299
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 90
+    width: 1937
+    height: 737
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 6339
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,31 +179,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 9}
-  - {fileID: 10}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1737
-    height: 737
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 91
---- !u!114 &9
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -214,16 +187,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 391
+    width: 436
     height: 737
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &10
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,25 +206,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 391
+    x: 436
     y: 0
-    width: 1346
+    width: 1501
     height: 737
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 2
---- !u!114 &11
+  m_Selected: 2
+  m_LastSelected: 0
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -261,23 +234,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 737
-    width: 1737
+    width: 1937
     height: 562
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 12}
+  - {fileID: 13}
+  m_Position:
+    serializedVersion: 2
+    x: 1937
+    y: 0
+    width: 623
+    height: 1299
+  m_MinSize: {x: 100, y: 200}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 6431
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,12 +291,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1937
+    x: 0
     y: 0
     width: 623
-    height: 1299
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 500
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -313,153 +311,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Test Runner
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
+  m_Children: []
+  m_Position:
     serializedVersion: 2
     x: 0
-    y: 73
-    width: 199
-    height: 1278
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_Spl:
-    ID: 4689
-    splitterInitialOffset: 0
-    currentActiveSplitter: -1
-    realSizes:
-    - 906
-    - 302
-    relativeSizes:
-    - 0.75
-    - 0.25
-    minSizes:
-    - 32
-    - 32
-    maxSizes:
-    - 0
-    - 0
-    lastTotalSize: 1208
-    splitSize: 6
-    xOffset: 0
-    m_Version: 1
-    oldRealSizes: 
-    oldMinSizes: 
-    oldMaxSizes: 
-    oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
-  m_PlayModeTestListGUI:
-    m_Window: {fileID: 13}
-    m_NewResultList:
-    - id: 1004
-      uniqueId: '[Vampire-Hunter][suite]'
-      name: Vampire-Hunter
-      fullName: Vampire-Hunter
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    m_ResultText: 
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 52fc473a
-      m_LastClickedID: 977796178
-      m_ExpandedIDs: 32c37329e3e5183222524b3affffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
-    m_SelectedOption: 0
-  m_EditModeTestListGUI:
-    m_Window: {fileID: 13}
-    m_NewResultList:
-    - id: 1000
-      uniqueId: '[Vampire-Hunter][suite]'
-      name: Vampire-Hunter
-      fullName: Vampire-Hunter
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    m_ResultText: 
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: e3e51832ffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
+    y: 500
+    width: 623
+    height: 799
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
+  m_Panes:
+  - {fileID: 21}
+  m_Selected: 0
+  m_LastSelected: 0
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -480,9 +348,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 591
+    x: 436
     y: 73
-    width: 1344
+    width: 1499
     height: 716
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -494,7 +362,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1344, y: 695}
+  m_TargetSize: {x: 1499, y: 695}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -509,8 +377,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -672
-    m_HBaseRangeMax: 672
+    m_HBaseRangeMin: -749.5
+    m_HBaseRangeMax: 749.5
     m_VBaseRangeMin: -347.5
     m_VBaseRangeMax: 347.5
     m_HAllowExceedBaseRangeMin: 1
@@ -521,7 +389,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -530,26 +398,26 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1344
+      width: 1499
       height: 695
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 672, y: 347.5}
+    m_Translation: {x: 749.5, y: 347.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -672
+      x: -749.5
       y: -347.5
-      width: 1344
+      width: 1499
       height: 695
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1344, y: 716}
+  m_LastWindowPixelSize: {x: 1499, y: 716}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 00000000000000000000
+  m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 --- !u!114 &15
@@ -572,9 +440,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 200
+    x: 0
     y: 73
-    width: 389
+    width: 435
     height: 716
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -583,25 +451,25 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: d4260200
       m_LastClickedID: 0
-      m_ExpandedIDs: 0c72feff68d2feffa6dbfefff4eafefff02effff5a31ffffaa52ffff66aaffff6eb6ffff6ec9ffffbcf9ffff0cfbfffff4ffffff927a0000da7a0000e47a0000107b00008c7b000014aa0000beaa0000daaa00000eab00001aab000006ac00000aac0000b8b70000d4b7000038b8000070b8000082b80000d2b80000e2b8000012b9000092b90000aab90000f89e01001a9f0100409f01004a9f01006c9f0100e49f0100f29f0100f6cc010006cd0100f2cd0100eece01002ed60100fa2a0200ba2b0200b62c0200c22c020034fe020066fe0200d0fe02008cff0200b0ff0200baff0200c6ff02004e000300c2000300ce000300
+      m_ExpandedIDs: d8fafeff12fbfeff4afdfeffe0fffeff1a00ffffa201ffffb002ffffea02ffff7204ffffda04ffff1405ffff9c06ffff9e07ffffd807ffff6009ffff680affffa20affff5a0dffff9a0effffd40effff5c10ffff4011fffffe12ffff8413ffffc015fffffc16ffff6618ffffc618fffff419ffffba1affffd41cffff0e1dfffff220ffff7e22ffffb622ffff1823ffff0e28ffff4428ffffc828ffff882affffba2bffff062dffff2a34ffff7a35ffff7e37ffff1e38ffffa838ffff2c39ffffc039ffff6c3bffff9c3cffff303dffffc43dffff583effffec3effff803fffff1440ffffa840ffff3c41ffffd441ffffe042ffff6846ffff5849ffff9249ffff764dffff804effffba4effff4250ffff4651ffff8051ffff0853ffff3c54ffff7654ffff5a59ffffc259fffffc59ffff445cffff4c5dffff865dfffffa60ffff0263ffffac63ffffe663ffff5a68ffffa66cffffe06cffffc86fffffe679ffff5c7affff967affffde7cffffcc7effff387fffff727fffffba81ffff2482ffff5e82ffffa684ffff6086ffff9a86ffffe288ffffe689ffff208affff788bffff848cffffbe8cffff168effffb493ffff0e95ffff8697ffffca98ffff309affff7c9bffff1c9cffff1e9dffff04b0ffff96b8ffffb8b8ffff4cb9ffff44befffff6c6ffff18c7ffff0afbffffb0620000fe6200000e630000c0630000ee630000fa630000366400006a640000ae640000fc6400005aad00000eae0000184101001a42010026190200701a0200241b0200343502006e6c020012c10200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: MusicSource
-        m_OriginalName: MusicSource
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -101874
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 9}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -629,9 +497,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 591
+    x: 436
     y: 73
-    width: 1344
+    width: 1499
     height: 716
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -889,9 +757,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 668.5354, y: 400.27628, z: -10.804134}
+    m_Target: {x: 853.15985, y: 288.35382, z: -10.00772}
     speed: 2
-    m_Value: {x: 668.5354, y: 400.27628, z: -10.804134}
+    m_Value: {x: 853.15985, y: 288.35382, z: -10.00772}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -942,9 +810,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 443.4913
+    m_Target: 517.22577
     speed: 2
-    m_Value: 443.4913
+    m_Value: 517.22577
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -989,10 +857,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1861
+    x: 436
     y: 73
-    width: 740
-    height: 717
+    width: 1499
+    height: 716
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1121,9 +989,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 200
+    x: 0
     y: 810
-    width: 1735
+    width: 1936
     height: 541
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1142,22 +1010,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Tests/EditMode
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Tests/EditMode
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Zhenjie Liu\Desktop\CS180\Vampire-Hunter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 71}
-    m_SelectedIDs: 8c640000
-    m_LastClickedID: 25740
-    m_ExpandedIDs: 00000000806400008c6400008e640000906400005e760000bc77000082790000e67f0000ea7f000042a70000c8c5010000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 67}
+    m_SelectedIDs: 86a80000
+    m_LastClickedID: 43142
+    m_ExpandedIDs: 00000000986600009c6600009e660000a06600005ca80000badb000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1173,7 +1041,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1185,7 +1053,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000080640000
+    m_ExpandedIDs: 00000000986600009c6600009e660000a066000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1210,8 +1078,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 20670000
-    m_LastClickedInstanceID: 26400
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000004680000146a0000306d0000b8600000
     m_RenameOverlay:
@@ -1229,7 +1097,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 12}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1261,9 +1129,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 200
+    x: 0
     y: 810
-    width: 1735
+    width: 1936
     height: 541
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1292,7 +1160,7 @@ MonoBehaviour:
     x: 1937
     y: 73
     width: 622
-    height: 1278
+    height: 479
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1310,3 +1178,589 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1937
+    y: 573
+    width: 622
+    height: 778
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_Spl:
+    ID: 6991
+    splitterInitialOffset: 224
+    currentActiveSplitter: -1
+    realSizes:
+    - 323
+    - 385
+    relativeSizes:
+    - 0.45614034
+    - 0.54385966
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 708
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 0
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 21}
+    m_NewResultList:
+    - id: 1004
+      uniqueId: '[Vampire-Hunter][suite]'
+      name: Vampire-Hunter
+      fullName: Vampire-Hunter
+      resultStatus: 1
+      duration: 1.1494412
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1004
+      uniqueId: '[PlayMode][C:/Users/Zhenjie Liu/Desktop/CS180/Vampire-Hunter/Library/ScriptAssemblies/PlayMode.dll][suite]'
+      name: PlayMode.dll
+      fullName: C:/Users/Zhenjie Liu/Desktop/CS180/Vampire-Hunter/Library/ScriptAssemblies/PlayMode.dll
+      resultStatus: 1
+      duration: 1.07186
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Vampire-Hunter][suite]'
+    - id: 1001
+      uniqueId: PlayMode.dll/[PlayMode][HealthBarSliderTests][suite]
+      name: HealthBarSliderTests
+      fullName: HealthBarSliderTests
+      resultStatus: 1
+      duration: 0.9921219
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: '[PlayMode][C:/Users/Zhenjie Liu/Desktop/CS180/Vampire-Hunter/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1005
+      uniqueId: PlayMode.dll/HealthBarSliderTests/[PlayMode][HealthBarSliderTests.HealthBarSliderDieSuccessTest]
+      name: HealthBarSliderDieSuccessTest
+      fullName: HealthBarSliderTests.HealthBarSliderDieSuccessTest
+      resultStatus: 1
+      duration: 0.8158224
+      messages: 
+      output: 'You Died.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/[PlayMode][HealthBarSliderTests][suite]
+    - id: 1004
+      uniqueId: PlayMode.dll/HealthBarSliderTests/[PlayMode][HealthBarSliderTests.HealthBarSliderHealSuccessTest]
+      name: HealthBarSliderHealSuccessTest
+      fullName: HealthBarSliderTests.HealthBarSliderHealSuccessTest
+      resultStatus: 1
+      duration: 0.0586249
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/[PlayMode][HealthBarSliderTests][suite]
+    - id: 1003
+      uniqueId: PlayMode.dll/HealthBarSliderTests/[PlayMode][HealthBarSliderTests.HealthBarSliderTakeDamageSuccessTest]
+      name: HealthBarSliderTakeDamageSuccessTest
+      fullName: HealthBarSliderTests.HealthBarSliderTakeDamageSuccessTest
+      resultStatus: 1
+      duration: 0.0417552
+      messages: 
+      output: 'HB TakeDamage called.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/[PlayMode][HealthBarSliderTests][suite]
+    - id: 1002
+      uniqueId: PlayMode.dll/HealthBarSliderTests/[PlayMode][HealthBarSliderTests.HealthBarSliderValueSuccessTest]
+      name: HealthBarSliderValueSuccessTest
+      fullName: HealthBarSliderTests.HealthBarSliderValueSuccessTest
+      resultStatus: 1
+      duration: 0.0410143
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/[PlayMode][HealthBarSliderTests][suite]
+    - id: 1006
+      uniqueId: PlayMode.dll/[PlayMode][InGameSettingMenuTests][suite]
+      name: InGameSettingMenuTests
+      fullName: InGameSettingMenuTests
+      resultStatus: 1
+      duration: 1.0677962
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: '[PlayMode][C:/Users/Zhenjie Liu/Desktop/CS180/Vampire-Hunter/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1010
+      uniqueId: PlayMode.dll/InGameSettingMenuTests/[PlayMode][InGameSettingMenuTests.ReloadGameSuccessTest]
+      name: ReloadGameSuccessTest
+      fullName: InGameSettingMenuTests.ReloadGameSuccessTest
+      resultStatus: 1
+      duration: 0.9697497
+      messages: 
+      output: 'Restart the game!
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/[PlayMode][InGameSettingMenuTests][suite]
+    - id: 1008
+      uniqueId: PlayMode.dll/InGameSettingMenuTests/[PlayMode][InGameSettingMenuTests.TimeScaleIsOneSuccessTest]
+      name: TimeScaleIsOneSuccessTest
+      fullName: InGameSettingMenuTests.TimeScaleIsOneSuccessTest
+      resultStatus: 1
+      duration: 0.0473852
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/[PlayMode][InGameSettingMenuTests][suite]
+    m_ResultText: Vampire-Hunter (1.149s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: e3e51832
+      m_LastClickedID: 840492515
+      m_ExpandedIDs: 05f0309324a4b6f1c8f3c41532c37329e3e518321607cc3422524b3abc805a6dffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 21}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[Vampire-Hunter][suite]'
+      name: Vampire-Hunter
+      fullName: Vampire-Hunter
+      resultStatus: 2
+      duration: 0.1275777
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1004
+      uniqueId: '[EditMode][C:/Users/Zhenjie Liu/Desktop/CS180/Vampire-Hunter/Library/ScriptAssemblies/EditMode.dll][suite]'
+      name: EditMode.dll
+      fullName: C:/Users/Zhenjie Liu/Desktop/CS180/Vampire-Hunter/Library/ScriptAssemblies/EditMode.dll
+      resultStatus: 2
+      duration: 0.0993834
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Vampire-Hunter][suite]'
+    - id: 1014
+      uniqueId: EditMode.dll/[EditMode][AudioManagerTests][suite]
+      name: AudioManagerTests
+      fullName: AudioManagerTests
+      resultStatus: 1
+      duration: 0.0837519
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1030
+      parentUniqueId: '[EditMode][C:/Users/Zhenjie Liu/Desktop/CS180/Vampire-Hunter/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1002
+      uniqueId: EditMode.dll/AudioManagerTests/[EditMode][AudioManagerTests.NotPlaySFXSuccessTest]
+      name: NotPlaySFXSuccessTest
+      fullName: AudioManagerTests.NotPlaySFXSuccessTest
+      resultStatus: 1
+      duration: 0.0236053
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/[EditMode][AudioManagerTests][suite]
+    - id: 1003
+      uniqueId: EditMode.dll/AudioManagerTests/[EditMode][AudioManagerTests.SetMusicVolumeSuccessTest]
+      name: SetMusicVolumeSuccessTest
+      fullName: AudioManagerTests.SetMusicVolumeSuccessTest
+      resultStatus: 1
+      duration: 0.0193295
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/[EditMode][AudioManagerTests][suite]
+    - id: 1004
+      uniqueId: EditMode.dll/AudioManagerTests/[EditMode][AudioManagerTests.SetSFXVolumeSuccessTest]
+      name: SetSFXVolumeSuccessTest
+      fullName: AudioManagerTests.SetSFXVolumeSuccessTest
+      resultStatus: 1
+      duration: 0.0002423
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/[EditMode][AudioManagerTests][suite]
+    - id: 1001
+      uniqueId: EditMode.dll/[EditMode][HealthBarTests][suite]
+      name: HealthBarTests
+      fullName: HealthBarTests
+      resultStatus: 2
+      duration: 0.0094394
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: '[EditMode][C:/Users/Zhenjie Liu/Desktop/CS180/Vampire-Hunter/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1021
+      uniqueId: EditMode.dll/HealthBarTests/[EditMode][HealthBarTests.HealthBarDieSuccessTest]
+      name: HealthBarDieSuccessTest
+      fullName: HealthBarTests.HealthBarDieSuccessTest
+      resultStatus: 1
+      duration: 0.0021331
+      messages: 
+      output: 'You Died.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: EditMode.dll/[EditMode][HealthBarTests][suite]
+    - id: 1020
+      uniqueId: EditMode.dll/HealthBarTests/[EditMode][HealthBarTests.HealthBarHealSuccessTest]
+      name: HealthBarHealSuccessTest
+      fullName: HealthBarTests.HealthBarHealSuccessTest
+      resultStatus: 1
+      duration: 0.0001485
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: EditMode.dll/[EditMode][HealthBarTests][suite]
+    - id: 1019
+      uniqueId: EditMode.dll/HealthBarTests/[EditMode][HealthBarTests.HealthBarTakeDamageFailureTest]
+      name: HealthBarTakeDamageFailureTest
+      fullName: HealthBarTests.HealthBarTakeDamageFailureTest
+      resultStatus: 2
+      duration: 0.0027876
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+        HB TakeDamage called.
+
+'
+      stacktrace: "  at HealthBar.Die () [0x00000] in C:\\Users\\Zhenjie Liu\\Desktop\\CS180\\Vampire-Hunter\\Assets\\Scripts\\HealthBar.cs:59
+        \r\n  at HealthBar.TakeDamage (System.Single damage) [0x00036] in C:\\Users\\Zhenjie
+        Liu\\Desktop\\CS180\\Vampire-Hunter\\Assets\\Scripts\\HealthBar.cs:43 \r\n 
+        at HealthBarTests.HealthBarTakeDamageFailureTest () [0x0001c] in C:\\Users\\Zhenjie
+        Liu\\Desktop\\CS180\\Vampire-Hunter\\Assets\\Tests\\EditMode\\HealthBarTests.cs:34
+        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x0006a] in <75633565436c42f0a6426b33f0132ade>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: EditMode.dll/[EditMode][HealthBarTests][suite]
+    - id: 1018
+      uniqueId: EditMode.dll/HealthBarTests/[EditMode][HealthBarTests.HealthBarTakeDamageSuccessTest]
+      name: HealthBarTakeDamageSuccessTest
+      fullName: HealthBarTests.HealthBarTakeDamageSuccessTest
+      resultStatus: 1
+      duration: 0.0003302
+      messages: 
+      output: 'HB TakeDamage called.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: EditMode.dll/[EditMode][HealthBarTests][suite]
+    - id: 1006
+      uniqueId: EditMode.dll/[EditMode][TimerTests][suite]
+      name: TimerTests
+      fullName: TimerTests
+      resultStatus: 2
+      duration: 0.0052404
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: '[EditMode][C:/Users/Zhenjie Liu/Desktop/CS180/Vampire-Hunter/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1009
+      uniqueId: EditMode.dll/TimerTests/[EditMode][TimerTests.TimerResetFailureTest]
+      name: TimerResetFailureTest
+      fullName: TimerTests.TimerResetFailureTest
+      resultStatus: 2
+      duration: 0.000688
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 'Can''t add script behaviour ''TMP_Text''. The script class can''t
+        be abstract!
+
+'
+      stacktrace: "  at TimerTests.TimerResetFailureTest () [0x00031] in C:\\Users\\Zhenjie
+        Liu\\Desktop\\CS180\\Vampire-Hunter\\Assets\\Tests\\EditMode\\TimerTests.cs:59
+        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x0006a] in <75633565436c42f0a6426b33f0132ade>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: EditMode.dll/[EditMode][TimerTests][suite]
+    - id: 1007
+      uniqueId: EditMode.dll/TimerTests/[EditMode][TimerTests.TimerStartSuccessTest]
+      name: TimerStartSuccessTest
+      fullName: TimerTests.TimerStartSuccessTest
+      resultStatus: 1
+      duration: 0.0004816
+      messages: 
+      output: 'Can''t add script behaviour ''TMP_Text''. The script class can''t
+        be abstract!
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: EditMode.dll/[EditMode][TimerTests][suite]
+    - id: 1008
+      uniqueId: EditMode.dll/TimerTests/[EditMode][TimerTests.TimerStopSuccessTest]
+      name: TimerStopSuccessTest
+      fullName: TimerTests.TimerStopSuccessTest
+      resultStatus: 1
+      duration: 0.0004729
+      messages: 
+      output: 'Can''t add script behaviour ''TMP_Text''. The script class can''t
+        be abstract!
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: EditMode.dll/[EditMode][TimerTests][suite]
+    m_ResultText: 'Vampire-Hunter (0.128s)
+
+      ---
+
+      One or more child tests
+      had errors'
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: e3e51832
+      m_LastClickedID: 840492515
+      m_ExpandedIDs: 30a6799a3cdc509e03dc22ba27b85aeaa64881eaa0d3dd1041b0831708e8e623e3e51832201c9c502d3a1f7c4b5ea47cffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized

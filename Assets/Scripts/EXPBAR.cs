@@ -8,7 +8,7 @@ public class EXPBAR : MonoBehaviour
 {
     public int level;
     //public int counter;
-    public float experience { get; private set; }
+    public float experience;
     public TMP_Text playerLevel;
    // public TMP_Text killedCounter;
     public Slider slider;
@@ -16,7 +16,7 @@ public class EXPBAR : MonoBehaviour
 
     public GameObject upgradeWindow;
 
-    void Start()
+    public void Start()
     {
         //killedCounter = 0;
         experience = 0;
@@ -26,7 +26,7 @@ public class EXPBAR : MonoBehaviour
         upgradeWindow.SetActive(false);
     }
 
-    void Update()
+    public void Update()
     {
         DisplayLevel();
     }

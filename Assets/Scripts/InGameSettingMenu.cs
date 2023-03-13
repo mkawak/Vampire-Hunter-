@@ -89,6 +89,8 @@ public class InGameSettingMenu : MonoBehaviour
         SceneManager.LoadScene("PlayerUI");
         Debug.Log("Restart the game!");
     }
+
+
 }
 
 
