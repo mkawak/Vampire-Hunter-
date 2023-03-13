@@ -16,7 +16,7 @@ public class Sentry : Weapon
 
     protected override void Start() {
 
-        baseDamage = 0.5f;
+        baseDamage = 2f;
         damageMultiplier = 1f;
         fireRate = 600;
 

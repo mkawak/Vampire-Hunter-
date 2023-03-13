@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   moveSpeed: 5
-  health: 5
+  health: 25
   attackDamage: 0.5
   xScale: 22
   yScale: 22

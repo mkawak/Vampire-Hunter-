@@ -8,7 +8,7 @@ public class Shooty : Weapon
 {
     protected override void Start() {
 
-        baseDamage = 0.5f;
+        baseDamage = 3f;
         damageMultiplier = 1f;
         fireRate = 60;
 
