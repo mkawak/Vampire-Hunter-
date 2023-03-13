@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using UnityEngine.UI;
+using TMPro;
 
 public class TEST_GameManager : MonoBehaviour
 {
@@ -40,10 +41,17 @@ public class TEST_GameManager : MonoBehaviour
         playerWeapons[playerWeapons.Count - 1].keycode = keycodes[playerWeapons.Count - 1];
 
         li = GameObject.FindWithTag("LevelInfo").GetComponent<LevelInfo>();
-        if (li == null) return;
-        maps[li.level].SetActive(true);
-        players[li.player].SetActive(true);
-        mainCamera.GetComponent<FollowPlayer>().player = players[li.player];
+        if (li != null){
+            maps[li.level].SetActive(true);
+            players[li.player].SetActive(true);
+            player = players[li.player];
+        }
+        else {
+            player = GameObject.FindWithTag("Player");
+        }
+        mainCamera.GetComponent<FollowPlayer>().player = player;
+
+        UpdateStatsGUI();
     }
 
     void ComboWeapons(int ind) {
@@ -114,6 +122,7 @@ public class TEST_GameManager : MonoBehaviour
     public void UpgradeItem(int ind) {
         playerItems_upgradeable[ind].LevelUp();
         if (playerItems_upgradeable[ind].GetLevel() == 3) playerItems_upgradeable.RemoveAt(ind);
+        UpdateStatsGUI();
     }
 
     public void AddItem(int ind) {
@@ -123,6 +132,7 @@ public class TEST_GameManager : MonoBehaviour
         playerItems.Add(currItem);
         playerItems_upgradeable.Add(currItem);
         itemList.RemoveAt(ind);
+        UpdateStatsGUI();
     }
 
 
@@ -145,4 +155,17 @@ public class TEST_GameManager : MonoBehaviour
         Time.timeScale = 0f;
         winwindow.SetActive(true);
     }
+
+
+
+    // Stats
+    public TextMeshProUGUI damage;
+    public TextMeshProUGUI maxHealth;
+    public TextMeshProUGUI speed;
+
+    public void UpdateStatsGUI() {
+        damage.text = "Damage: " + player.GetComponent<PlayerCharacter>().baseDamage.ToString();
+        maxHealth.text = "Max Health: " + player.GetComponent<PlayerCharacter>().baseHealth.ToString();
+        speed.text = "Speed: " + player.GetComponent<PlayerCharacter>().baseSpeed.ToString();
+    } 
 }
