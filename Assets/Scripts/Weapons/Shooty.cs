@@ -8,7 +8,7 @@ public class Shooty : Weapon
 {
     protected override void Start() {
 
-        baseDamage = 0.5f;
+        baseDamage = 3f;
         damageMultiplier = 1f;
         fireRate = 60;
 
@@ -43,8 +43,9 @@ public class Shooty : Weapon
                 timeTillShot = 60/fireRate;
                 Fire();
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha2)) {
+            else if (Input.GetKeyDown(keycode)) {
                 timeTillShot = 60/fireRate;
+                AudioManager.Instance.PlaySFX("6SidedSFX");
                 Fire();
             }
         }

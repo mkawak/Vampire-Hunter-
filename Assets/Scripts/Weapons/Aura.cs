@@ -30,6 +30,7 @@ public class Aura : Weapon
 
     new void Update() {
         base.Update();
+        CoolDown();
         // if (Input.GetKeyDown(KeyCode.Alpha2)) Fire();
     }
 

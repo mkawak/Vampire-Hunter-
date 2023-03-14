@@ -11,12 +11,12 @@ public class Sentry : Weapon
 
     bool spawnedChild = false, found = false;
 
-    float coolDown = 3f, currCoolDown = 3f;
+    float coolDownE = 3f, currCoolDown = 3f;
     int shots = 6;
 
     protected override void Start() {
 
-        baseDamage = 0.5f;
+        baseDamage = 2f;
         damageMultiplier = 1f;
         fireRate = 600;
 
@@ -57,10 +57,14 @@ public class Sentry : Weapon
             return;
         }
         if (!spawnedChild) SpawnChild();
-        childCollider.radius = childCollider.radius + (10 * Time.deltaTime);
+        childCollider.radius = childCollider.radius + (100 * Time.deltaTime);
     }
 
     new void Fire() {
+        if (target == null) {
+            shots = -1;
+            return;
+        }
         Vector3 toTarget = transform.position - target.transform.position;
 
         Projectile currProj = Instantiate(projectile, transform.position, Quaternion.identity);
@@ -70,12 +74,15 @@ public class Sentry : Weapon
         shots -= 1;
     }
 
+    bool firing = false;
     new void Update() {
+        CoolDown();
         if (currCoolDown >= 0) {
             currCoolDown -= Time.deltaTime;
             return;
         }
-        if (shots >= 0) {
+        if (Input.GetKeyDown(keycode)) firing = true;
+        if (shots >= 0 && firing) {
             FindTarget();
             if (found) {
                 timeTillShot -= Time.deltaTime;
@@ -85,25 +92,22 @@ public class Sentry : Weapon
                 }
             }
         }
-        else {
-            currCoolDown = coolDown;
+        else if (shots < 0){
+            currCoolDown = coolDownE;
             found = false;
             target = null;
             shots = numProjectiles;
-        }
-
-        if (Input.GetKeyDown(KeyCode.K)) {
-            LevelUp();
+            firing = false;
         }
     }
 
     protected override void ChangeStats() {
         switch(level) {
             case 2:
-                coolDown = 2f;
+                coolDownE = 2f;
                 break;
             case 3:
-                coolDown = 1f;
+                coolDownE = 1f;
                 numProjectiles = 10;
                 break;
             default:
@@ -111,5 +115,10 @@ public class Sentry : Weapon
         }
 
         base.ChangeStats();
+    }
+
+    protected new void CoolDown() {
+        if (currCoolDown == 0) currCoolDown += 0.0001f;
+        coolDown.fillAmount = Mathf.Min(Mathf.Max(0, currCoolDown / (60 / fireRate)), 1);
     }
 }

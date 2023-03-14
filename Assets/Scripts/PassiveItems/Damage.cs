@@ -6,26 +6,27 @@ public class Damage : Item
 {
     void Start() {
         value = 3;
+        base.Start();
     }
 
-    protected virtual void AddToPlayer() {
+    protected override void AddToPlayer() {
         player.ChangeDamage(value);
     }
 
-    protected virtual void RemoveFromPlayer(float prevVal) {
+    protected override void RemoveFromPlayer(float prevVal) {
         player.ChangeDamage(-prevVal);
     }
 
-    protected virtual void ChangeStats() {
+    protected override void ChangeStats() {
         level += 1;
         float prevVal = value;
         switch(level) {
             case 2:
-                value += 5;
+                value += 2;
                 AddToPlayer();
                 break;
             case 3:
-                value += 5;
+                value += 2;
                 AddToPlayer();
                 break;
         }

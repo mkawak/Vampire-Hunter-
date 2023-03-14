@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
     protected float baseDamage;
     protected float damageMultiplier;                     // Increases with weapon level
     protected float fireRate;                             // Amount of bullets fired per minute
-    protected int level = 1;                              // Level of Weapon
+    public int level = 1;                              // Level of Weapon
 
     public GameObject player;
     protected float playerDamageMultiplier;               // Player's damage multiplier (Increased with passive items)
@@ -33,6 +33,7 @@ public class Weapon : MonoBehaviour
 
     protected Projectile currProj;
     public virtual void Fire() {
+        playerDamageMultiplier = player.GetComponent<PlayerCharacter>().GetPlayerDamage();
         int angleInd = 0;
 
         for (int i = 0; i < numProjectiles; i++) {
@@ -58,9 +59,9 @@ public class Weapon : MonoBehaviour
             Fire();
         }
 
-        if (Input.GetKeyDown(KeyCode.K)) {
-            LevelUp();
-        }
+        // if (Input.GetKeyDown(KeyCode.K)) {
+        //     LevelUp();
+        // }
     }
 
     public void AddDamage(float amount) {
@@ -68,7 +69,9 @@ public class Weapon : MonoBehaviour
     }
 
     public void LevelUp() {
+        Debug.Log("Leveling up " + level);
         level += 1;
+        Debug.Log("Leveled up " + level);
         ChangeStats();
     }
 

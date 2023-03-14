@@ -5,19 +5,24 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
 
-    [SerializeField]
-    private GameObject Hell_Boss_1;
+    // private GameObject Hell_Boss_1;
+    public List<Enemy> level1Enemies;
+    public List<Enemy> level2Enemies;
+    public List<Enemy> level3Enemies;
+    public List<Enemy> level4Enemies;
+    private List<List<Enemy>> enemies;
 
-    [SerializeField]
-    private Transform leftPos, rightPos, topPos, bottomPos;
+    public Transform leftPos, rightPos, topPos, bottomPos;
 
-    private float Hell_Boss_1_Interval = 3.5f; //number of seconds in between spawns
+    private float Hell_Boss_1_Interval = 1.2f; //number of seconds in between spawns
     private int randomSide;
+    private int level = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(spawnEnemy(Hell_Boss_1_Interval, Hell_Boss_1));
+        StartCoroutine(spawnEnemy(Hell_Boss_1_Interval));
+        enemies = new List<List<Enemy>>() {level1Enemies, level2Enemies, level3Enemies, level4Enemies};
     }
 
     // Update is called once per frame
@@ -26,13 +31,15 @@ public class EnemySpawner : MonoBehaviour
 
     }
 
-    private IEnumerator spawnEnemy(float interval, GameObject enemy) //to perform something after a fixed amount of time
+    private IEnumerator spawnEnemy(float interval) //to perform something after a fixed amount of time
     {
         yield return new WaitForSeconds(interval);
 
         randomSide = Random.Range(0, 4);
 
-        GameObject newEnemy = Instantiate(enemy);
+        int randEnemy = Random.Range(0, enemies[level - 1].Count);
+
+        Enemy newEnemy = Instantiate(enemies[level - 1][randEnemy]);
         if(randomSide == 0)
         {
             newEnemy.transform.position = topPos.transform.position;
@@ -47,6 +54,14 @@ public class EnemySpawner : MonoBehaviour
             newEnemy.transform.position = leftPos.transform.position;
         }
 
-        StartCoroutine(spawnEnemy(interval, enemy));
+        // Circle equation
+
+        StartCoroutine(spawnEnemy(interval));
+    }
+
+    public void LevelUp() {
+        if (level == 4) return;
+        level++;
+        Hell_Boss_1_Interval -= 0.3f;
     }
 }

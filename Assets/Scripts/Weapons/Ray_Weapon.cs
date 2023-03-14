@@ -59,6 +59,7 @@ public class Ray_Weapon : Weapon
             currProj.SetStats(baseDamage * damageMultiplier * playerDamageMultiplier);
             timeTillShot = 60 / fireRate;
             firing = false;
+            AudioManager.Instance.PlaySFX("LightThunderSFX");
 
             Destroy(cursor);
             cursor = null;
@@ -72,7 +73,7 @@ public class Ray_Weapon : Weapon
         timeTillShot -= Time.deltaTime;
 
         if (timeTillShot <= 0 && !firing) {
-            if (Input.GetKeyDown(KeyCode.Alpha3)) {
+            if (Input.GetKeyDown(keycode)) {
                 firing = true;
             }
         }

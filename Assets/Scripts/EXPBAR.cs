@@ -14,8 +14,12 @@ public class EXPBAR : MonoBehaviour
 
     public GameObject upgradeWindow;
 
+    PlayerCharacter player;
+
     void Start()
-    {
+    {   
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerCharacter>();
+
         experience = 0;
         level = 1;
         slider.value = experience; 
@@ -25,6 +29,10 @@ public class EXPBAR : MonoBehaviour
 
     void Update()
     {
+        experience = player.GetExpAsPercentage();
+        slider.value = experience;
+        level = player.GetLevel();
+
         DisplayLevel();
     }
 
@@ -63,8 +71,8 @@ public class EXPBAR : MonoBehaviour
 
     public void LevelUp()
     {
-        level++;
-        slider.value = 0;
+        Time.timeScale = 0f;
+        upgradeWindow.SetActive(true);
         //ChangeStats();
     }
 

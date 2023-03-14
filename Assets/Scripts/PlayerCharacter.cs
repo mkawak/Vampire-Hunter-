@@ -9,16 +9,18 @@ public class PlayerCharacter : MonoBehaviour
 {
     // For tweaking --------------
     public float baseDamage = 1;
-    public float baseSpeed = 10f;
+    public float baseSpeed = 20f;
     public int maxWeapons = 3;
     public int maxItems = 3;
     public float baseHealth = 100;
     public float experience = 0;
     // ---------------------------
 
-    protected float damage;
+    protected float damage = 1;
     protected float health;
-    protected HealthBar playerHealthBar;
+
+    float expToLevel = 10;
+    int level = 1;
 
     protected List<Weapon> weapons;
     // protected List<Item> items;
@@ -26,22 +28,43 @@ public class PlayerCharacter : MonoBehaviour
 
     void Start() {
         playerController = GetComponent<PlayerController>();
-        playerHealthBar = GetComponent<HealthBar>();
         health = baseHealth;
-        playerHealthBar.maxHealth = baseHealth;
-        playerHealthBar.health = health;
         gameObject.tag = "Player";
 
     }
 
     void Update(){
+        RegenHealth();
+        if (Input.GetKeyDown(KeyCode.K)) {
+            ChangeExperience(10000);
+        }
+    }
+
+    protected void RegenHealth() {
+        if (health < baseHealth) {
+            health += 3 * Time.deltaTime;
+        }
     }
 
     public float GetPlayerDamage() {
-        return damage;
+        return baseDamage;
+    }
+
+    public float GetHealthAsPercentage() {
+        return health / baseHealth * 100;
+    }
+
+    public int GetLevel() {
+        return level;
+    }
+
+    public float GetExpAsPercentage() {
+        return experience / expToLevel * 100;
     }
 
     public void TakeDamage(float damage){
+        AudioManager.Instance.PlaySFX("HurtSFX");
+
         if (damage > health) damage = health;
         
         health -= damage;
@@ -59,8 +82,11 @@ public class PlayerCharacter : MonoBehaviour
     public void ChangeExperience(int value) {
         
         experience += value;
-        Debug.Log("Experience gained: " + value);
-        if ((experience % 3) == 0) {
+
+        if (experience >= expToLevel) {
+            experience = 0;
+            level++;
+            expToLevel += 10;
             gm.LeveledUp();
         }
     }
@@ -68,11 +94,10 @@ public class PlayerCharacter : MonoBehaviour
     public void ChangeHealth(float value) {
         
         baseHealth += value;
-        Debug.Log("Health gained: " + value);
+        health += value;
     }
 
     public void ChangeDamage(float value) {
-        
         baseDamage += value;
         Debug.Log("Damage gained: " + value);
     }
@@ -84,6 +109,7 @@ public class PlayerCharacter : MonoBehaviour
     }
 
     public void Die(){
+        gm.Died();
         Destroy(gameObject);
     }
 

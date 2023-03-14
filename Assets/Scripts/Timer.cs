@@ -7,11 +7,23 @@ public class Timer : MonoBehaviour
 {
 
     public TMP_Text textTimer;
+    public TEST_GameManager gm;
 
     private float timer = 0.0f;
     private bool isTimer = false;
 
+    protected float levelTime = 180;
 
+    void Awake()
+    {
+        StartTimer();
+    }
+
+
+    int diffRef;
+    void Start() {
+        diffRef = (int)levelTime / 4;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -19,6 +31,15 @@ public class Timer : MonoBehaviour
         {
             timer += Time.deltaTime;
             DisplayTime();
+        }
+
+        if (timer > levelTime) {
+            gm.Win();
+        }
+
+        if (timer > diffRef) {
+            diffRef += 10;
+            gm.IncreaseDifficulty();
         }
     }
 

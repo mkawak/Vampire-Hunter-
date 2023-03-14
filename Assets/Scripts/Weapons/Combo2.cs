@@ -38,8 +38,9 @@ public class Combo2 : Weapon
                 timeTillShot = 60/fireRate;
                 Fire();
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha4)) {
+            else if (Input.GetKeyDown(keycode)) {
                 timeTillShot = 60/fireRate;
+                AudioManager.Instance.PlaySFX("ElectricBallSFX");
                 Fire();
             }
         }

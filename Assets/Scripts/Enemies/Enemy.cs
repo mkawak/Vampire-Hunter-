@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy3 : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     [SerializeField] public Transform player;
     [SerializeField] public float moveSpeed = 5f;
-    [SerializeField] private float health = 5f;
-    [SerializeField] private float attackDamage = 0.5f;
-    [SerializeField] private float xScale = 22f;
-    [SerializeField] private float yScale = 22f;
-    [SerializeField] private float zScale = 1f;
-    [SerializeField] private float attackRange = 9.5f;
+    [SerializeField] protected float health = 5f;
+    [SerializeField] protected float attackDamage = 0.5f;
+    [SerializeField] protected float xScale = 22f;
+    [SerializeField] protected float yScale = 22f;
+    [SerializeField] protected float zScale = 1f;
+    [SerializeField] protected float attackRange = 9.5f;
+
+    public int level;
+    public GameObject xp;
 
     private Rigidbody2D rb;
     private Vector2 movement;
@@ -21,21 +24,22 @@ public class Enemy3 : MonoBehaviour
     private string attackAnimation = "attack";
 
 
-    private void Start()
+    protected void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
         gameObject.tag = "Enemy";
+
+        player = GameObject.FindWithTag("Player").transform;
     }
 
     private void Update()
     {
         getMovement(player);
-
         if (getHealth() <= 0) //if health is 0 or less, enemy is dead
         {
             Die();
-            Debug.Log(gameObject + " being destroyed.");
+            // Debug.Log(gameObject + " being destroyed.");
         }
     }
 
@@ -86,8 +90,7 @@ public class Enemy3 : MonoBehaviour
         if (movement.x != 0)
         {
             anim.SetBool(walkAnimation, true);
-        }
-        else
+        } else
         {
             anim.SetBool(walkAnimation, false);
         }
@@ -100,27 +103,28 @@ public class Enemy3 : MonoBehaviour
         {
             anim.SetBool(attackAnimation, false);
         }
-
+            
     }
 
-    public float TakeDamage(float damage)
+    public float TakeDamage (float damage)
     {
         float damageTaken = damage;
         float newHealth;
 
-        if (damageTaken >= health)
+        if(damageTaken >= health)
         {
             damageTaken = health;
         }
 
         newHealth = getHealth() - damageTaken;
-        setHealth(newHealth);
+        this.setHealth(newHealth);
         Debug.Log("Damage taken, Health: " + getHealth());
         return damageTaken;
     }
 
     public void Die()
     {
+        if (xp != null) Instantiate(xp, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
@@ -130,11 +134,11 @@ public class Enemy3 : MonoBehaviour
         return distance;
     }
 
-
+    
     public void Attack(Transform player)
     {
         //call function to deal player damage
-        Debug.Log(gameObject + " attacking " + player);
+        // Debug.Log(gameObject + " attacking " + player);
 
         player.GetComponent<PlayerCharacter>().TakeDamage(attackDamage);
     }

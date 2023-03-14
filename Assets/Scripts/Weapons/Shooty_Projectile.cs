@@ -8,7 +8,7 @@ public class Shooty_Projectile : Projectile
     Animator animator;
 
     void Start() {
-        speed = 30;
+        speed = 100;
         lifeTime = 1;
         hits = 1;
 

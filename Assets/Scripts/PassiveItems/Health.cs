@@ -5,27 +5,28 @@ using UnityEngine;
 public class Health : Item
 {
     void Start() {
-        value = 20;
+        value = 100;
+        base.Start();
     }
 
-    protected virtual void AddToPlayer() {
+    protected override void AddToPlayer() {
         player.ChangeHealth(value);
     }
 
-    protected virtual void RemoveFromPlayer(float prevVal) {
+    protected override void RemoveFromPlayer(float prevVal) {
         player.ChangeHealth(-prevVal);
     }
 
-    protected virtual void ChangeStats() {
+    protected override void ChangeStats() {
         level += 1;
         float prevVal = value;
         switch(level) {
             case 2:
-                value += 5;
+                value += 100;
                 AddToPlayer();
                 break;
             case 3:
-                value += 5;
+                value += 100;
                 AddToPlayer();
                 break;
         }

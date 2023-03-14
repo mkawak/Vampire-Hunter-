@@ -58,13 +58,14 @@ public class Player2_BasicAttack : Weapon
             }
             else if (Input.GetKeyDown(keycode)) {
                 timeTillShot = 60/fireRate;
+                AudioManager.Instance.PlaySFX("FireSFX");
                 Fire();
             }
         }
 
         if (coolDown != null) CoolDown();
 
-        if (level == 3) currProj.lifeTime = 5f;
+        if (level == 3 && currProj != null) currProj.lifeTime = 5f;
     }
 
     

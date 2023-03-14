@@ -21,8 +21,8 @@ public class Player3_BasicAttack_Projectile : Projectile
     List<GameObject> toHit = new List<GameObject>{};
 
     void Start() {
-        speed = 12;
-        lifeTime = 100f;
+        speed = 30;
+        lifeTime = 7f;
         hits = 99;
 
         //damage = 1;
@@ -48,7 +48,7 @@ public class Player3_BasicAttack_Projectile : Projectile
         }
         else {
             currSearchTime += Time.deltaTime;
-            collider.radius += collider.radius * Time.deltaTime * 5;
+            collider.radius += collider.radius * Time.deltaTime * 8;
 
             if (currSearchTime >= maxSearchTime) {
                 doFind = false;
@@ -78,6 +78,7 @@ public class Player3_BasicAttack_Projectile : Projectile
                 movingToTarget = false;
             }
         }
+        transform.GetChild(0).transform.Rotate(new Vector3(0, 0, 720) * Time.deltaTime);
     }
 
     new void OnTriggerEnter2D(Collider2D other) {
@@ -101,7 +102,7 @@ public class Player3_BasicAttack_Projectile : Projectile
 
     void Attack() {
         for (int i = 0; i < toHit.Count; i++) {
-            weapon.AddDamage(toHit[i].GetComponent<Enemy_TEST>().TakeDamage(damage));
+            weapon.AddDamage(toHit[i].GetComponent<Enemy>().TakeDamage(damage));
         }
     }
 
