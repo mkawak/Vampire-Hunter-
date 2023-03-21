@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
 
+
+//This test case is testing the upgrade weapon system
 public class TESTGameManagerTest
 {
 /*    [Test]

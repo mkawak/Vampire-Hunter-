@@ -6,7 +6,7 @@ public class ExpCollectible : MonoBehaviour
 {
     public int exp = 1;
 
-    void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {

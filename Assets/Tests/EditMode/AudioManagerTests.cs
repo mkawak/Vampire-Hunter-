@@ -4,6 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
+// This file is testing the audio manager to ensure each audio are working correctly
 public class AudioManagerTests
 {
     [Test]

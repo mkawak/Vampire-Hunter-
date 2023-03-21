@@ -6,22 +6,22 @@ public class Player : MonoBehaviour
 {
 
     [SerializeField]
-    private float moveForce = 10f;
+    public float moveForce = 10f;
 
     [SerializeField]
-    private float jumpForce = 11f;
+    public float jumpForce = 11f;
 
-    private float movementX;
+    public float movementX;
 
     public Rigidbody2D myBody;
 
-    private SpriteRenderer sr;
+    public SpriteRenderer sr;
 
     //private Animator anim;
-    private string WALK_ANIMATION = "Walk";
+    public string WALK_ANIMATION = "Walk";
 
 
-    private void Awake()
+    public void Awake()
     {
 
         myBody = GetComponent<Rigidbody2D>();
@@ -32,13 +32,13 @@ public class Player : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         PlayerMoveKeyboard();
         //AnimatePlayer();
@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
         PlayerJump();
     }
 */
-    void PlayerMoveKeyboard() {
+    public void PlayerMoveKeyboard() {
 
         movementX = Input.GetAxisRaw("Horizontal");
 
@@ -108,33 +108,4 @@ public class Player : MonoBehaviour
     }
 */
 } // class
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

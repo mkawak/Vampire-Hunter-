@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using TMPro;
 
+
+// This test case is testing the timer can work correctly when we click different buttons
 public class TimerTests
 {
     [Test]

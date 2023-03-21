@@ -2,6 +2,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
+// This test case is testing the enemy can take damage correctly. 
 public class EnemyTests
 {
     [Test]

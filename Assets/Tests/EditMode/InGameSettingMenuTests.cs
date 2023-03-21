@@ -2,6 +2,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
 
+// This test case is testiing if we pause or resume game, does the time scalse can work correctly
 public class InGameSettingMenuTests
 {
 

@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour {
     public GameObject MapMenu;
     public GameObject CreditsPanel;
 
-    void Start()
+    public void Start()
     {
         StartMenu.SetActive(true);
         Options.SetActive(false);
