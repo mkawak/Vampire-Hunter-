@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : Item
 {
-    void Start() {
+    public void Start() {
         value = 100;
         base.Start();
     }

@@ -11,7 +11,7 @@ public class InGameSettingMenu : MonoBehaviour
     public GameObject Options;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         Time.timeScale = 1f;
         SettingMenu.SetActive(false);
