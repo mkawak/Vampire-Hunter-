@@ -13,16 +13,16 @@ public class ChoicesWindow : MonoBehaviour
 
     public List<GameObject> selections;
 
-    List<int> optionChoice = new List<int>(new int[3]);
-    List<int> optionType = new List<int>(new int[3]); // 0 is new weapon, 1 is upgrade weapon, 2 is new item, 3 is upgrade weapon;
-    void OnEnable() {
+    public List<int> optionChoice = new List<int>(new int[3]);
+    public List<int> optionType = new List<int>(new int[3]); // 0 is new weapon, 1 is upgrade weapon, 2 is new item, 3 is upgrade weapon;
+    public void OnEnable() {
         RollOptions();
         DisplayOptions();
         RelayOptions();
     }
 
-    int tot = 3;
-    void RollOptions() {
+    public int tot = 3;
+    public void RollOptions() {
         List<int> nums = new List<int>{gm.weaponList.Count, gm.playerWeapons_upgradeable.Count, gm.itemList.Count, gm.playerItems_upgradeable.Count};
         List<int> counts = new List<int>{gm.weaponList.Count, gm.playerWeapons_upgradeable.Count, gm.itemList.Count, gm.playerItems_upgradeable.Count};
         
@@ -59,7 +59,7 @@ public class ChoicesWindow : MonoBehaviour
     }
 
     // TextMeshProUGUI
-    void DisplayOptions() {
+    public void DisplayOptions() {
         for (int i = 0; i < tot; i++) {
             TextMeshProUGUI currText = selections[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>();
             currText.text = (optionType[i] % 2 == 0) ? "New" : "Upgrade";
@@ -89,7 +89,7 @@ public class ChoicesWindow : MonoBehaviour
         }
     }
 
-    void RelayOptions() {
+    public void RelayOptions() {
         wl.optionWeapon = optionChoice;
         wl.optionType = optionType;
     }

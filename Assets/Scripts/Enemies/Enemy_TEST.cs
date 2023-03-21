@@ -18,12 +18,12 @@ public class Enemy_TEST : MonoBehaviour
     }
 
     public GameObject xp;
-    void Die() {
+    public void Die() {
         Instantiate(xp, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
-    void Update () {
+    public void Update () {
         if (health <= 0) Die();
     }
 }

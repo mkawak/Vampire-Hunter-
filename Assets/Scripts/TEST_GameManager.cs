@@ -20,13 +20,13 @@ public class TEST_GameManager : MonoBehaviour
 
     public List<Weapon> comboFabs = new List<Weapon>();
 
-    Dictionary<string, string> combos = new Dictionary<string, string>() {{"shooty", "ray"}, {"ray", "shooty"}, {"lightningBall", "aura"}, {"aura", "lightningBall"}};
-    Dictionary<string, int> comboMaxed = new Dictionary<string, int>() {{"shooty", 0}, {"ray", 0}, {"lightningBall", 0}, {"aura", 0}};
+    Dictionary<string, string> combos = new Dictionary<string, string>() { { "shooty", "ray" }, { "ray", "shooty" }, { "lightningBall", "aura" }, { "aura", "lightningBall" } };
+    Dictionary<string, int> comboMaxed = new Dictionary<string, int>() { { "shooty", 0 }, { "ray", 0 }, { "lightningBall", 0 }, { "aura", 0 } };
     Dictionary<string, Weapon> comboWeapon;
 
 
     public List<Image> coolDowns;
-    List<KeyCode> keycodes = new List<KeyCode>() {KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4};
+    List<KeyCode> keycodes = new List<KeyCode>() { KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4 };
 
     public LevelInfo li;
     public List<GameObject> maps;
@@ -34,16 +34,18 @@ public class TEST_GameManager : MonoBehaviour
 
     public Camera mainCamera;
 
-    void Start() {
-        comboWeapon = new Dictionary<string, Weapon>(){{"shooty", comboFabs[0]}, {"ray", comboFabs[0]}, {"lightningBall", comboFabs[1]}, {"aura", comboFabs[1]}};
+    public void Start()
+    {
+        comboWeapon = new Dictionary<string, Weapon>() { { "shooty", comboFabs[0] }, { "ray", comboFabs[0] }, { "lightningBall", comboFabs[1] }, { "aura", comboFabs[1] } };
 
         li = GameObject.FindWithTag("LevelInfo").GetComponent<LevelInfo>();
-        if (li != null){
+        if (li != null)
+        {
             maps[li.level].SetActive(true);
             players[li.player].SetActive(true);
             player = players[li.player];
         }
-        
+
         // player = GameObject.FindWithTag("Player");
 
         mainCamera.GetComponent<FollowPlayer>().player = player;
@@ -58,18 +60,21 @@ public class TEST_GameManager : MonoBehaviour
         healthbar.SetActive(true);
     }
 
-    void Update() {
+    public void Update()
+    {
         UpdateStatsGUI();
         healthbar.transform.position = player.transform.position;
         es.transform.position = player.transform.position;
     }
 
-    void ComboWeapons(int ind) {
+    public void ComboWeapons(int ind)
+    {
         string otherWeaponName = combos[playerWeapons_upgradeable[ind].name];
         int weap1 = -1, weap2 = -1;
-        for (int i = 0; i < playerWeapons.Count; i++) {
+        for (int i = 0; i < playerWeapons.Count; i++)
+        {
             if (weap1 == -1 && (playerWeapons[i].name == otherWeaponName || playerWeapons[i].name == playerWeapons_upgradeable[ind].name)) weap1 = i;
-            else if (weap2 == -1 && (playerWeapons[i].name == otherWeaponName || playerWeapons[i].name == playerWeapons_upgradeable[ind].name)) {weap2 = i; break;}
+            else if (weap2 == -1 && (playerWeapons[i].name == otherWeaponName || playerWeapons[i].name == playerWeapons_upgradeable[ind].name)) { weap2 = i; break; }
         }
         Debug.Log("WHAT THE FUCK R U DOING");
 
@@ -79,7 +84,7 @@ public class TEST_GameManager : MonoBehaviour
         playerWeapons.RemoveAt(weap2);
         playerWeapons.RemoveAt(weap1);
         playerWeapons_upgradeable.RemoveAt(ind);
-        
+
 
         Weapon currWeapon = Instantiate(comboWeapon[otherWeaponName], Vector3.zero, Quaternion.identity);
         currWeapon.transform.parent = player.transform;
@@ -95,20 +100,25 @@ public class TEST_GameManager : MonoBehaviour
         weaponList = tempWeaponList;
     }
 
-    public void UpgradeWeapon(int ind) {
-        if (playerWeapons_upgradeable[ind].GetLevel() == 3) {
+    public void UpgradeWeapon(int ind)
+    {
+        if (playerWeapons_upgradeable[ind].GetLevel() == 3)
+        {
             ComboWeapons(ind);
             return;
         }
 
-        Debug.Log("UPGRADE b4 " + playerWeapons_upgradeable[ind].GetLevel() );
+        Debug.Log("UPGRADE b4 " + playerWeapons_upgradeable[ind].GetLevel());
         playerWeapons_upgradeable[ind].LevelUp();
-        Debug.Log("UPGRADE aft " + playerWeapons_upgradeable[ind].GetLevel() );
-        if (playerWeapons_upgradeable[ind].GetLevel() == 3){
+        Debug.Log("UPGRADE aft " + playerWeapons_upgradeable[ind].GetLevel());
+        if (playerWeapons_upgradeable[ind].GetLevel() == 3)
+        {
 
-            if (combos.ContainsKey(playerWeapons_upgradeable[ind].name)) {
+            if (combos.ContainsKey(playerWeapons_upgradeable[ind].name))
+            {
                 comboMaxed[playerWeapons_upgradeable[ind].name] = 1;
-                if (comboMaxed[combos[playerWeapons_upgradeable[ind].name]] == 1) {
+                if (comboMaxed[combos[playerWeapons_upgradeable[ind].name]] == 1)
+                {
                     return;
                 }
             }
@@ -116,7 +126,8 @@ public class TEST_GameManager : MonoBehaviour
         }
     }
 
-    public void AddWeapon(int ind) {
+    public void AddWeapon(int ind)
+    {
         Weapon currWeapon = Instantiate(weaponList[ind], Vector3.zero, Quaternion.identity);
         currWeapon.transform.parent = player.transform;
         currWeapon.transform.localPosition = Vector3.zero;
@@ -130,19 +141,22 @@ public class TEST_GameManager : MonoBehaviour
         playerWeapons[playerWeapons.Count - 1].coolDown = coolDowns[playerWeapons.Count - 1];
         playerWeapons[playerWeapons.Count - 1].keycode = keycodes[playerWeapons.Count - 1];
 
-        if (weaponList.Count == 4) {
+        if (weaponList.Count == 4)
+        {
             tempWeaponList = weaponList;
             weaponList = new List<Weapon>();
         }
     }
 
-    public void UpgradeItem(int ind) {
+    public void UpgradeItem(int ind)
+    {
         playerItems_upgradeable[ind].LevelUp();
         Debug.Log("Level: " + playerItems_upgradeable[ind].GetLevel());
         if (playerItems_upgradeable[ind].GetLevel() == 3) playerItems_upgradeable.RemoveAt(ind);
     }
 
-    public void AddItem(int ind) {
+    public void AddItem(int ind)
+    {
         Item currItem = Instantiate(itemList[ind], Vector3.zero, Quaternion.identity);
         currItem.player = player.GetComponent<PlayerCharacter>();
         currItem.transform.parent = player.transform;
@@ -155,26 +169,30 @@ public class TEST_GameManager : MonoBehaviour
 
     // Level up test
     public EXPBAR xpbar;
-    public void LeveledUp() {
+    public void LeveledUp()
+    {
         xpbar.LevelUp();
     }
 
 
     // Control Spawning
     public EnemySpawner es;
-    public void IncreaseDifficulty() {
+    public void IncreaseDifficulty()
+    {
         es.LevelUp();
     }
 
 
-    public GameObject winwindow; 
-    public void Win() {
+    public GameObject winwindow;
+    public void Win()
+    {
         Time.timeScale = 0f;
         winwindow.SetActive(true);
     }
 
     public GameObject dieWindow;
-    public void Died() {
+    public void Died()
+    {
         Time.timeScale = 0f;
         dieWindow.SetActive(true);
     }
@@ -186,11 +204,12 @@ public class TEST_GameManager : MonoBehaviour
     public TextMeshProUGUI maxHealth;
     public TextMeshProUGUI speed;
 
-    public void UpdateStatsGUI() {
+    public void UpdateStatsGUI()
+    {
         damage.text = "Damage: " + player.GetComponent<PlayerCharacter>().baseDamage;
         maxHealth.text = "Max Health: " + player.GetComponent<PlayerCharacter>().baseHealth;
         speed.text = "Speed: " + player.GetComponent<PlayerCharacter>().baseSpeed;
-    } 
+    }
 
     public GameObject healthbar;
 }
