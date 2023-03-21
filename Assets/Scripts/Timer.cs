@@ -14,18 +14,18 @@ public class Timer : MonoBehaviour
 
     protected float levelTime = 180;
 
-    void Awake()
+    public void Awake()
     {
         StartTimer();
     }
 
 
     int diffRef;
-    void Start() {
+    public void Start() {
         diffRef = (int)levelTime / 4;
     }
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (isTimer)
         {

@@ -16,31 +16,31 @@ public class PlayerCharacter : MonoBehaviour
     public float experience = 0;
     // ---------------------------
 
-    protected float damage = 1;
-    protected float health;
+    public float damage = 1;
+    public float health;
 
-    float expToLevel = 10;
-    int level = 1;
+    public float expToLevel = 10;
+    public int level = 1;
 
-    protected List<Weapon> weapons;
+    public List<Weapon> weapons;
     // protected List<Item> items;
-    protected PlayerController playerController;
+    public PlayerController playerController;
 
-    void Start() {
+    public void Start() {
         playerController = GetComponent<PlayerController>();
         health = baseHealth;
         gameObject.tag = "Player";
 
     }
 
-    void Update(){
+    public void Update(){
         RegenHealth();
         if (Input.GetKeyDown(KeyCode.K)) {
             ChangeExperience(10000);
         }
     }
 
-    protected void RegenHealth() {
+    public void RegenHealth() {
         if (health < baseHealth) {
             health += 3 * Time.deltaTime;
         }

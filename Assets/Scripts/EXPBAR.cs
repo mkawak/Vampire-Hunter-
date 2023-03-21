@@ -16,7 +16,7 @@ public class EXPBAR : MonoBehaviour
 
     PlayerCharacter player;
 
-    void Start()
+    public void Start()
     {   
         player = GameObject.FindWithTag("Player").GetComponent<PlayerCharacter>();
 
@@ -27,7 +27,7 @@ public class EXPBAR : MonoBehaviour
         upgradeWindow.SetActive(false);
     }
 
-    void Update()
+    public void Update()
     {
         experience = player.GetExpAsPercentage();
         slider.value = experience;

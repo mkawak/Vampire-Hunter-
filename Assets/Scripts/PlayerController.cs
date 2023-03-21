@@ -7,9 +7,9 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 10f;
     Animator animator;
 
-    bool moving = false;
+    public bool moving = false;
 
-    void Start() {
+    public void Start() {
         animator = GetComponent<Animator>();
         gameObject.tag = "Player";
     }
@@ -17,12 +17,12 @@ public class PlayerController : MonoBehaviour
     public float GetSpeed() {return moveSpeed;}
     public void SetSpeed(float newSpeed) {moveSpeed = newSpeed;}
     
-    void Move(float horiz, float vert, float deltaTime) {
+    public void Move(float horiz, float vert, float deltaTime) {
 	    transform.position += new Vector3(horiz * moveSpeed * deltaTime, vert * moveSpeed * deltaTime, 0);
     } 
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         moveSpeed = GetComponent<PlayerCharacter>().baseSpeed;
 

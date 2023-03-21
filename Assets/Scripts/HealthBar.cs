@@ -12,12 +12,12 @@ public class HealthBar : MonoBehaviour
     public Slider healthbar;
     public float health = 100;
 
-    void Start()
+    public void Start()
     {
         player = GameObject.FindWithTag("Player");
     }
 
-    void Update()
+    public void Update()
     {
         health = player.GetComponent<PlayerCharacter>().GetHealthAsPercentage();
         healthbar.value = health;
